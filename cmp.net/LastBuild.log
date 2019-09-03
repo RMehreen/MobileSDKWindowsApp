@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2016.9.17.0" projectFile="C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpsdkdocs.shfbproj" started="11/28/2016 1:41:30 PM">
+<buildStep step="Initializing">
+Finding tools...
+The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
+Locating components in the following folder(s):
+    C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk
+    C:\ProgramData\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins\
+    C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\
+Using framework reflection data for &#39;.NET Framework 4.5&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework&#39;
+Using presentation style &#39;VS2010&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010&#39;
+</buildStep>
+<buildStep step="ClearWorkFolder">
+Clearing working folder...
+-------------------------------
+Clearing any prior web/markdown output...
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmp.net\CmpNET.csproj
+    Found project &#39;C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmp.net\CmpNET.csproj&#39;
+Source: C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\Cmp.WPF\CmpWPF.csproj
+    Found project &#39;C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\Cmp.WPF\CmpWPF.csproj&#39;
+
+Parsing project files
+    Found assembly &#39;C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmp.net\bin\Debug\Citrix.CMP.dll&#39;
+    Found assembly &#39;C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\Cmp.WPF\bin\Debug\Citrix.Cmp.WPF.dll&#39;
+SHFB: Warning BE0007: A project with a different or higher framework version was found.  Changing project FrameworkVersion property from &#39;.NET Framework 4.5&#39; to &#39;.NET Framework 4.5.1&#39; for the build.
+
+References to include (excluding framework assemblies):
+    None
+
+Copying XML comments files
+    C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmp.net\bin\Debug\Citrix.CMP.XML -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Citrix.CMP.XML
+    C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\Cmp.WPF\bin\Debug\Citrix.Cmp.WPF.XML -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Citrix.Cmp.WPF.XML
+</buildStep>
+<buildStep step="GenerateSharedContent">
+Generating shared content files (en-US, English (United States))...
+    Last step completed in 00:00:00.1250
+</buildStep>
+<buildStep step="GenerateApiFilter">
+Generating API filter for MRefBuilder...
+    Last step completed in 00:00:00.1094
+</buildStep>
+<buildStep step="GenerateReflectionInfo">
+Generating reflection information...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - GenerateRefInfo.proj]
+Build started 11/28/2016 1:41:33 PM.
+Project &quot;C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
+PrepareForBuild:
+  Creating directory &quot;obj\Debug\&quot;.
+GenerateRefInfo:
+  MRefBuilder (v2016.9.17.0)
+  Copyright c 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2016, Eric Woodruff, All Rights Reserved.
+  No source code context base path specified.  Source context information is unavailable.
+  Loaded 2 assemblies for reflection and 1 dependency assemblies.
+  Wrote information on 2 namespaces, 102 types, and 996 members
+  Copying file from &quot;reflection.org&quot; to &quot;reflection.all&quot;.
+  XslTransform (v2016.9.17.0)
+  Copyright c 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
+Done Building Project &quot;C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\GenerateRefInfo.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.20
+    Last step completed in 00:00:05.3595
+</buildStep>
+<buildStep step="TransformReflectionInfo">
+Transforming reflection output...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - TransformManifest.proj]
+Build started 11/28/2016 1:41:37 PM.
+Project &quot;C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\TransformManifest.proj&quot; on node 1 (default targets).
+TransformManifest:
+  XslTransform (v2016.9.17.0)
+  Copyright c 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
+  Copying file from &quot;reflection.xml&quot; to &quot;reflection.nofilenames&quot;.
+  XslTransform (v2016.9.17.0)
+  Copyright c 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\AddFilenames.xsl&#39;.
+  XslTransform (v2016.9.17.0)
+  Copyright c 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
+Done Building Project &quot;C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\TransformManifest.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.32
+    Last step completed in 00:00:03.5626
+</buildStep>
+<buildStep step="GenerateNamespaceSummaries">
+Generating namespace summary information...
+    Last step completed in 00:00:00.2344
+</buildStep>
+<buildStep step="CopyAdditionalContent">
+Copying additional content files...
+No additional content to copy
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="MergeTablesOfContents">
+Merging conceptual and additional tables of contents...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateIntermediateTableOfContents">
+Generating intermediate table of contents file...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - GenerateIntermediateTOC.proj]
+Build started 11/28/2016 1:41:41 PM.
+Project &quot;C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
+GenerateIntermediateTOC:
+  XslTransform (v2016.9.17.0)
+  Copyright c 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
+Done Building Project &quot;C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\GenerateIntermediateTOC.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.37
+Generating conceptual content intermediate TOC file...
+    Last step completed in 00:00:00.6406
+</buildStep>
+<buildStep step="CreateBuildAssemblerConfigs">
+Creating Sandcastle configuration files...
+    sandcastle.config
+    Last step completed in 00:00:00.7500
+</buildStep>
+<buildStep step="MergeCustomConfigs">
+Merging custom build component configurations
+C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\sandcastle.config
+  Updating reference topic configurations.
+  No conceptual content.  Removing conceptual content components.
+    Last step completed in 00:00:00.1093
+</buildStep>
+<buildStep step="BuildTopics">
+Building help topics...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - BuildTopics.proj]
+Build started 11/28/2016 1:41:43 PM.
+Project &quot;C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj&quot; on node 1 (default targets).
+BuildTopics:
+  BuildAssembler (v2016.9.17.0)
+  Copyright c 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2016, Eric Woodruff, All Rights Reserved.
+  Loading configuration...
+  ResolveReferenceLinksComponent: The MSDN content ID cache &#39;C:\Users\chaitanyak\AppData\Local\EWSoftware\Sandcastle Help File Builder\Cache\MsdnContentId.cache&#39; does not exist yet.  All IDs will be looked up in this build which will slow it down.
+  Processing topics...
+BuildAssembler : warning : ShowMissingComponent: [M:Citrix.Cmp.AudioClip.QueryMetaData] Missing &lt;returns&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Citrix.Cmp.AutoWindowLayout.DpiScalingEnabled] Missing &lt;summary&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Citrix.Cmp.AutoWindowLayout.Enable] Missing &lt;summary&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Citrix.Cmp.AutoWindowLayout.FallbackWindowStyle] Missing &lt;summary&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Citrix.Cmp.AutoWindowLayout.LayoutEnabled] Missing &lt;summary&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Citrix.Cmp.ClientKeyboardController.AutoHideKeyboard] Missing &lt;summary&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Citrix.Cmp.ClientKeyboardController.AutoShowKeyboard] Missing &lt;summary&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Citrix.Cmp.ClientKeyboardController.KeyboardReturnKeyText] Missing &lt;summary&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Citrix.Cmp.ClientKeyboardController.KeyboardType] Missing &lt;summary&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Citrix.Cmp.ClientKeyboardController.ShowExtendedKeyboard] Missing &lt;summary&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Citrix.Cmp.ClippingBorder.OnRender(System.Windows.Media.DrawingContext)] Missing &lt;param name=&quot;dc&quot;/&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Citrix.Cmp.DelegateCommand.#ctor(System.Action,System.Func{System.Boolean},System.Boolean)] Missing &lt;param name=&quot;isAutomaticRequeryDisabled&quot;/&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Citrix.Cmp.DelegateCommand.CanExecute] Missing &lt;returns&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Citrix.Cmp.DelegateCommand`1.CanExecute(`0)] Missing &lt;returns&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Citrix.Cmp.DelegateCommand`1.CanExecute(`0)] Missing &lt;param name=&quot;parameter&quot;/&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Citrix.Cmp.DelegateCommand`1.Execute(`0)] Missing &lt;param name=&quot;parameter&quot;/&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Citrix.Cmp.FocusHelpers.EndOfTextOnFocus] Missing &lt;summary&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Citrix.Cmp.FocusHelpers.GrabFocusWhenVisible] Missing &lt;summary&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Citrix.Cmp.FocusHelpers.SelectAllTextOnFocus] Missing &lt;summary&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Citrix.Cmp.KineticScrollingBehaviour.Friction] Missing &lt;summary&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Citrix.Cmp.KineticScrollingBehaviour.HandleKineticScrolling] Missing &lt;summary&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Citrix.Cmp.KineticScrollingBehaviour.ScrollGranularity] Missing &lt;summary&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Citrix.Cmp.Picture.QueryMetaData] Missing &lt;returns&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Citrix.Cmp.VideoClip.QueryMetaData] Missing &lt;returns&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Citrix.Cmp.ViewportInfo.ToString] Missing &lt;returns&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Citrix.Cmp.WeakRefEventHelper.AddWeakReferenceHandler``1(System.Collections.Generic.List{System.WeakReference}@,System.EventHandler{``0},System.Int32)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Citrix.Cmp.WeakRefEventHelper.CallWeakReferenceHandlers``1(System.Collections.Generic.List{System.WeakReference},System.Object,``0)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Citrix.Cmp.WeakRefEventHelper.RemoveWeakReferenceHandler``1(System.Collections.Generic.List{System.WeakReference},System.EventHandler{``0})] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj]
+  Processed 936 topic(s)
+  28 warning(s)
+  CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 14 of 15.
+  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 7 of 30.
+  ResolveReferenceLinksComponent: 674 entries added to the MSDN content ID cache.  New cache size: 674 entries
+Done Building Project &quot;C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\BuildTopics.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:13:51.93
+    Last step completed in 00:14:03.2759
+</buildStep>
+<buildStep step="CombiningIntermediateTocFiles">
+Combining conceptual and API intermediate TOC files...
+    Last step completed in 00:00:00.0469
+</buildStep>
+<buildStep step="ExtractingHtmlInfo">
+Extracting HTML info for HTML Help 1 and/or website...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - ExtractHtmlInfo.proj]
+Sandcastle Help File Builder and Tools, version 2016.9.17.0
+Copyright c 2006-2016, Eric Woodruff, All Rights Reserved
+E-Mail: Eric@EWoodruff.us
+
+Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
+
+Processing website files in C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website
+Processed 936 HTML files
+Sorting keywords and generating See Also indices
+Saving website keyword index to C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\WebKI.xml
+Saving website table of contents to C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\WebTOC.xml
+    Last step completed in 00:00:01.7344
+</buildStep>
+<buildStep step="CopyStandardHelpContent">
+Copying standard help content...
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\alert_caution.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\alert_caution.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\alert_note.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\alert_note.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\alert_security.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\alert_security.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\CFW.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\CFW.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\CodeExample.png -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\CodeExample.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\favicon.ico -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\footer_slice.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\footer_slice.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\privclass.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\privclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\privdelegate.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\privdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\privenumeration.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\privenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\privevent.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\privevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\privextension.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\privextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\privfield.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\privfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\privinterface.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\privinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\privmethod.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\privmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\privproperty.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\privproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\privstructure.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\privstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protclass.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\protclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protdelegate.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\protdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protenumeration.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\protenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protevent.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\protevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protextension.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\protextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protfield.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\protfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protinterface.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\protinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protmethod.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\protmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protoperator.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\protoperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protproperty.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\protproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protstructure.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\protstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\pubclass.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\pubclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\pubdelegate.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\pubdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\pubenumeration.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\pubenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\pubevent.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\pubevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\pubextension.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\pubextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\pubfield.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\pubfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\pubinterface.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\pubinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\pubmethod.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\pubmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\puboperator.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\puboperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\pubproperty.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\pubproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\pubstructure.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\pubstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\slMobile.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\slMobile.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\static.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\static.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\tabLeftBG.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\tabLeftBG.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\tabRightBG.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\tabRightBG.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\xna.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\icons\xna.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\scripts\branding.js -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\scripts\branding.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-cs-CZ.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\styles\branding-cs-CZ.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-de-DE.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\styles\branding-de-DE.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-en-US.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\styles\branding-en-US.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-es-ES.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\styles\branding-es-ES.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-fr-FR.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\styles\branding-fr-FR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-Help1.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\styles\branding-Help1.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-HelpViewer.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\styles\branding-HelpViewer.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-it-IT.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\styles\branding-it-IT.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-ja-JP.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\styles\branding-ja-JP.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-ko-KR.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\styles\branding-ko-KR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-pl-PL.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\styles\branding-pl-PL.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-pt-BR.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\styles\branding-pt-BR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-ru-RU.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\styles\branding-ru-RU.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-tr-TR.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\styles\branding-tr-TR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-zh-CN.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\styles\branding-zh-CN.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-zh-TW.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\styles\branding-zh-TW.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\MSHelpViewer\styles\branding.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\alert_caution.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\alert_caution.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\alert_note.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\alert_note.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\alert_security.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\alert_security.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\CFW.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\CFW.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\CodeExample.png -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\CodeExample.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\favicon.ico -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\footer_slice.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\footer_slice.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\privclass.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\privclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\privdelegate.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\privdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\privenumeration.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\privenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\privevent.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\privevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\privextension.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\privextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\privfield.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\privfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\privinterface.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\privinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\privmethod.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\privmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\privproperty.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\privproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\privstructure.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\privstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protclass.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\protclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protdelegate.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\protdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protenumeration.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\protenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protevent.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\protevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protextension.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\protextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protfield.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\protfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protinterface.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\protinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protmethod.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\protmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protoperator.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\protoperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protproperty.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\protproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\protstructure.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\protstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\pubclass.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\pubclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\pubdelegate.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\pubdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\pubenumeration.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\pubenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\pubevent.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\pubevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\pubextension.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\pubextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\pubfield.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\pubfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\pubinterface.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\pubinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\pubmethod.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\pubmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\puboperator.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\puboperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\pubproperty.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\pubproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\pubstructure.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\pubstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\slMobile.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\slMobile.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\static.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\static.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\tabLeftBG.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\tabLeftBG.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\tabRightBG.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\tabRightBG.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\icons\xna.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\icons\xna.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\scripts\branding.js -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\scripts\branding.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-cs-CZ.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\styles\branding-cs-CZ.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-de-DE.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\styles\branding-de-DE.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-en-US.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\styles\branding-en-US.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-es-ES.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\styles\branding-es-ES.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-fr-FR.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\styles\branding-fr-FR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-Help1.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\styles\branding-Help1.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-HelpViewer.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\styles\branding-HelpViewer.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-it-IT.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\styles\branding-it-IT.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-ja-JP.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\styles\branding-ja-JP.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-ko-KR.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\styles\branding-ko-KR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-pl-PL.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\styles\branding-pl-PL.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-pt-BR.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\styles\branding-pt-BR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-ru-RU.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\styles\branding-ru-RU.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-tr-TR.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\styles\branding-tr-TR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-zh-CN.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\styles\branding-zh-CN.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-zh-TW.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\styles\branding-zh-TW.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\styles\branding.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\CloseSearch.png -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\CloseSearch.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\CollapseAll.png -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\CollapseAll.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\Collapsed.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\Collapsed.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\Expanded.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\Expanded.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\favicon.ico -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\FillNode.aspx -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\FillNode.aspx
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\FillNode.php -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\FillNode.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\Index.aspx -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\Index.aspx
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\Index.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\Index.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\index.html -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\index.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\index.php -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\index.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\Item.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\Item.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\LoadIndexKeywords.aspx -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\LoadIndexKeywords.aspx
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\LoadIndexKeywords.php -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\LoadIndexKeywords.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\Search.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\Search.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\SearchHelp.aspx -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\SearchHelp.aspx
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\SearchHelp.inc.php -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\SearchHelp.inc.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\SearchHelp.php -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\SearchHelp.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\Splitter.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\Splitter.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\SyncTOC.gif -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\SyncTOC.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\TOC.css -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\TOC.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\TOC.js -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\TOC.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\Web.Config -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\Web.Config
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\..\LegacyWeb\scripts\clipboard.min.js -&gt; C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Working\Output\Website\scripts\clipboard.min.js
+    Last step completed in 00:00:01.2812
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Executing informational Generate Table of Contents build step for plug-ins (not used for MS Help Viewer)
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateHelpProject">
+Executing informational Generate Help Project build step for plug-ins (not used for MS Help Viewer)
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="CompilingHelpFile">
+Generating MS Help Viewer file...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - BuildHelpViewerFile.proj]
+  Compressing help content files...
+  500 items added
+  1000 items added
+  Compression finished.  1005 items added
+  Saving C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Documentation.mshc...
+  Saved 500 of 1005 items
+  Saved 1000 of 1005 items
+  Finished saving C:\DevTrees\chaitanyak_chaitanyak-dev2_Main_1815\Hostcore\src\ica\Hostcore\cmp\cmpsdk\cmpapi\autogendoc\en\html\cmp.net\Documentation.mshc
+  Compressed 4 folders, 1001 files.  Reduced size by 7,704,001 bytes (78%).
+    Last step completed in 00:00:02.4063
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating website table of contents file...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateFullTextIndex">
+Generating full-text index for the website...
+
+    Last step completed in 00:00:02.5313
+</buildStep>
+<buildStep step="CopyingWebsiteFiles">
+Copying website files to output folder...
+
+Copied 500 files
+Copied 1000 files
+Copied 1052 files for the website content
+    Last step completed in 00:00:01.3750
+</buildStep>
+<buildStep step="CleanIntermediates">
+Removing intermediate files...
+    Last step completed in 00:00:01.1407
+</buildStep>
+<buildStep step="Completed">
+
+Build completed successfully at 11/28/2016 1:55:56 PM.  Total time: 00:14:26.3073
+
+</buildStep>
+</shfbBuild>

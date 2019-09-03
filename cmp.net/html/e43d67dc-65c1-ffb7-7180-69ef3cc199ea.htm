@@ -1,0 +1,25 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }.OH_footer { }</style><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>ViewportInfo Properties</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="ViewportInfo class, properties" /><meta name="Microsoft.Help.Id" content="Properties.T:Citrix.Cmp.ViewportInfo" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="Citrix.Cmp" /><meta name="file" content="e43d67dc-65c1-ffb7-7180-69ef3cc199ea" /><meta name="guid" content="e43d67dc-65c1-ffb7-7180-69ef3cc199ea" /><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdTitleColumn">ViewportInfo Properties</td><td class="OH_tdRunningTitleColumn">Citrix Mobility Pack .NET SDK</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span> <p>The <a href="4376a356-5fb3-0f7d-5b07-ad5fecd7c277.htm">ViewportInfo</a> type exposes the following members.</p><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Properties</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="propertyList"><tr><th class="ps_iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="8e34a66d-8269-13d6-5a84-b36032df9bc6.htm">ClientViewport</a></td><td><div class="summary"><p>
+            The client viewport defines the screen area on the client device that is available
+            to view the server session. The resolution that is reported in the
+            <a href="82016734-83c2-080e-2f41-e92f8b117707.htm">DisplayState</a> class is the full screen resolution of the client device.
+            However many Citrix receivers will not have access to this full resolution to
+            display the session, because of toolbars. This viewport value takes these things
+            into account, so it will return the client resolution minus any space taken up by
+            toolbars or other onscreen elements, e.g. the onscreen keyboard.
+            </p><p>
+            If the client viewport was not available then this will be null.
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="6378b8f5-2be1-4eb9-66f1-f3a9b3a827ea.htm">ServerViewport</a></td><td><div class="summary"><p>
+            When viewing a remote session, the size of the session maybe bigger than the size of
+            the client viewport. This means you cannot view the entire server session at once.
+            Receivers provide a panning facility that allows users to move the viewport around
+            to view the entire server session. This viewport value reports which section of the
+            server session is visible inside the client viewport.
+            </p><p>
+            If the server viewport was not available then this will be null.
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="6f55a7be-c9af-c2ff-fceb-bc03135271b4.htm">ZoomFactor</a></td><td><div class="summary">
+            The server viewport zoom factor as a percentage, e.g. 100 means no zooming. When the
+            value is null the zoom factor is not available. When viewport events occur that do
+            not affect the zoom factor, this value will be null.
+            </div></td></tr></table><a href="#mainBody">Top</a><div class="OH_CollapsibleAreaRegion" id="seeAlsoSection"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="4376a356-5fb3-0f7d-5b07-ad5fecd7c277.htm">ViewportInfo Class</a></div><div class="seeAlsoStyle"><a href="a096d640-bd1d-22e3-e658-15c131622f2c.htm">Citrix.Cmp Namespace</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"> </div></body></html>

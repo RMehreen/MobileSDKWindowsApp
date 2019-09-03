@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['phonecallstarted',['PhoneCallStarted',['../class_citrix_mobility_1_1_citrix_mobile_class.html#a2356cddd018a01d99e931ba1a7500fd3',1,'CitrixMobility::CitrixMobileClass.PhoneCallStarted()'],['../interface_citrix_mobility_1_1_i_c_m_p_events___event.html#a835de886d9bc24b08ae233f16f8238f3',1,'CitrixMobility::ICMPEvents_Event.PhoneCallStarted()']]],
+  ['pickercontrolstatechanged',['PickerControlStateChanged',['../class_citrix_mobility_1_1_citrix_mobile_class.html#a9d739dbfb2734d68b825e19ed1052b77',1,'CitrixMobility::CitrixMobileClass.PickerControlStateChanged()'],['../interface_citrix_mobility_1_1_i_c_m_p_events___event.html#a7576b86f5056a3d26b46931cc2e9dbda',1,'CitrixMobility::ICMPEvents_Event.PickerControlStateChanged()']]],
+  ['picturecaptured',['PictureCaptured',['../class_citrix_mobility_1_1_citrix_mobile_class.html#a73a08a7000ca5effaec57fae5ec7fbd9',1,'CitrixMobility::CitrixMobileClass.PictureCaptured()'],['../interface_citrix_mobility_1_1_i_c_m_p_events___event.html#ad1fcb63d57a601f6a9ad10f304a551f8',1,'CitrixMobility::ICMPEvents_Event.PictureCaptured()']]],
+  ['picturetaken',['PictureTaken',['../class_citrix_mobility_1_1_citrix_mobile_class.html#a6292faee50a32d8600cc42afa97fc54d',1,'CitrixMobility::CitrixMobileClass.PictureTaken()'],['../interface_citrix_mobility_1_1_i_c_m_p_events___event.html#a7ce2a235cf4e8a9db3666421e149951d',1,'CitrixMobility::ICMPEvents_Event.PictureTaken()']]]
+];

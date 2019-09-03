@@ -1,0 +1,137 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }.OH_footer { }</style><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>ILocationReport(T) Interface</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="ILocationReport%3CT%3E interface" /><meta name="System.Keywords" content="Citrix.Cmp.ILocationReport%3CT%3E interface" /><meta name="System.Keywords" content="ILocationReport%3CT%3E interface, about ILocationReport%3CT%3E interface" /><meta name="System.Keywords" content="ILocationReport(Of T) interface" /><meta name="System.Keywords" content="Citrix.Cmp.ILocationReport(Of T) interface" /><meta name="System.Keywords" content="ILocationReport(Of T) interface, about ILocationReport(Of T) interface" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.ILocationReport`1" /><meta name="Microsoft.Help.Id" content="T:Citrix.Cmp.ILocationReport`1" /><meta name="Description" content="This interface is used to expose an instance of a specific type of location report. For each report you can perform a one shot query, or enable events." /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="Citrix.Cmp" /><meta name="file" content="296a8cd0-4357-a2c6-7c95-ff3420f37cc2" /><meta name="guid" content="296a8cd0-4357-a2c6-7c95-ff3420f37cc2" /><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdTitleColumn">ILocationReport<span id="LSTE004AE66_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTE004AE66_0?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script><span class="typeparameter">T</span><span id="LSTE004AE66_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTE004AE66_1?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script> Interface</td><td class="OH_tdRunningTitleColumn">Citrix Mobility Pack .NET SDK</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span> <div class="summary"><p>
+            This interface is used to expose an instance of a specific type of location report. For
+            each report you can perform a one shot query, or enable events. If you enable events
+            then you will get periodic reporting of location information until you stop the events.
+            For each report you can set and/or query the following state:
+            <ul><li><strong>Accuracy</strong> - </li><li><strong>Minimum interval</strong> - When you have location events enabled, you can use the minimum interval
+                to throttle back the frequency at which the report will fire location events. You
+                should set this to the longest interval your app can tolerate in order to reduce the
+                load on processor resources. Note: setting this to a small value doesn't guarantee
+                that you will get events at this interval as the provider is free to provide events
+                at a longer interval if it wants to.</li><li><strong>Status</strong> - This is the current status of the location provider. It is read only.</li></ul></p></div><p> </p>
+    <strong>Namespace:</strong> 
+   <a href="a096d640-bd1d-22e3-e658-15c131622f2c.htm">Citrix.Cmp</a><br />
+    <strong>Assembly:</strong>
+   Citrix.CMP (in Citrix.CMP.dll) Version: 2.0.0.0 (7.12.0.10009)<div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Syntax</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><div class="OH_CodeSnippetContainer"><div class="OH_CodeSnippetContainerTabs"><div class="OH_CodeSnippetContainerTabLeft" id="ID0EDCA_tabimgleft"> </div><div id="ID0EDCA_tab1" class="OH_CodeSnippetContainerTabFirst"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','cs','1','4');return false;">C#</a></div><div id="ID0EDCA_tab2" class="OH_CodeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','vb','2','4');return false;">VB</a></div><div id="ID0EDCA_tab3" class="OH_CodeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','cpp','3','4');return false;">C++</a></div><div id="ID0EDCA_tab4" class="OH_CodeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','fs','4','4');return false;">F#</a></div><div class="OH_CodeSnippetContainerTabRight" id="ID0EDCA_tabimgright"> </div></div><div class="OH_CodeSnippetContainerCodeCollection"><div class="OH_CodeSnippetToolBar"><div class="OH_CodeSnippetToolBarText"><a id="ID0EDCA_copyCode" href="#" class="OH_copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EDCA');return false;" title="Copy">Copy</a></div></div><div id="ID0EDCA_code_Div1" class="OH_CodeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="identifier">ILocationReport</span>&lt;T&gt;
+</pre></div><div id="ID0EDCA_code_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">Public</span> <span class="keyword">Interface</span> <span class="identifier">ILocationReport</span>(<span class="keyword">Of</span> T)</pre></div><div id="ID0EDCA_code_Div3" class="OH_CodeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">generic</span>&lt;<span class="keyword">typename</span> T&gt;
+<span class="keyword">public</span> <span class="keyword">interface class</span> <span class="identifier">ILocationReport</span></pre></div><div id="ID0EDCA_code_Div4" class="OH_CodeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">type</span> <span class="identifier">ILocationReport</span>&lt;'T&gt; =  <span class="keyword">interface</span> <span class="keyword">end</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EDCA");</script><h4 class="subHeading">Type Parameters</h4><dl><dt><span class="parameter">T</span></dt><dd>This is the concrete type of the location data object that holds the
+            location state for this report type.</dd></dl><p>The <span class="selflink">ILocationReport<span id="LSTE004AE66_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTE004AE66_2?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTE004AE66_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTE004AE66_3?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></span> type exposes the following members.</p><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Methods</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="methodList"><tr><th class="ps_iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="f56f871f-57aa-ca45-5556-88448d1cf8c1.htm">BeginGetAccuracy</a></td><td><div class="summary">
+            Initiates an async request to get the accuracy of the location report.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="0650b1aa-6f7e-120b-f29f-00ea0aafce03.htm">BeginGetReport</a></td><td><div class="summary">
+            Initiates an async request to get a location report.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="433d4372-71a0-f8fd-5bd3-a59a6a92dd2b.htm">BeginGetShortestInterval</a></td><td><div class="summary"><p>
+            Initiates an async query to get the location events shortest interval.
+            </p><p>
+            When location events are active, this is the shortest interval at which the
+            provider may generate events. The provider may take longer to generate events than
+            this interval and it may not raise events on a regular interval and instead wait for
+            the location to change. However it will not generate events more frequently than
+            this value. You should use this interval to throttle back the rate at which you
+            receive events if you do not need frequent updates.
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="269688d0-f871-2a27-2a86-4efe39f4d9ca.htm">BeginGetStatus</a></td><td><div class="summary">
+            Initiates an async request to get the status of the location report.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="2d109c49-9b9e-6859-85ee-e7336c6d64aa.htm">BeginSetAccuracy</a></td><td><div class="summary">
+            Initiates an async request to set the accuracy of the location report.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="69f1b4f1-2b7d-6dad-6541-30a8a8eb9c0c.htm">BeginSetShortestInterval</a></td><td><div class="summary"><p>
+            Initiates an async request to set the location events shortest interval.
+            </p><p>
+            When location events are active, this is the shortest interval at which the
+            provider may generate events. The provider may take longer to generate events than
+            this interval and it may not raise events on a regular interval and instead wait for
+            the location to change. However it will not generate events more frequently than
+            this value. You should use this interval to throttle back the rate at which you
+            receive events if you do not need frequent updates.
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="8d700c55-8d52-bc15-eb98-40df31982fdd.htm">BeginStartEvents</a></td><td><div class="summary"><p>
+            Initiates an async request to start firing location events using
+            <a href="b9c4106b-0a30-19cd-b5e4-f4a2a8cd01ed.htm">ReportUpdated</a>.
+            </p><p>
+            The interval at which events get fired will depend on the location provider. Some
+            providers will report events on a periodic interval while others will only fire the
+            event when the location of the device changes. While you can reduce the frequency
+            of reporting using <a href="67b3c3fc-564c-ad70-d2b2-8206d562c8c9.htm">SetShortestInterval(TimeSpan)</a>, the provider may always use
+            an interval greater than the one your supply.
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="d62dd371-dd43-45eb-6bb4-a434551657ac.htm">BeginStopEvents</a></td><td><div class="summary">
+            Initiates an async request to stop firing location events.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="b2b46217-6937-04d6-dd82-cd57565a4cfb.htm">EndGetAccuracy</a></td><td><div class="summary">
+            Completes an async request to get the accuracy of the location report.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="8cbd9f6c-1858-52ac-1a6c-2d2f7316dfff.htm">EndGetReport</a></td><td><div class="summary">
+            Completes an async request to get a location report.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="62896082-eb9a-3ccf-ae8b-f8b8a277a74f.htm">EndGetShortestInterval</a></td><td><div class="summary">
+            Completes an async request to get the location events shortest interval.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="607cf7d6-22cd-22b4-85f4-793ed96a5307.htm">EndGetStatus</a></td><td><div class="summary">
+            Completes an async request to get the location report status.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="96bc06bb-fbab-80f9-fa27-b9f662c87492.htm">EndSetAccuracy</a></td><td><div class="summary">
+            Completes an async request to set the accuracy of the location report.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="558a2f5b-2531-94b3-e976-3cd2948b6c89.htm">EndSetShortestInterval</a></td><td><div class="summary">
+            Completes an async request to set the location events shortest reporting interval.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="be2475ae-056a-a401-8b03-6f86d8566718.htm">EndStartEvents</a></td><td><div class="summary">
+            Completes an async request to start firing location events.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="b3b0839d-fbc6-08c9-5c5b-607d1d11c904.htm">EndStopEvents</a></td><td><div class="summary">
+            Completes an async request to stop firing location events.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="e5046159-62bc-bf8c-5ea7-f5e3ddd5b3c5.htm">GetAccuracy</a></td><td><div class="summary">
+            This operation makes a blocking request to get the accuracy of the location report.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="8685df66-b090-457d-bd92-78633194696f.htm">GetReport</a></td><td><div class="summary">
+            This operation makes a blocking request for a location report.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="6103933d-c5ef-e5dd-bc13-379de9610c41.htm">GetShortestInterval</a></td><td><div class="summary"><p>
+            This operation performs a blocking request to get the location events shortest
+            interval.
+            </p><p>
+            When location events are active, this is the shortest interval at which the
+            provider may generate events. The provider may take longer to generate events than
+            this interval and it may not raise events on a regular interval and instead wait for
+            the location to change. However it will not generate events more frequently than
+            this value. You should use this interval to throttle back the rate at which you
+            receive events if you do not need frequent updates.
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="04a73e91-bbeb-46d9-205b-6e95c72fd710.htm">GetStatus</a></td><td><div class="summary">
+            This operation makes a blocking request to get the location report status.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="f1c590d4-92e3-dc6b-3759-022559cccde9.htm">SetAccuracy</a></td><td><div class="summary">
+            This operation performs a blocking request to set the accuracy of the location
+            report.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="67b3c3fc-564c-ad70-d2b2-8206d562c8c9.htm">SetShortestInterval</a></td><td><div class="summary"><p>
+            This operation performs a blocking request to set the shortest interval at which
+            the provider may report location events.
+            </p><p>
+            When location events are active, this is the shortest interval at which the
+            provider may generate events. The provider may take longer to generate events than
+            this interval and it may not raise events on a regular interval and instead wait for
+            the location to change. However it will not generate events more frequently than
+            this value. You should use this interval to throttle back the rate at which you
+            receive events if you do not need frequent updates.
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="2116ab3a-551b-6356-e606-401b17b95dad.htm">StartEvents</a></td><td><div class="summary"><p>
+            Performs a blocking request to start firing location events using
+            <a href="b9c4106b-0a30-19cd-b5e4-f4a2a8cd01ed.htm">ReportUpdated</a>.
+            </p><p>
+            The interval at which events get fired will depend on the location provider. Some
+            providers will report events on a periodic interval while others will only fire the
+            event when the location of the device changes. While you can reduce the frequency
+            of reporting using <a href="67b3c3fc-564c-ad70-d2b2-8206d562c8c9.htm">SetShortestInterval(TimeSpan)</a>, the provider may always use
+            an interval greater than the one your supply.
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="f5ee6d1c-3519-c617-a0fd-c8b2877828bb.htm">StopEvents</a></td><td><div class="summary">
+            Performs a blocking request to stop firing location events.
+            </div></td></tr></table><a href="#mainBody">Top</a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Events</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="eventList"><tr><th class="ps_iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubevent.gif" alt="Public event" title="Public event" /></td><td><a href="b9c4106b-0a30-19cd-b5e4-f4a2a8cd01ed.htm">ReportUpdated</a></td><td><div class="summary"><p>
+            When you enable events using <a href="2116ab3a-551b-6356-e606-401b17b95dad.htm">StartEvents<span id="LSTE004AE66_4"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTE004AE66_4?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> this event will get fired
+            to report the latest location. This event firing will continue until you call
+            <a href="f5ee6d1c-3519-c617-a0fd-c8b2877828bb.htm">StopEvents<span id="LSTE004AE66_5"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTE004AE66_5?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>.
+            </p><p>
+            You can affect the interval at which the event is fired by using
+            <a href="67b3c3fc-564c-ad70-d2b2-8206d562c8c9.htm">SetShortestInterval(TimeSpan)</a>. You should increase this interval to the largest
+            value that your app can use in order to reduce the load on the location provider.
+            While you can specify a small interval, the provider may not respect it. The
+            provider may use a larger interval than the one you supply.
+            </p></div></td></tr></table><a href="#mainBody">Top</a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Remarks</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><p>
+            This interface exposes both sync and async versions of the APIs. The async versions are
+            useful as many of the calls can take a long time to execute. There are two reasons that
+            the calls can take a long time. Firstly the calls may trigger permission dialogs to be
+            displayed to the user, and so the calls get blocked until the user accepts or rejects
+            the dialog. Secondly the calls involve a request being sent over the network to the
+            Citrix Receiver and a reply being sent back. Depending on network conditions this
+            request/reply sequence can take a long time to complete.
+            </p><p>
+            It is recommended that you use the async versions to ensure your user interface does
+            not become unresponsive while the calls are being processed. Keep in mind that the async
+            callbacks may execute in the context of a worker thread.
+            </p><div class="OH_CollapsibleAreaRegion" id="seeAlsoSection"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="a096d640-bd1d-22e3-e658-15c131622f2c.htm">Citrix.Cmp Namespace</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"> </div></body></html>

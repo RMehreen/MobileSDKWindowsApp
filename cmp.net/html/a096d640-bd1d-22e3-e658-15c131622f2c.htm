@@ -1,0 +1,499 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }.OH_footer { }</style><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Citrix.Cmp Namespace</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="Citrix.Cmp namespace" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp" /><meta name="Microsoft.Help.Id" content="N:Citrix.Cmp" /><meta name="Description" content="This is the root namespace for the Citrix Mobility Pack .NET SDK. This SDK allows you to write Windows ." /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="Citrix.Cmp" /><meta name="file" content="a096d640-bd1d-22e3-e658-15c131622f2c" /><meta name="guid" content="a096d640-bd1d-22e3-e658-15c131622f2c" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdTitleColumn">Citrix.Cmp Namespace</td><td class="OH_tdRunningTitleColumn">Citrix Mobility Pack .NET SDK</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span> <div class="summary"><p>
+This is the root namespace for the Citrix Mobility Pack .NET SDK. This SDK allows you to write Windows .NET applications that run on Citrix servers in the data center that access the native capabilities of the mobile client devices you access the apps from. This approach has several advantages. Firstly you can write a single app that will work on a wide range of different mobile devices, e.g. on Androids and iPhones. It also means you don't need any specific developer knowledge about the various client platforms such as Java for Android and C++ and Object C for iOS. The final main advantage is one of security. Since your apps are running on the data center, only the graphics are sent to the client devices. All your corporate data remains secure in your data center.
+</p><p>
+While you can use Citrix technologies to run existing Windows apps from mobile devices such as iPads and Android phones, the user experience is quite poor. This is mainly due to smaller screen sizes and the use of touch based input which is less precise than a mouse, and doesn't provide the left/right mouse buttons that Windows apps were designed around. Another disadvantage is that the Windows apps were not designed to make use of the native capabilities of mobile devices.
+</p><p>
+For example a standard input pattern on mobile devices is the use of an on screen keyboard that pops up automatically when the user puts focus into an input control. This mechanism does not work for Windows apps running on a Citrix server since they assume that a physical keyboard is always available. Using the CMP SDK you can write Windows apps that will tell the mobile client device to auto-popup the on screen keyboard when an input field has focus. This provides users with an experience that is much closer to using native applications on their device.
+</p><p>
+The main class in the CMP SDK is <a href="4f4e01e6-c1f3-3110-8e87-efe36e411014.htm">CmpApi</a>. You need to create a single instance of this class in your application to use the SDK.
+</p></div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Classes</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="classList"><tr><th class="ps_iconColumn">
+					 
+				</th><th>Class</th><th>Description</th></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="c49efeee-8f63-5360-9105-c5bb51d700e6.htm">AcceleratedScrollViewer</a></td><td><div class="summary">
+            The following class implements a control that implements the basic functionalities of a
+            ScrollViewer and allows for scroll acceleration when WPF is using software rendering.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="03d8e148-8660-298b-0f78-eede24005540.htm">Audio</a></td><td><div class="summary">
+            The audio class allows you to record audio clips using the microphone of the client
+            device. It triggers a local audio capture app to popup on the client so the user can
+            record an audio clip. Once the user captures an audio clip and exits the audio capture
+            app the SDK will complete the audio capture operation and provide you with the resulting
+            audio clip. The recording is stored on the local storage of the device and be copied off
+            the device using standard file access APIs since the HDX drive mapping feature presents
+            the client drive as a network drive on the Citrix server.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="fb570e9c-ea9a-b3ab-53c9-8cb362d3ef6c.htm">AudioCaptureOptions</a></td><td><div class="summary">
+            This class is used to define the configuration options for a capture audio request.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="1f055ca7-2e6b-961f-c986-d2f9e2d1dbe7.htm">AudioClip</a></td><td><div class="summary">
+            This class represents an audio clip that has been captured on the client device. Once a
+            clip has been captured it remains stored on the local storage of the device. It is
+            recommended that you copy the clip off the client device to a local location on the
+            Citrix server as soon as possible, rather than using it directly off the device. This
+            will make repeated access of the clip much faster since IO requests will not be sent
+            over the network to the client. It also ensures that the picture will remain available
+            to your application if the client gets disconnected. You can use the functions
+            <a href="b194eb9d-ca70-a1ee-92ba-7c080ff9c974.htm">CopyFile(String)</a> and <a href="cccbbeed-321d-d9cb-5c50-4d805bf5399c.htm">CopyFileToTemp<span id="LSTFC1DDF01_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTFC1DDF01_0?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> to do this.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="e614e1f0-c8d1-1aea-992c-d351266a0414.htm">AutoWindowLayout</a></td><td><div class="summary"><p>
+            This class provides attached properties that will automatically manage your application
+            Windows to best present them when accessed from a a mobile device. They also provide
+            appropriate fallback behavior when your app is not being accessed from a mobile device.
+            </p><p>
+            Use <a href="605f951d-afd4-b349-aba6-c167d27fcf4b.htm">LayoutEnabledProperty</a> to take care of styling, sizing and positioning
+            your window. The styling ensures you don't see the window title bar or frame on a mobile
+            device, while the resizing logic ensures that changes in screen size due to orientation
+            changes or keyboard popup are handled.
+            </p><p>
+            Use <a href="5efe88fc-9388-d935-524e-a13e34712a7b.htm">DpiScalingEnabledProperty</a> to provide DPI scaling in your application.
+            This ensures your UI will have a consistent physical size when access from different
+            client devices with different DPIs.
+            </p></div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="2b80058c-c533-a45c-bec6-f8dcafcf8c1d.htm">BoolToVisibilityConverter</a></td><td><div class="summary">
+            Converts from a boolean to a visibility value. By default true = Visible and
+            false = Collapsed. Setting the optional boolean parameter to true will invert this
+            behaviour.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="13aa2c76-2340-485c-02ef-736e84ea066a.htm">ButtonPressedArgs</a></td><td><div class="summary">
+            The <a href="81230fc7-e5b7-b036-326b-73febe1edb00.htm">ButtonPressed</a> event arguments.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="e3954bb1-ca0e-daf6-13da-2320553b01f5.htm">ButtonRedirectionArgs</a></td><td><div class="summary">
+            The <a href="27e88067-e910-5a60-6e29-85f9f82eb8e5.htm">ButtonRedirectionChanged</a> event arguments.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="49c2628c-e039-31b9-37b5-3e773da4b5cb.htm">Camera</a></td><td><div class="summary">
+            This class is used to take pictures using the camera of the client device. The pictures
+            are stored on the local storage of the device. The <a href="ecf47d2d-999e-fcac-a983-ea86dc20b7e4.htm">Picture</a> objects the API
+            returns contain the remote file path of the pictures, and you can use these to copy the
+            pictures to the local Citrix server so your app can use them.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="a15fa9f8-97a5-bd9c-f63c-10c80f75e6b6.htm">CivicAddress</a></td><td><div class="summary">
+            Represents a geographical location, using a street level address.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="0834310e-e949-b787-154a-e3a5d66db4f1.htm">ClientControls</a></td><td><div class="summary"><p>
+            This class is used to control the visibility of the on-screen client controls that are
+            displayed by Citrix Receiver. The client controls are primarily intended to allow users
+            to interact with legacy Windows applications. If you design your mobile applications
+            appropriately you can remove the need to display the client controls. If you are
+            designing a new app specifically for mobile usage you should aim to always have the
+            client controls disabled. However if you are porting an existing app to be mobile
+            friendly you may wish to keep the client controls available to the user.
+            </p><p>
+            For some devices the client controls can take valuable screen real estate. E.g. on the
+            iPhone Receiver tapping the bottom/middle of the screen will always popup the on-screen
+            controls (since it doesn't have a separate physical button like Android to popup
+            controls). This prevents you from placing any controls that need user input at this
+            location.
+            </p><p>
+            The capability to show/hide the controls is not supported by all receivers. E.g. it is
+            not supported on the Android receiver since the controls are accessed via the physical
+            menu button and so do not get in the way of normal app usage. 
+            </p></div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="1a1c5258-64b2-57e9-c6e3-c613930ebd95.htm">ClientControlStateChangedArgs</a></td><td><div class="summary">
+            Event arguments for the visbility state of the on-screen Citrix Receiver controls
+            changing. </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="9d09b141-005f-ec0f-7049-7517a5535074.htm">ClientKeyboardController</a></td><td><div class="summary"><p>
+            Used to control the visibility of the on screen keyboard of the mobile client device
+            running the Citrix Receiver based on the focus of input fields. When this dependency
+            property is activated on Control derived class it will issue a show keyboard control
+            whenever the control gets focus.
+            </p><p>
+            You should apply this attached property to any text field the user needs to enter
+            input into. You cannot rely on popping the keyboard up once when you display particular
+            form/control and then hiding it when the form is closed. This is because certain classes
+            of mobile devices (notably Android devices) allow the user to manually hide the keyboad
+            via a physical button on the phone.
+            </p><p>
+            Hence if your app doesn't always ask the keyboard to popup whenever an input field gets
+            focus your users can get stuck on input forms with no keyboard displayed.
+            </p><p>
+            You can use this class in two ways. You can use it directly in XAML via the dependency
+            properties. You can also call it directly via code using ShowKeyboard and HideKeyboard.
+            The direct calls will only work if you have initialised an instance of the API using
+            <a href="4f4e01e6-c1f3-3110-8e87-efe36e411014.htm">CmpApi</a>.
+            </p></div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="5095a070-7a84-bd9c-c73b-a3880a92219f.htm">ClientState</a></td><td><div class="summary">
+            This class reports a range of useful information about the current client the user is
+            using to access your application. You can use this state to alter the appearance or
+            behaviour of the application to best suit the way the application is being accessed.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="6d52a4ca-3f0a-fdc4-5828-d62a72d860f8.htm">ClippingBorder</a></td><td><div class="summary">
+            A border specialisation that will clip its content to the inside of the border, e.g.
+            useful for borders with rounded corners where you want to ensure the contents don't go
+            outside the bounds of the corners.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="4f4e01e6-c1f3-3110-8e87-efe36e411014.htm">CmpApi</a></td><td><div class="summary"><p>
+            The core class that enables the use of the CMP SDK. You must create an instance of this
+            class before the CMP SDK is usable. You should not create multiple instances of this
+            class in your application, just create one instance and reuse it. You have to create
+            this object in the context of your UI thread. This is so the SDK can get a reference to
+            your UI thread in order to post notifications to it. If you create the SDK in a non-UI
+            thread then none of the notifications or async callbacks will ever get executed.
+            </p><p>
+            Many of the API calls in this SDK have both a synchronous and asynchronous version.
+            We provide async APIs where the SDK has to call over the network to the client
+            device. Since the round trip delay can potentially be quite long, you can end up with
+            pauses and stutters in your UI if you use the synchronous version of the APIs. So where
+            available, your should always use the async version of the API instead. This will
+            unblock your UI thread and so keep your UI responsive for the user.
+            </p><p>
+            The various functions in this SDK are accessed via the public properties of this class:
+            <ul><li><strong><a href="8e9b8202-3046-14be-e77e-b5b3d6757503.htm">Audio</a></strong> - Used to capture audio clips using the client device and upload them
+                to the Citrix server so you can use them.</li><li><strong><a href="06f04b47-f703-b005-781a-e93c67d86880.htm">Camera</a></strong> - Used to take pictures using the camera on the client device and then
+                upload those pictures to the Citrix server so you can use them.</li><li><strong><a href="65d14ea7-c531-b05c-0866-99e4790e99b2.htm">ClientControls</a></strong> - Used to control the appearance of the on-screen Citrix Receiver client
+                controls. E.g. on the iPhone you can disable the on-screen controls that appear at
+                the bottom of the screen.</li><li><strong><a href="baa5116c-c786-1f81-f8e5-d0333c2fd1fa.htm">Device</a></strong> - Used to access information about the client device, such as the form
+                factor and client OS.</li><li><strong><a href="cea60e20-7714-3a0f-2fd7-72164bb58bdf.htm">Display</a></strong> - The <a href="b72a3c53-7408-e39d-894e-68b354806bff.htm">Display</a> class contains many functions to
+                view and control the state of the clients display. You can query basic information
+                such as resolution, DPI and orientation of the client device. You can also perform
+                control operations such as locking the orientation and setting the position of the
+                viewport on the client.</li><li><strong><a href="5a9886c4-5726-e97d-3386-95242dc8d803.htm">Input</a></strong> - The <a href="78e1ca13-62f4-e74f-81ab-1ad693771dd4.htm">Input</a> class is used to manage all
+                functionality related to user input. It contains functions to show/hide the
+                on-screen keyboard; change how the receiver processes user touch input and handle
+                button presses of the physical buttons on the user's client device.</li><li><strong><a href="a6fbe1b8-8ff2-b57e-8b15-eab954bfb856.htm">Messaging</a></strong> - Used to send SMS messages using the phone.</li><li><strong><a href="3ea7e66b-73cb-386c-4765-98afef37e2a2.htm">Notifications</a></strong> - The <a href="9c5581b2-aa98-0ae4-b296-f84877bf77e5.htm">Notifications</a> class allows to display
+                notifications to the user using the notification mechanism of the client device,
+                e.g. vibrations, flashing light, text message.</li><li><strong><a href="b631fa23-9692-8f3a-f8e7-a762e5f8b1a2.htm">Phone</a></strong> - Used to start phone calls.</li><li><strong><a href="7118ceb1-e8c1-a79b-b1be-9117cca479fc.htm">Picker</a></strong> - Used to display a local picker control on the client device. A picker
+                can display a simple list of strings to the user. Since the picker is shown locally
+                on the client, it provides a smoother user experience to the user.</li><li><strong><a href="d957dc53-8fea-8ea0-36a9-d5f224369d62.htm">SessionManager</a></strong> - The <a href="16416a47-a451-b2da-a3c9-5f852cb42f21.htm">SessionManager</a> class is important for
+                tracking when the user connects and reconnects to the Citrix server. Users may move
+                their session between different client devices. E.g. they may start it on a phone
+                and then reconnect using their tablet. Since the different devices may have
+                different capabilities, you should use the
+                <a href="f90246b8-319a-1e82-f553-779069144d05.htm">SessionConnected</a> event to detect when the
+                user has reconnected and check the capabilities of the client device in case you
+                want to change the appearance or behaviour of your app.</li><li><strong><a href="6942de72-4740-3bc8-8813-914d3c4768f9.htm">Video</a></strong> - Used to capture video clips using the client device and upload them
+                to the Citrix server so you can use them.</li></ul></p></div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="4cc9722a-b6eb-8cd4-6812-f90ddbfc6cf9.htm">CmpCallFailedException</a></td><td><div class="summary">
+            This exception is thrown when a CMPCOM call returns an unsuccessful result. It contains
+            the CMPCOM error information which you access using
+            <a href="f158f58c-ab45-528f-a921-2c47e3fede91.htm">CmpStatus</a>.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="e188d80a-1ed5-3e53-f89a-2eaa879a9d1f.htm">CmpException</a></td><td><div class="summary">
+            The base exception type for the Citrix.Cmp namespace.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="ef941697-3652-eb1e-17c1-fa68acd016aa.htm">CmpStatus</a></td><td><div class="summary">
+            This class holds the result of a CMP operation. A CMP result is made up of a high word
+            which contains a component ID, and a low word that contains the specific result for that
+            component. A lower word value of '0' always indicates success for that component.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="bdd7dc7e-2821-a910-2a66-2168e993aaf5.htm">CmpWpfApi</a></td><td><div class="summary"><p>
+            This is the main API object you need to instantiate to be able to use this CMP.WPF API.
+            This API provides WPF specific functionality on top of the CMP.NET API, e.g.
+            </p><ul><li>DPI scaling to give your app a consistent physical size across
+                different client devices with different DPIs.</li><li>Attached behaviours you can apply to text boxes to control the
+                visibility of the on-screen keyboard on the client device.</li><li>Attached properties for scroll viewers that provide mobile style touch
+                scrolling with inertia. This allows you to swipe anywhere on a scroll panel to
+                scroll it.</li></ul></div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="bbd4d1a9-da2c-ca07-be8c-30ef9657d50c.htm">DelegateCommand</a></td><td><div class="summary">
+            This class allows delegating the commanding logic to methods passed as parameters,
+            and enables a View to bind commands to objects that are not part of the element tree.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="94ad1aca-b7d0-2650-8c5f-9894b53cbcb4.htm">DelegateCommand<span id="LSTFC1DDF01_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTFC1DDF01_1?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTFC1DDF01_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTFC1DDF01_2?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a></td><td><div class="summary">
+            This class allows delegating the commanding logic to methods passed as parameters,
+            and enables a View to bind commands to objects that are not part of the element tree.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="6888a074-8bcf-528e-ac20-4845e5c66a9a.htm">Device</a></td><td><div class="summary">
+            Used to query general information about the client device such as form factor,
+            operating system version and hardware capabilities. This class returns a base set of
+            device capabilities via .NET properties. These are properties are loaded first and are
+            available as soon as the <a href="f90246b8-319a-1e82-f553-779069144d05.htm">SessionConnected</a> event is fired.
+            A second set of more detailed device properties is available on demand by calling the
+            various get functions.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="b72a3c53-7408-e39d-894e-68b354806bff.htm">Display</a></td><td><div class="summary">
+            This class holds all the information about the current state of the display of the
+            connected client device, e.g. state such as resolution, DPI and orientation. It also has
+            control functions that affect the state of the display such as locking the orientation
+            and setting the viewport.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="82016734-83c2-080e-2f41-e92f8b117707.htm">DisplayState</a></td><td><div class="summary">
+            Contains a set of display state that describes the state of the screen of the connected
+            client device.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="ca1d2a6f-fce4-2646-b976-8835b4b88b0f.htm">DisplayStateChangedArgs</a></td><td><div class="summary">
+            The event arguments for the display state changing.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="bc50a93f-2f5c-00ae-1065-d1ce045098dd.htm">Dpi</a></td><td><div class="summary">
+            Used to present the DPI state of a display.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="3ba7c159-2032-2620-7d00-342b1929fc97.htm">DpiScaling</a></td><td><div class="summary"><p>
+            This class is used to implement DPI scaling in a WPF application. With the ever
+            increasing range of mobile devices (with different screen DPIs), developers need to
+            provide DPI independence for their applications when running on different devices.
+            Without DPI independence apps will have an inconsistent physical size when running on
+            devices with different DPIs.
+            </p></div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="e7ee4f4a-633c-c34b-7517-06e4b2167891.htm">EventExtensions</a></td><td><div class="summary">
+            Extension methods for eventing that call .NET events using the recommended pattern. The
+            extension methods capture the event handler list so there is no race condition between
+            performing a null check on the handler list and calling it.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="02cdb1ff-d016-ba96-7cc7-457d5cbd47f3.htm">FocusHelpers</a></td><td><div class="summary">
+            This class provides attached properties for managing and interacting with focus changes.
+            It has two properties for managing <a href="http://msdn2.microsoft.com/en-us/library/ms617604" target="_blank">TextBox</a> behavior when receiving focus:
+            <ul><li><strong><a href="bc013129-ac60-a4dc-eec9-da5d723a5160.htm">EndOfTextOnFocusProperty</a></strong> - Sets the caret position to the end of the text when it receives focus.</li><li><strong><a href="1f3d7b6b-4e81-9be3-b488-85e463cd24dc.htm">SelectAllTextOnFocusProperty</a></strong> - Selects all the text in a text box when it receives focus.</li></ul>
+            It also has a general purpose property that grabs text to any element when it becomes
+            visible: <a href="4ae83fee-9467-870e-7a7e-c5bfd0c625f8.htm">GrabFocusWhenVisibleProperty</a></div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="d4eb7a6d-640c-d14d-6a39-7be6741df675.htm">GeoLocation</a></td><td><div class="summary">
+            Represents a geographical location that is determined by latitude and longitude
+            coordinates. May also include other information like altitude, speed, and course.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="78e1ca13-62f4-e74f-81ab-1ad693771dd4.htm">Input</a></td><td><div class="summary"><p>
+            This class is used to manage how the user provides input to the client device. It allows
+            applications to:
+            <ul><li>Control when the on-screen keyboard is displayed.</li><li>Consume physical button presses, e.g. back, search, etc.</li><li>Configure how the Citrix Receiver processes touch input.</li><li>Configure on-screen client controls displayed by Citrix Receiver.</li></ul></p></div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="14d78943-4801-17b4-a713-daa7bb41aa55.htm">KeyboardState</a></td><td><div class="summary">
+            This class represents a snapshot of keyboard state. It is used to both request the
+            display of the on-screen keyboard, as well report the current state of the keyboard on
+            the client. When requesting the on-screen keyboard to be displayed, use the public
+            properties with setters to specify the desired keyboard configuration.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="b9617877-66b3-64d5-5fd7-19dc23e6c433.htm">KeyboardStateChangedArgs</a></td><td><div class="summary">
+            The event arguments for the keyboard state changed event.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="4e5b512c-5dc4-0970-8607-1c1b2fc3f34a.htm">KineticScrollingBehaviour</a></td><td><div class="summary">
+            Used to apply kinetic scrolling to a ScrollViewer. Kinetic scrolling changes the
+            behaviour of scrollable areas in two ways.
+            
+            Firstly it provides a click, hold and drag mechanic that will scroll the scrollable
+            area. When scrolling in this way the scroll area "sticks" to the mouse pointer and
+            moves in time with it. This is referred to as "drag scrolling".
+            
+            The second behaviour is the use of inertia that keeps the scrollable area scrolling
+            after you release the mouse button. The amount of inertia applied is based on how fast
+            you are moving the mouse when you release the mouse button. How long the inertia
+            scrolling keeps going after you release the mouse is based on: (a) the initial inertia;
+            (b) the configured friction using "FrictionProperty". Use 1.0 for no friction which will
+            keep the scroll view scrolling until it hits the extent of the scrollable area. Use 0
+            for no inertia scrolling.
+            
+            TODO: currently doesn't work properly when using logical item based scrolling like
+            listbox does by default - when enabled the scrolling is too fast. A quick fix is to
+            forcibly disable CanContentScroll. However ideally we want to allow logical scrolling as
+            well.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="d08f27ab-b6c0-31af-e7cf-a00ac3214bc3.htm">LayoutTracker</a></td><td><div class="summary">
+            The layout tracker is used to query the form factor of the endpoint the user is running
+            your application from. By default the layout is queried from the Citrix Receiver using
+            the Mobility Pack runtime. However you can supply a custom form factor report if
+            required.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="5636c2a8-d81f-93ef-cea2-af5189d7c05a.htm">LocationException</a></td><td><div class="summary">
+            This exception is thrown by the location API. </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="1166179c-ba52-431a-108d-29f967a6ab9a.htm">LocationProvider</a></td><td><div class="summary"><p>
+            Use this class to query location information from a client device that has a location
+            sensor. This class supports two types of location reports:
+            <ul><li><strong>Civic Address</strong> - This report returns a street level address.</li><li><strong>Geo-location</strong> - This report returns a latitude and longitude.</li></ul></p></div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="953fc6ae-137f-1338-0262-d547a1b0b548.htm">LocationReportUpdatedArgs<span id="LSTFC1DDF01_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTFC1DDF01_3?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTFC1DDF01_4"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTFC1DDF01_4?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a></td><td><div class="summary">
+            These event args hold a new location report object.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="47109fb3-52dd-0a4f-9cd2-8500ffcef897.htm">Messaging</a></td><td><div class="summary">
+            Use this class to make client devices send SMS messages. CMP will only open the native
+            SMS application with the phone number and message text pre-filled, it will never send
+            a message automatically. The user still has to manually send the message.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="9c5581b2-aa98-0ae4-b296-f84877bf77e5.htm">Notifications</a></td><td><div class="summary"><p>
+            This class is used to activate the notification features of the client device in order
+            to let the user know there is some pending state that may be of interest to them in your
+            application (when they are not actively using your app).
+            </p><p>
+            You need to keep in mind that this notification mechanism will only work while the
+            Citrix Receiver on the client device is still connected to the Citrix server running
+            your application. So while most mobile devices support some form of multi-tasking, if
+            you lock your device or switch to a different application, the Citrix Receiver may be
+            shutdown. If this happens the connection will be broken and you will not be able to send
+            any notifications to the device.
+            </p></div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="d50502ac-0523-22d6-604f-a8ae5c33f976.htm">NotifyHelper</a></td><td><div class="summary">
+            Helpers for using INotifyPropertyChanged.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="09f10828-7837-381b-9f6e-cf7244217ee4.htm">OrientationState</a></td><td><div class="summary">
+            The orientation status of the client device.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="7f572776-6496-193c-56db-e9f9f057cb33.htm">OrientationStateChangedArgs</a></td><td><div class="summary">
+            Event arguments for the orientation state changing.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="4d0a7e4c-e12e-0405-3b68-3e41b95cdb00.htm">Phone</a></td><td><div class="summary">
+            This class is used to make the client device start a phone call. CMP will only open
+            that native phone call app on the device with the number pre-filled. It will never
+            initiate the phone call automatically. The user still has to manually start the phone
+            call.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="db9cb969-a031-762d-2a9d-60e4538e7b42.htm">Picker</a></td><td><div class="summary"><p>
+            Used to display a local client device picker. Create instances of this class using
+            <a href="65bfb4f8-052f-4783-defd-5f50e6f69de1.htm">CreateNewPicker(IEnumerable<span id="LSTFC1DDF01_5"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTFC1DDF01_5?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>String<span id="LSTFC1DDF01_6"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTFC1DDF01_6?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a> and show a picker using
+            <a href="72dc7737-a77a-aaa4-f5e1-33c78cf68df3.htm">BeginShowPicker(Picker, Action<span id="LSTFC1DDF01_7"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTFC1DDF01_7?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>IAsyncResult<span id="LSTFC1DDF01_8"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTFC1DDF01_8?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a> or <a href="b71f8e2f-c0cd-7b81-e1a9-3e9ee4d4d508.htm">ShowPicker(Picker)</a>.
+            The picker usage is one shot, so once you have shown a picker you cannot show it again.
+            Subscribe to the events in the picker class to get informed when the user selects an
+            item or closes the picker.
+            </p><p>
+            Once you have created a picker instance, you have a few options to configure the picker
+            before you display it.
+            <ul><li>Use <a href="ca343ca1-aa86-04f9-ab34-9cd6c31c602b.htm">PickerTitle</a> to set a title on the picker
+                control. Note: this option is not always available, depending on the client device
+                in use.</li><li>Use <a href="6f7e9435-b376-d6ec-36aa-7d8c86679142.htm">PickerLayout</a> to control the size and position
+                of the picker control. If you don't set this property the client will automatically
+                size and position the control for you.</li></ul></p></div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="ea20c5ad-fb17-67a5-753d-0655c74239a6.htm">PickerControl</a></td><td><div class="summary">
+            Used to display local (native) picker controls on the client device. The picker control
+            displays a simple string list of options to the user and allow them to select a single
+            option. Since the picker is displayed using the native picker control on the client
+            device the user gets a smooth user experience. The disadvantage to using this picker API
+            is that you can only display basic string content.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="2d6d3f0a-7a0a-525b-c93b-df1d08f1269a.htm">PickerErrorArgs</a></td><td><div class="summary">
+            The event arguments for the <a href="8ad71b3c-d26b-5599-2c52-66047babd5de.htm">PickerError</a> event.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="071a1dad-2cdd-5263-ab98-c646406b48b2.htm">PickerItemSelectedArgs</a></td><td><div class="summary">
+            Event arguments for the <a href="17440de7-8466-0f62-96d8-1410f9032138.htm">ItemSelected</a> event.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="ecf47d2d-999e-fcac-a983-ea86dc20b7e4.htm">Picture</a></td><td><div class="summary">
+            Represents a picture taken using the camera of the client device. Once a picture is
+            taken, it is held on local storage on the device. It is recommended that you copy the
+            picture off the client device to a local location on the Citrix server as soon as
+            possible, rather than using it directly off the device. This will make repeated access
+            of the picture much faster since IO requests will not be sent over the network to the
+            client. It also ensures that the picture will remain available to your application if
+            the client gets disconnected. You can use the functions <a href="443aeb62-102e-fb1b-e6d0-75c50e03cd5d.htm">CopyFile(String)</a>
+            and <a href="1da291e8-9821-65d1-ed08-046ab77a6f28.htm">CopyFileToTemp<span id="LSTFC1DDF01_9"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTFC1DDF01_9?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> to do this.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="c6393197-36d7-dee9-a7b2-329ab5c198a4.htm">PictureOptions</a></td><td><div class="summary">
+            This class contains all the configuration options for the version 2 take picture API.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="e632ef30-0365-8f0e-9df5-460c5b067ba4.htm">ReferenceDpi</a></td><td><div class="summary">
+            Used to provide a set of display state that is needed by the <a href="3ba7c159-2032-2620-7d00-342b1929fc97.htm">DpiScaling</a>
+            class for operation. That most important state it contains, that you must provide is the
+            reference X/Y client DPI that your application is designed for. This is the screen DPI
+            of the primary mobile device you develop on. This provides the reference DPI that is
+            used to implement application DPI scaling. E.g. if you run your app on devices with DPI
+            higher than your reference DPI then the application will get scaled up in proportion.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="5694e8c2-e613-1547-7b6f-454a314fe1c1.htm">ScreenSize</a></td><td><div class="summary">
+            Contains the screen size of the client device in inches.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="b89f705a-78dd-491c-4999-eacfe2505fe6.htm">ScrollAcceleratedCanvas</a></td><td><div class="summary">
+            Implements a canvas where the scroll-acceleration feature can be turned on or off by
+            setting its VisualScrollableAreaClip. This is used as a wrapper around the content
+            presenter of the associated ScrollAcceleratedContentScroller.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="6bc1751a-839e-139a-1359-4f259bd69ce2.htm">ScrollArgs</a></td><td><div class="summary">
+            Event arguments for AcceleratedScrollViewer.ScrollChanged.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="45478bd5-d95d-68e7-a32f-62edb108ae87.htm">SessionConnectedArgs</a></td><td><div class="summary">
+            The event arguments for the session connected event
+            (<a href="f90246b8-319a-1e82-f553-779069144d05.htm">SessionConnected</a>).
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="16416a47-a451-b2da-a3c9-5f852cb42f21.htm">SessionManager</a></td><td><div class="summary"><p>
+            Used to track, query and manage the status of a user's remote connection to the Citrix
+            server running your app. Use the <a href="f90246b8-319a-1e82-f553-779069144d05.htm">SessionConnected</a> event in
+            this class to track when a user reconnects a client to the Citrix server. It is often
+            useful to use this event to recheck the capabilities of the newly connected client and
+            to alter your apps behaviour or layout to best suit the client.
+            </p><p>
+            The CMP SDK uses Windows focus checking by default when processing requests and firing
+            events. This focus checking is provided as an arbitration mechanism between multiple
+            applications that use CMP SDK and are running in the same session. By only allowing the
+            app with focus to use CMP SDK, you ensure that apps don't try to set conflicting state
+            on the client. When your app does not have focus, any set request will fail and throw
+            an exception. Also most of the events will not get fired. The only events that will fire
+            when your app does not have focus are the session events in this class.
+            </p><p>
+            While the focus checking behaviour is used by default, you can turn it off. The
+            <a href="0123f03d-d488-d8c9-3946-2511f5a2d9d4.htm">SetSessionOption(SessionOption, Boolean)</a> function allows you to turn focus checking
+            on or off for your app. Just be aware that when you turn focus checking off, your app
+            can potentially try to set conflicting state with another CMP enabled app that does have
+            focus. For this reason disabling the focus checking is not recommended.
+            </p><p>
+            This class also implements an automatic disconnect feature when the screen becomes
+            locked. For mobile apps we want to provide the best "as-local" user experience. One of
+            the things that breaks this, is the display of the Windows lock screen in a session. So
+            by disconnecting a session when it becomes locked, the user is spared the cumbersome
+            process of having to unlock the session. Instead they can relaunch the app from the app
+            list in their mobile receiver. Also depending on the receiver, when configured for
+            mobile app operation it may not be possible to unlock the screen. This is because
+            receivers hide client controls that are normally provided for interacting with legacy
+            Windows applications.
+            </p></div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="1b5563f8-cdf6-84fc-e1f6-a1b826db5bbd.htm">SupportedOrientationsChangedArgs</a></td><td><div class="summary">
+            The event arguments for <a href="74c95854-b7ea-9005-1448-6d8efe393320.htm">SupportedOrientationsChanged</a>.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="01b4aca7-eb72-1c1c-2328-c71b8ce160fd.htm">TouchInputModeChangedArgs</a></td><td><div class="summary">
+            Event arguments for the touch input mode changing.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="0252bb37-6c6e-030a-d229-66c915a02904.htm">Video</a></td><td><div class="summary">
+            The video class allows you to record video clips using the microphone and camera of the
+            client device. It triggers a local video capture app to popup on the client so the user
+            can record a video. Once the user captures a video and exits the video capture app,
+            the SDK will complete the video capture operation and provide you with the resulting
+            video clip. The recording is stored on the local storage of the device and be copied off
+            the device using standard file access APIs since the HDX drive mapping feature presents
+            the client drive as a network drive on the Citrix server.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="9bcea683-9d9f-09e7-1198-476d5a072a1a.htm">VideoCaptureOptions</a></td><td><div class="summary">
+            This class is used to define the configuration options for a capture video request.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="675dce91-c63b-fcb4-aa21-15bcc1f4d3fe.htm">VideoClip</a></td><td><div class="summary">
+            This class represents an video clip that has been captured on the client device. Once a
+            clip has been captured it remains stored on the local storage of the device. It is
+            recommended that you copy the clip off the client device to a local location on the
+            Citrix server as soon as possible, rather than using it directly off the device. This
+            will make repeated access of the clip much faster since IO requests will not be sent
+            over the network to the client. It also ensures that the picture will remain available
+            to your application if the client gets disconnected. You can use the functions
+            <a href="09d32d10-20b5-2727-f835-f51b0b9ea5a5.htm">CopyFile(String)</a> and <a href="93b80889-7b94-92a3-a508-811e834a1f04.htm">CopyFileToTemp<span id="LSTFC1DDF01_10"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTFC1DDF01_10?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> to do this.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="4376a356-5fb3-0f7d-5b07-ad5fecd7c277.htm">ViewportInfo</a></td><td><div class="summary">
+            Holds a set of viewport information that is used to report what the current state of
+            the viewport is on the Citrix Receiver. Refer to <a href="8e34a66d-8269-13d6-5a84-b36032df9bc6.htm">ClientViewport</a>
+            and <a href="6378b8f5-2be1-4eb9-66f1-f3a9b3a827ea.htm">ServerViewport</a> for more information on the different
+            viewport state reported by this class.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="0c1fc9c9-b45a-d862-77e5-fe0a9559c36f.htm">ViewportInfoChangedArgs</a></td><td><div class="summary">
+            Used to report a new set of viewport information.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="a47495fc-c19d-2fa2-3db9-e8ae42aa3666.htm">ViewportOriginChangedArgs</a></td><td><div class="summary">
+            Event arguments for the viewport origin changing.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="dfd99657-c88e-98c1-0dc1-32615fcd07c5.htm">WeakRefEventHelper</a></td><td><div class="summary"><p>
+            A helper class for implementing events that use weak references.
+            </p><p>
+            Consumers of your weak ref event must hold their own explicit reference to their
+            handler delegate since the weak reference subscription won't keep the delegate alive.
+            If they don't hold their own reference the delegate will get garbage collected and end
+            up never getting called.
+            </p></div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Interfaces</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="interfaceList"><tr><th class="ps_iconColumn">
+					 
+				</th><th>Interface</th><th>Description</th></tr><tr data="interface; public"><td><img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="64d90dcb-a5ee-41b0-5d56-2280d02b78ec.htm">IFormFactorReport</a></td><td><div class="summary"><p>
+            The form factor report interface is used to control the reporting of the form factor of
+            the user's endpoint. By default the CMP.NET SDK will report the same form factor as you
+            get from calling <a href="d9e4e5af-f130-34b0-8b0a-77292ab44834.htm">GetClientState<span id="LSTFC1DDF01_11"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTFC1DDF01_11?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> and querying the
+            <a href="74597c93-3b41-c106-131f-1aa475eb241f.htm">DeviceFormFactor</a> property.
+            </p><p>
+            You can customise the form factor reporting behavior of your application by implementing
+            this interface and calling <a href="5687762e-1d5b-0347-cb40-392108a9e937.htm">SetReport(IFormFactorReport)</a>.
+            </p></div></td></tr><tr data="interface; public"><td><img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="296a8cd0-4357-a2c6-7c95-ff3420f37cc2.htm">ILocationReport<span id="LSTFC1DDF01_12"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTFC1DDF01_12?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LSTFC1DDF01_13"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTFC1DDF01_13?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a></td><td><div class="summary"><p>
+            This interface is used to expose an instance of a specific type of location report. For
+            each report you can perform a one shot query, or enable events. If you enable events
+            then you will get periodic reporting of location information until you stop the events.
+            For each report you can set and/or query the following state:
+            <ul><li><strong>Accuracy</strong> - </li><li><strong>Minimum interval</strong> - When you have location events enabled, you can use the minimum interval
+                to throttle back the frequency at which the report will fire location events. You
+                should set this to the longest interval your app can tolerate in order to reduce the
+                load on processor resources. Note: setting this to a small value doesn't guarantee
+                that you will get events at this interval as the provider is free to provide events
+                at a longer interval if it wants to.</li><li><strong>Status</strong> - This is the current status of the location provider. It is read only.</li></ul></p></div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Enumerations</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="enumerationList"><tr><th class="ps_iconColumn">
+					 
+				</th><th>Enumeration</th><th>Description</th></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="f4a5a49f-b37e-6855-ef78-3c9f3da95604.htm">AudioEncoding</a></td><td><div class="summary">
+            Defines all the possible audio encoding formats for capturing audio clips.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="987bf400-4580-68d7-ebd9-57d73acbf30d.htm">ButtonId</a></td><td><div class="summary">
+            The IDs of all the buttons we support redirecting.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="0b71d3ca-79b5-2b89-0fce-3d21b8dabab1.htm">ButtonTarget</a></td><td><div class="summary">
+            Specifies where the client is sending button presses to.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="7ab4c319-df13-3655-be75-3a4224dd5aa6.htm">CameraSelection</a></td><td><div class="summary">
+            Defines the available cameras for taking a picture/video on a device.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="d9f900c1-9c6f-e160-e027-b1213433e1c4.htm">CaptureQuality</a></td><td><div class="summary">
+            Defines the supported capture qualities for audio/pictures/video.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="2ac1d6d5-e68d-807a-9eeb-5b1e9edf1f4d.htm">CmpComponent</a></td><td><div class="summary">
+            Defines all the CMP components that are used in the CMP error codes.
+            .
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="6c588ab4-ede7-2a68-27dc-f82d4c55ca8b.htm">CmpError</a></td><td><div class="summary">
+            This enumeration defines the full set of CMP errors that can be raised. The underlying
+            values are made up of two words. The top word contains a CMP component ID. This ID will
+            match one of the values from <a href="2ac1d6d5-e68d-807a-9eeb-5b1e9edf1f4d.htm">CmpComponent</a>. The lower word contains the
+            specific error ID for that component. A lower word value of '0' always indicates success
+            for that component.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="9a05d553-d885-72a5-4037-344d1c8ecd54.htm">ConnectionState</a></td><td><div class="summary">
+            This enumeration defines the states we report for the status of the underlying
+            connection between the user's client and the server running your application.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="acef3c85-576c-962a-4404-3643eb958e05.htm">DeviceBoolProperty</a></td><td><div class="summary">
+            Defines the set of detailed device boolean properties that devices may support.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="82bcca02-fe30-8aac-2786-01b7195d33d4.htm">DeviceOS</a></td><td><div class="summary">
+            The set of known mobile device operating systems that the CMP device reporting can report.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="8ec72adc-c022-eb92-262c-ac0012feb106.htm">DeviceStringProperty</a></td><td><div class="summary">
+            Defines the set of detailed device string properties that devices may support.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="155e3396-fa84-c348-f24f-7da1a10d2c2f.htm">DeviceType</a></td><td><div class="summary">
+            The physical device types that the CMP device reporting can report. The device type is
+            primarily used to distinguish the form factor of the client device. If you have a tablet
+            device that can also make phone calls for example the tablet type would be returned, not
+            the phone type.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="48d66f6b-c6d5-a1ed-8a40-04a944210092.htm">KeyboardAutoCapitalization</a></td><td><div class="summary">
+            Defines the auto-capitalisation behaviour for text input via the mobile device.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="791c4def-ae07-2b8a-bc85-b902d180fec8.htm">KeyboardReturnKey</a></td><td><div class="summary">
+            Defines the text that is displayed on the return key of the onscreen keyboard.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="63b9cb29-703d-1002-25ff-56d80d939722.htm">KeyboardStates</a></td><td><div class="summary">
+            A set of flags that define the states the client keyboard can be in.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="79608589-fa12-0ff9-fa04-3decdf72c2d7.htm">KeyboardType</a></td><td><div class="summary">
+            Defines the different types of keyboards supported by CMP. Not all client devices
+            will be able to support all of the keyboards defined here, so you should check the
+            capabilities before issuing a show keyboard request for a specific type of keyboard.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="3f174783-9847-39da-eb0d-affaf8ec15f8.htm">LocationAccuracy</a></td><td><div class="summary">
+            Defines the supported location accuracies. You should prefer the lowest accuracy that
+            your app can tolerate.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="d737c2ea-9da5-36b6-af4f-51e4b049da45.htm">LocationReportStatus</a></td><td><div class="summary">
+            Defines the states a location report provider can be in.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="64c5e4a4-3585-42c3-c0ee-ef73879f7b0a.htm">NotificationTypes</a></td><td><div class="summary">
+            This enumeration defines all the types of notification mechanisms the CMP API supports.
+            You can use notifications to let the user know that they may want to re-open your
+            application when something of interest has occurred.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="8caa87c4-89bb-fb46-b972-455c90923c6f.htm">Orientation</a></td><td><div class="summary">
+            Defines the four possible orientations a device can be in. This is used for reporting
+            orientation state and for locking the orientation of the device.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="bffff485-8972-fa8d-91b1-b874662deadd.htm">PictureImageFormat</a></td><td><div class="summary">
+            The supported image formats that can be output when taking pictures.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="3f3e10ab-79a3-a936-6e8e-d2161eaa6044.htm">Protocol</a></td><td><div class="summary">
+            This protocol enumeration defines the underlying protocol in use to remote the
+            application from the server it is running on, to the client the user is using.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="5f4c7961-33af-91a0-f669-6c9887e06e15.htm">SessionOption</a></td><td><div class="summary">
+            Defines all the boolean session options we can set in CMP.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="4e1fc699-1c57-8e3e-ddcf-d0254342f3ee.htm">SupportedOrientations</a></td><td><div class="summary">
+            This set of flags is used for locking the orientation of a device. You can hold devices
+            in one of four possible angles. While you can lock to a specific angle, it is not
+            recommended since it doesn't allow the user to flip the device by 180 degrees and have
+            the app follow the sensor. So when locking the orientation of the device it is
+            recommended that you only ever use: <a href="4e1fc699-1c57-8e3e-ddcf-d0254342f3ee.htm">Landscape</a>
+            and <a href="4e1fc699-1c57-8e3e-ddcf-d0254342f3ee.htm">Portrait</a>. To "unlock" the orientation call the
+            locking API with a value of: <a href="4e1fc699-1c57-8e3e-ddcf-d0254342f3ee.htm">All</a>.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="2e54d3a0-bcec-219c-528c-753ad7c90d36.htm">ThumbnailType</a></td><td><div class="summary">
+            Defines the type of thumbnail to be returned by a V2 take picture request.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="21e99098-4731-52b2-2655-e7481e6ad7db.htm">TouchInputMode</a></td><td><div class="summary">
+            The input modes define the different ways Citrix receivers will process touch input,
+            particularly swipe gestures. The <a href="21e99098-4731-52b2-2655-e7481e6ad7db.htm">MouseWheelScroll</a> and
+            <a href="21e99098-4731-52b2-2655-e7481e6ad7db.htm">Pan</a> modes were mainly designed for interacting with legacy
+            Windows applications, while the <a href="21e99098-4731-52b2-2655-e7481e6ad7db.htm">RawMouseInput</a> mode is mainly
+            intended for apps designed for mobile use.
+            </div></td></tr><tr data="enumeration; public"><td><img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="1a1c9501-2977-4aa7-16c5-8e6b86d2715d.htm">VideoEncoding</a></td><td><div class="summary">
+            Defines all the possible video encoding formats for capturing video clips.
+            </div></td></tr></table></div></div></div></div><div id="OH_footer" class="OH_footer"> </div></body></html>

@@ -1,0 +1,141 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }.OH_footer { }</style><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Camera Class</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="Camera class" /><meta name="System.Keywords" content="Citrix.Cmp.Camera class" /><meta name="System.Keywords" content="Camera class, about Camera class" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.Camera" /><meta name="Microsoft.Help.Id" content="T:Citrix.Cmp.Camera" /><meta name="Description" content="This class is used to take pictures using the camera of the client device. The pictures are stored on the local storage of the device." /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="Citrix.Cmp" /><meta name="file" content="49c2628c-e039-31b9-37b5-3e773da4b5cb" /><meta name="guid" content="49c2628c-e039-31b9-37b5-3e773da4b5cb" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdTitleColumn">Camera Class</td><td class="OH_tdRunningTitleColumn">Citrix Mobility Pack .NET SDK</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span> <div class="summary">
+            This class is used to take pictures using the camera of the client device. The pictures
+            are stored on the local storage of the device. The <a href="ecf47d2d-999e-fcac-a983-ea86dc20b7e4.htm">Picture</a> objects the API
+            returns contain the remote file path of the pictures, and you can use these to copy the
+            pictures to the local Citrix server so your app can use them.
+            </div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Inheritance Hierarchy</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System<span id="LSTF9A97BE6_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTF9A97BE6_0?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Object</a><br />  <span class="selflink">Citrix.Cmp<span id="LSTF9A97BE6_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTF9A97BE6_1?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Camera</span><br /><p> </p>
+    <strong>Namespace:</strong> 
+   <a href="a096d640-bd1d-22e3-e658-15c131622f2c.htm">Citrix.Cmp</a><br />
+    <strong>Assembly:</strong>
+   Citrix.CMP (in Citrix.CMP.dll) Version: 2.0.0.0 (7.12.0.10009)<div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Syntax</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><div class="OH_CodeSnippetContainer"><div class="OH_CodeSnippetContainerTabs"><div class="OH_CodeSnippetContainerTabLeft" id="ID0EDCA_tabimgleft"> </div><div id="ID0EDCA_tab1" class="OH_CodeSnippetContainerTabFirst"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','cs','1','4');return false;">C#</a></div><div id="ID0EDCA_tab2" class="OH_CodeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','vb','2','4');return false;">VB</a></div><div id="ID0EDCA_tab3" class="OH_CodeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','cpp','3','4');return false;">C++</a></div><div id="ID0EDCA_tab4" class="OH_CodeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','fs','4','4');return false;">F#</a></div><div class="OH_CodeSnippetContainerTabRight" id="ID0EDCA_tabimgright"> </div></div><div class="OH_CodeSnippetContainerCodeCollection"><div class="OH_CodeSnippetToolBar"><div class="OH_CodeSnippetToolBarText"><a id="ID0EDCA_copyCode" href="#" class="OH_copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EDCA');return false;" title="Copy">Copy</a></div></div><div id="ID0EDCA_code_Div1" class="OH_CodeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">Camera</span> : <span class="identifier">IDisposable</span></pre></div><div id="ID0EDCA_code_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">Public</span> <span class="keyword">Class</span> <span class="identifier">Camera</span>
+	<span class="keyword">Implements</span> <span class="identifier">IDisposable</span></pre></div><div id="ID0EDCA_code_Div3" class="OH_CodeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">ref class</span> <span class="identifier">Camera</span> : <span class="identifier">IDisposable</span></pre></div><div id="ID0EDCA_code_Div4" class="OH_CodeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">type</span> <span class="identifier">Camera</span> =  
+    <span class="keyword">class</span>
+        <span class="keyword">interface</span> <span class="identifier">IDisposable</span>
+    <span class="keyword">end</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EDCA");</script><p>The <span class="selflink">Camera</span> type exposes the following members.</p><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Properties</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="propertyList"><tr><th class="ps_iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="655d66f9-9f0b-0758-5f7b-030b50d7aabd.htm">CanControlThumbnailSize</a></td><td><div class="summary">
+            Reports whether the client supports the capability to create a thumbnail with a
+            non-default size, i.e. with the <a href="2e54d3a0-bcec-219c-528c-753ad7c90d36.htm">ThumbnailType</a> set to one of:
+            <ul><li><a href="2e54d3a0-bcec-219c-528c-753ad7c90d36.htm">Small</a></li><li><a href="2e54d3a0-bcec-219c-528c-753ad7c90d36.htm">Medium</a></li><li><a href="2e54d3a0-bcec-219c-528c-753ad7c90d36.htm">Large</a></li><li><a href="2e54d3a0-bcec-219c-528c-753ad7c90d36.htm">Custom</a></li></ul>
+            This only applies to pictures taken with the V2 take picture API:
+            <a href="a17c83f3-739b-f003-f82b-445f9599edfb.htm">BeginTakePicture2(PictureOptions, TimeSpan, Action<span id="LSTF9A97BE6_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTF9A97BE6_2?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>IAsyncResult<span id="LSTF9A97BE6_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTF9A97BE6_3?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a> or <a href="853b520a-7d30-4c6b-9995-71abf7937b90.htm">TakePicture2(PictureOptions, TimeSpan)</a>.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="d8aa84af-1138-0aea-8251-1840702b857a.htm">CanCreateThumbnail</a></td><td><div class="summary">
+            Reports whether the client supports the capability to create thumbnails for pictures
+            taken using V2 take picture requests (<a href="a17c83f3-739b-f003-f82b-445f9599edfb.htm">BeginTakePicture2(PictureOptions, TimeSpan, Action<span id="LSTF9A97BE6_4"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTF9A97BE6_4?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>IAsyncResult<span id="LSTF9A97BE6_5"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTF9A97BE6_5?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a> or
+            <a href="853b520a-7d30-4c6b-9995-71abf7937b90.htm">TakePicture2(PictureOptions, TimeSpan)</a>).
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="7d4b8bed-8d2e-6e40-5578-6e3f8f326622.htm">CanSetDefaultCamera</a></td><td><div class="summary">
+            Reports whether the client supports the capability to set the default camera that
+            will be used to capture the picture for V2 take picture requests. If the default
+            camera can be set, it doesn't prevent the user from swapping to a different camera.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="35030fab-a3ac-4991-0649-13121fa349fa.htm">CanSetQuality</a></td><td><div class="summary">
+            Reports whether the client supports the capability to set a custom image quality for
+            V2 picture capture operations using <a href="a17c83f3-739b-f003-f82b-445f9599edfb.htm">BeginTakePicture2(PictureOptions, TimeSpan, Action<span id="LSTF9A97BE6_6"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTF9A97BE6_6?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>IAsyncResult<span id="LSTF9A97BE6_7"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTF9A97BE6_7?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a> or
+            <a href="853b520a-7d30-4c6b-9995-71abf7937b90.htm">TakePicture2(PictureOptions, TimeSpan)</a>.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="e2116072-e89a-d620-a85e-af1afa7ff75a.htm">CanSetResolution</a></td><td><div class="summary">
+            Reports whether the client supports the capability to use a custom resolution for
+            V2 picture capture operations using <a href="a17c83f3-739b-f003-f82b-445f9599edfb.htm">BeginTakePicture2(PictureOptions, TimeSpan, Action<span id="LSTF9A97BE6_8"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTF9A97BE6_8?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>IAsyncResult<span id="LSTF9A97BE6_9"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTF9A97BE6_9?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a> or
+            <a href="853b520a-7d30-4c6b-9995-71abf7937b90.htm">TakePicture2(PictureOptions, TimeSpan)</a>.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="59bb1860-68b4-ed28-080a-fce180afdda6.htm">CanTakePictures</a></td><td><div class="summary">
+            Whether or not the currently connected client device supports taking pictures using
+            the V1 take picture API.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="b2efbbec-2d0f-22f0-6aec-7f01575b1596.htm">CanTakePicturesV2</a></td><td><div class="summary">
+            Whether or not the currently connected client device supports taking pictures using
+            the V2 capture picture API. The V2 API adds extra capabilities to control the size
+            and quality of the picture, and returns extra state such as EXIF meta-data and a
+            thumbnail of the image.
+            </div></td></tr></table><a href="#mainBody">Top</a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Methods</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="methodList"><tr><th class="ps_iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="4321c7cb-f656-4488-df91-f751a5eb3a8c.htm">BeginRemovePicture</a></td><td><div class="summary">
+            Initiates an async request to remove the specified picture. Pictures are stored on
+            the client device in the private application data store for the Citrix Receiver. To
+            avoid wasting space on your users' devices you should remove pictures once you have
+            copied them off the client. If you do not explicitly remove pictures then they will
+            get automatically deleted off the device 24hrs after they were created.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="ed798a34-e005-b307-c3e0-71a99da1f9f8.htm">BeginTakePicture</a></td><td><div class="summary">
+            Initiates an async request to take a picture. This will bring up the native camera
+            app on the device. The async operation will complete when the user takes a picture
+            or cancels the operation, or the supplied timeout occurs.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="a17c83f3-739b-f003-f82b-445f9599edfb.htm">BeginTakePicture2</a></td><td><div class="summary"><p>
+            Initiates an async request to take a picture. This will bring up the native camera
+            app on the device. The async operation will complete when the user takes a picture
+            or cancels the operation, or the supplied timeout occurs.
+            </p><p>
+            This V2 version of the API adds extra options for controlling the quality of the
+            captured image. Also once a picture has been taken it can return a thumbnail and
+            meta-data about the picture.
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="e37da417-813d-8b08-3e54-8263c45b73dc.htm">Dispose</a></td><td><div class="summary">
+            Dipose handler.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="5f30bae2-5971-8fe8-54ea-d728f64003c8.htm">EndRemovePicture</a></td><td><div class="summary">
+            Completes an async request to remove a picture.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="492b308a-e402-37f8-9313-0b5981c97743.htm">EndTakePicture</a></td><td><div class="summary">
+            Completes an async take picture request.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="788b5b76-55fb-f5fb-33c7-478cbfd3a291.htm">EndTakePicture2</a></td><td><div class="summary">
+            Completes an async V2 take picture request.
+            </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/bsc2ak47" target="_blank">Equals</a></td><td><div class="summary">Determines whether the specified object is equal to the current object.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="protected;declared;notNetfw;"><td><img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="24cd5b4d-4c55-95e9-df5a-41862403d404.htm">Finalize</a></td><td><div class="summary">
+            Finalizer
+            </div> (Overrides <a href="http://msdn2.microsoft.com/en-us/library/4k87zsw7" target="_blank">Object<span id="LSTF9A97BE6_10"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTF9A97BE6_10?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Finalize<span id="LSTF9A97BE6_11"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTF9A97BE6_11?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/zdee4b3y" target="_blank">GetHashCode</a></td><td><div class="summary">Serves as a hash function for a particular type. </div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/dfwy45w9" target="_blank">GetType</a></td><td><div class="summary">Gets the <a href="http://msdn2.microsoft.com/en-us/library/42892f65" target="_blank">Type</a> of the current instance.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="23a7dc3c-7a70-7b26-c5f4-f4590b4b6d92.htm">IsFormatSupported</a></td><td><div class="summary">
+            Tests whether the supplied picture format is supported by the currently connected
+            client device.
+            </div></td></tr><tr data="protected;inherited;notNetfw;"><td><img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/57ctke0a" target="_blank">MemberwiseClone</a></td><td><div class="summary">Creates a shallow copy of the current <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="aa0e6d9f-64c6-cc84-9d75-b3b98b1b5a07.htm">RemovePicture</a></td><td><div class="summary">
+            Removes the specified picture from the local storage of the client device. Pictures
+            are stored on the client device in the private application data store for the Citrix
+            Receiver. To avoid wasting space on your users' devices you should remove pictures
+            once you have copied them off the client. If you do not explicitly remove pictures
+            then they will get automatically deleted off the device 24hrs after they were created.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="e36bcc94-5ef9-aa07-28ec-54e903798482.htm">TakePicture</a></td><td><div class="summary">
+            Brings up the native camera app on the device so the user can take a picture. This
+            function will block until the user has taken the picture or cancels the operation,
+            or the supplied timeout occurs. Since this function can block for a long time, it is
+            recommended that you use the async version instead (<a href="ed798a34-e005-b307-c3e0-71a99da1f9f8.htm">BeginTakePicture(PictureImageFormat, TimeSpan, Action<span id="LSTF9A97BE6_12"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTF9A97BE6_12?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>IAsyncResult<span id="LSTF9A97BE6_13"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTF9A97BE6_13?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a>).
+            If you do call this synchronous version you should not call it from your UI thread,
+            since your UI will lockup until it returns.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="853b520a-7d30-4c6b-9995-71abf7937b90.htm">TakePicture2</a></td><td><div class="summary"><p>
+            Brings up the native camera app on the device so the user can take a picture. This
+            function will block until the user has taken the picture, or the supplied timeout
+            occurs. Since this function can block for a long time, it is recommended that you
+            use the async version instead (<a href="a17c83f3-739b-f003-f82b-445f9599edfb.htm">BeginTakePicture2(PictureOptions, TimeSpan, Action<span id="LSTF9A97BE6_14"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTF9A97BE6_14?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>IAsyncResult<span id="LSTF9A97BE6_15"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTF9A97BE6_15?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a>). If you do call this
+            synchronous version you should not call it from your UI thread, since your UI will
+            lockup until it returns.
+            </p><p>
+            This V2 version of the API adds extra options for controlling the quality of the
+            captured image. Also once a picture has been taken it can return a thumbnail and
+            meta-data about the picture.
+            </p></div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/7bxwbwt2" target="_blank">ToString</a></td><td><div class="summary">Returns a string that represents the current object.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr></table><a href="#mainBody">Top</a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Remarks</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div>
+            Take picture requests will usually take a long time to return since you have to wait
+            until the user takes the picture (or the request times out). Also the version 2 take
+            picture API <a href="a17c83f3-739b-f003-f82b-445f9599edfb.htm">BeginTakePicture2(PictureOptions, TimeSpan, Action<span id="LSTF9A97BE6_16"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTF9A97BE6_16?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>IAsyncResult<span id="LSTF9A97BE6_17"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTF9A97BE6_17?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a> may perform additional post
+            processing on the image file before returning. For these reasons you avoid using the
+            synchronous versions of the take picture APIs. If you do call the synchronous versions
+            you should not call them from your UI thread, since your UI will lockup until they
+            return.
+            <div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Examples</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div>
+            The following sample shows how you can take a picture and copy the picture off the
+            client device to the local Citrix server your app is running on.
+            <div class="OH_CodeSnippetContainer"><div class="OH_CodeSnippetContainerCodeCollection"><div class="OH_CodeSnippetToolBar"><div class="OH_CodeSnippetToolBarText"><a id="ID0EAAABA_copyCode" href="#" class="OH_copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAAABA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAABA_code_Div1" class="OH_CodeSnippetContainerCode" style="display: block"><pre xml:space="preserve">CmpApi cmpApi = <span class="highlight-keyword">new</span> CmpApi();
+cmpApi.Camera.BeginTakePicture(PictureImageFormat.Jpeg, TimeSpan.FromSeconds(<span class="highlight-number">30</span>), ar =&gt;
+{
+    <span class="highlight-keyword">try</span>
+    {
+        <span class="highlight-keyword">var</span> picture = cmpApi.Camera.EndTakePicture(ar);
+
+        <span class="highlight-comment">// Copies the picture off the client device to the Citrix server your app</span>
+        <span class="highlight-comment">// is running on. You should always copy the picture to Citrix server since</span>
+        <span class="highlight-comment">// accessing the picture over a wireless network to the client device can</span>
+        <span class="highlight-comment">// be slow. Note that we are performing the copy in a worker thread since</span>
+        <span class="highlight-comment">// the operation can take a long time to complete and we don't want the UI</span>
+        <span class="highlight-comment">// thread to block while we are doing this.</span>
+        ThreadPool.QueueUserWorkItem(workItem =&gt;
+            {
+                <span class="highlight-keyword">var</span> tempFileName = picture.CopyFileToTemp();
+            });
+    }
+    <span class="highlight-keyword">catch</span> (CmpException ex)
+    {
+    }
+    <span class="highlight-keyword">catch</span> (NotSupportedException ex)
+    {
+    }
+    <span class="highlight-keyword">catch</span> (TimeoutException ex)
+    {
+    }
+});</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAAABA");</script><div class="OH_CollapsibleAreaRegion" id="seeAlsoSection"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="a096d640-bd1d-22e3-e658-15c131622f2c.htm">Citrix.Cmp Namespace</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"> </div></body></html>

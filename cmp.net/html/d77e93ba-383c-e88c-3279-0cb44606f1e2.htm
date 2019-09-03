@@ -1,0 +1,41 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }.OH_footer { }</style><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>DpiScaling Properties</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="DpiScaling class, properties" /><meta name="Microsoft.Help.Id" content="Properties.T:Citrix.Cmp.DpiScaling" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="Citrix.Cmp" /><meta name="file" content="d77e93ba-383c-e88c-3279-0cb44606f1e2" /><meta name="guid" content="d77e93ba-383c-e88c-3279-0cb44606f1e2" /><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdTitleColumn">DpiScaling Properties</td><td class="OH_tdRunningTitleColumn">Citrix Mobility Pack .NET SDK</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span> <p>The <a href="3ba7c159-2032-2620-7d00-342b1929fc97.htm">DpiScaling</a> type exposes the following members.</p><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Properties</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="propertyList"><tr><th class="ps_iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="299b8245-fbd3-9848-0159-151e45ff12fc.htm">ClientDpiX</a></td><td><div class="summary">
+            The X DPI of the client device.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="645b1f0b-c4f6-e53d-c4c0-e18b3e9e0280.htm">ClientDpiY</a></td><td><div class="summary">
+            The Y DPI of the client device.
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="14e5084d-8738-0afb-5a69-7e9290b31106.htm">DeviceDependentSeparatorHeightKey</a></td><td><div class="summary"><p>
+            This resource key returns a double value for the height in DIUs that will draw
+            horizontal separator lines with a consistent physical pixel size. To implement DPI
+            scaling,  WPF uses pixel rounding when its device independent values do not end up
+            producing a value that gives an even number of pixels. This means over a series of
+            separator lines some lines will be rounded up while others get rounded down, giving
+            an inconsistent thickness.
+            </p><p>
+            Using this property will remove the inconsistent thickness between separator lines,
+            as well as ensure no lines get rounded down to zero pixels. This key attempts to get
+            a thickness as close to one DIU as possible.
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="5f9d58b8-acca-9d01-8674-71762e295c3b.htm">InverseScalingFactorX</a></td><td><div class="summary">
+            The inverse of the current scaling factor for the X dimension.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="3fa94531-2f62-fd46-c47c-1de8e3f2dd51.htm">InverseScalingFactorY</a></td><td><div class="summary">
+            The inverse of the current scaling factor for the Y dimension.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="b7cda181-2519-7d94-241f-fb3d22a73976.htm">ScalingFactorX</a></td><td><div class="summary">
+            The scaling factor to apply on the X dimension to the entire application.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="75935f7c-c399-4a0c-02e2-4cc9e280e1fc.htm">ScalingFactorY</a></td><td><div class="summary">
+            The scaling factor to apply on the Y dimension to the entire application.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="ad3d19cf-ba00-c5cf-f797-aa67d1124036.htm">SessionDpiX</a></td><td><div class="summary">
+            Returns the in-session DPI. When running in a XenApp server session the session DPI
+            will always be 96. The session DPI can only vary from 96 when your app is running in
+            a XenDesktop session or when you are logged on directly to the computer (at the
+            console).
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="c5b141e0-c2aa-e147-1ecb-6ac432def32c.htm">SessionDpiY</a></td><td><div class="summary">
+            Returns the in-session DPI. When running in a XenApp server session the session DPI
+            will always be 96. The session DPI can only vary from 96 when your app is running in
+            a XenDesktop session or when you are logged on directly to the computer (at the
+            console).
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="f14ee709-7c9a-7673-62ee-785131e9a6bf.htm">Zoom</a></td><td><div class="summary">
+            This property allows you to further adjust the scale of your application in addition
+            to the scaling that gets applied based on the client device form factor and DPI. The
+            default value is 1.0 (100%) for no zoom. Use lower values to zoom out, and higher
+            values to zoom in. Attempts to set the zoom to 0 or below will be ignored.
+            </div></td></tr></table><a href="#mainBody">Top</a><div class="OH_CollapsibleAreaRegion" id="seeAlsoSection"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="3ba7c159-2032-2620-7d00-342b1929fc97.htm">DpiScaling Class</a></div><div class="seeAlsoStyle"><a href="a096d640-bd1d-22e3-e658-15c131622f2c.htm">Citrix.Cmp Namespace</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"> </div></body></html>

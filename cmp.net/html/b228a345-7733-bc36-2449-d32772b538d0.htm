@@ -1,0 +1,112 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }.OH_footer { }</style><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Input Methods</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="Input class, methods" /><meta name="Microsoft.Help.Id" content="Methods.T:Citrix.Cmp.Input" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="Citrix.Cmp" /><meta name="file" content="b228a345-7733-bc36-2449-d32772b538d0" /><meta name="guid" content="b228a345-7733-bc36-2449-d32772b538d0" /><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdTitleColumn">Input Methods</td><td class="OH_tdRunningTitleColumn">Citrix Mobility Pack .NET SDK</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span> <p>The <a href="78e1ca13-62f4-e74f-81ab-1ad693771dd4.htm">Input</a> type exposes the following members.</p><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Methods</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="methodList"><tr><th class="ps_iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="134c7290-99ce-c9fd-ab19-4067bde2dda8.htm">BeginGetButtonTarget</a></td><td><div class="summary"><p>
+            Initiates an async request to query the redirection state of a button.
+            </p><p>
+            When a client connects all buttons will start in the default
+            <a href="0b71d3ca-79b5-2b89-0fce-3d21b8dabab1.htm">ClientDevice</a> state.
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="7b155e5a-4f8d-faf0-0d91-6c6da07ef070.htm">BeginGetKeyboardState</a></td><td><div class="summary">
+            Initiates an async request to get the current state of the keyboard from the client.
+            Call <a href="57711860-598d-76f0-7c9d-5d376cac6bab.htm">EndGetKeyboardState(IAsyncResult)</a> to get the result of the request.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="1ef19ca9-fa76-9b82-8897-96cdea97edd7.htm">BeginGetTouchInputMode</a></td><td><div class="summary">
+            Initiates an async request to get the current touch input mode that specifies how
+            the receiver is translating touch input and passing it up to the Citrix server. Call
+            <a href="6fbf5656-dd13-6ac8-c8b3-ed9b9036fc1e.htm">EndGetTouchInputMode(IAsyncResult)</a> to complete the request and get the result.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="071722fe-3470-ddc1-81eb-7daa4ad51c01.htm">BeginHideKeyboard</a></td><td><div class="summary"><p>
+            Initiates an async request to hide the on-screen keyboard. To check the result of
+            the operation call <a href="9ca97cfb-bd9f-bca6-ea5e-93de8675bdbd.htm">EndHideKeyboard(IAsyncResult)</a>.
+            </p><p>
+            You can call <a href="2f745128-b188-945b-e8fc-c00e0b80866f.htm">CanControlOnscreenKeyboard</a> to check whether the current
+            client supports keyboard control. If it does not support it, the operation will
+            throw a <a href="http://msdn2.microsoft.com/en-us/library/8a7a4e64" target="_blank">NotSupportedException</a> when this async operation is completed.
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="601ca9db-a83b-6050-69a8-18a0be8bf62e.htm">BeginSetButtonTarget</a></td><td><div class="summary"><p>
+            Initiates an async request to set or cancel button redirection for a button. Call
+            <a href="0516f1c9-f6bb-9449-5201-f5c90d2a0fb9.htm">EndSetButtonTarget(IAsyncResult)</a> to get the result of the request.
+            </p><p>
+            You can test whether the client supports redirecting a given button using
+            <a href="066f4196-ec29-06f5-ed54-e05db494983e.htm">IsButtonRedirectionSupported(ButtonId)</a>.
+            </p><p>
+            This API supports fallback. This means if you change the redirection state of a
+            button that the client does not support you will not get an error and your request
+            will be cached. If the user then connects via a different client that does support
+            this capability then the cached state will be applied and the button will be
+            redirected appropriately.
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="e6ecc7b4-303f-aa42-f8b3-ebeed33e24a6.htm">BeginSetTouchInputMode</a></td><td><div class="summary">
+            Initiates an async request to set the current connected client to the specified
+            input mode. The input mode alters how the client processes and translates touch
+            events. Call <a href="84d8b2ac-eb8a-ce75-503f-78abf88eb296.htm">EndSetTouchInputMode(IAsyncResult)</a> to complete the request.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="555a857a-1918-10f4-b811-fefb910a7316.htm">BeginShowKeyboard</a></td><td><div class="summary"><p>
+            Makes an async request to show the keyboard using the supplied state. To check the
+            result of the operation call <a href="4afdde44-d6c2-dbe5-7700-e4917ff76bdb.htm">EndShowKeyboard(IAsyncResult)</a>.
+            </p><p>
+            You can call <a href="97ed11d9-8cd2-9c1e-a4db-7b968d093be3.htm">IsKeyboardConfigSupported(KeyboardState)</a> to check whether the client
+            supports displaying a keyboard of the requested configuration. If it does not
+            support it, the operation will throw a <a href="http://msdn2.microsoft.com/en-us/library/8a7a4e64" target="_blank">NotSupportedException</a> when this
+            async operation is completed.
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="dff7ba4d-3fca-1296-bc5f-e3db04826b64.htm">EndGetButtonTarget</a></td><td><div class="summary">
+            Completes an async request to query the redirection status of a button.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="57711860-598d-76f0-7c9d-5d376cac6bab.htm">EndGetKeyboardState</a></td><td><div class="summary">
+            Completes an async request to get the current keyboard state.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="6fbf5656-dd13-6ac8-c8b3-ed9b9036fc1e.htm">EndGetTouchInputMode</a></td><td><div class="summary">
+            Completes an async request to get the touch input mode.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="9ca97cfb-bd9f-bca6-ea5e-93de8675bdbd.htm">EndHideKeyboard</a></td><td><div class="summary">
+            Completes an async hide keyboard request.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="0516f1c9-f6bb-9449-5201-f5c90d2a0fb9.htm">EndSetButtonTarget</a></td><td><div class="summary">
+            Completes an async request to set/cancel button redirection.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="84d8b2ac-eb8a-ce75-503f-78abf88eb296.htm">EndSetTouchInputMode</a></td><td><div class="summary">
+            Completes an async request to set the touch input mode.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="4afdde44-d6c2-dbe5-7700-e4917ff76bdb.htm">EndShowKeyboard</a></td><td><div class="summary">
+            Completes an async show keyboard request.
+            </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/bsc2ak47" target="_blank">Equals</a></td><td><div class="summary">Determines whether the specified object is equal to the current object.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="protected;inherited;notNetfw;"><td><img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/4k87zsw7" target="_blank">Finalize</a></td><td><div class="summary">Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="0c54ee2e-55e8-25a3-08a1-2a17095122e6.htm">GetButtonTarget</a></td><td><div class="summary">
+            Used to check the redirection status of a particular button. When a client connects
+            all buttons will start in the default
+            <a href="0b71d3ca-79b5-2b89-0fce-3d21b8dabab1.htm">ClientDevice</a> state.
+            </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/zdee4b3y" target="_blank">GetHashCode</a></td><td><div class="summary">Serves as a hash function for a particular type. </div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="249b308b-0d58-4b4f-d11f-c9ef016fe76c.htm">GetKeyboardState</a></td><td><div class="summary">
+            Gets the current state of the keyboard from the client.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="95526fc5-1b31-c7ff-b494-ac024613b913.htm">GetTouchInputMode</a></td><td><div class="summary">
+            Gets the current touch input mode that specifies how the receiver is translating
+            touch input and passing it up to the Citrix server.
+            </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/dfwy45w9" target="_blank">GetType</a></td><td><div class="summary">Gets the <a href="http://msdn2.microsoft.com/en-us/library/42892f65" target="_blank">Type</a> of the current instance.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="107aa4be-ffde-40c6-abbe-35f3e3449d06.htm">HideKeyboard</a></td><td><div class="summary"><p>
+            Hides the onscreen keyboard.
+            </p><p>
+            You can call <a href="2f745128-b188-945b-e8fc-c00e0b80866f.htm">CanControlOnscreenKeyboard</a> to check whether the current
+            client supports keyboard control.
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="066f4196-ec29-06f5-ed54-e05db494983e.htm">IsButtonRedirectionSupported</a></td><td><div class="summary">
+            Checks whether the currently connected client supports redirecting the specified
+            button.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="3007bf7b-4bc5-449d-15a8-2cbef0d17ceb.htm">IsKeyboardAutoCapitalizeModeSupported</a></td><td><div class="summary">
+            Checks whether the specified auto-capitalization mode is supported by the client.
+            Supplying the "none" mode always returns true.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="97ed11d9-8cd2-9c1e-a4db-7b968d093be3.htm">IsKeyboardConfigSupported</a></td><td><div class="summary">
+            Checks whether the specified keyboard state is supported by the current client.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="4431a580-6389-b78b-2374-dc7d8505b6d9.htm">IsKeyboardReturnTextSupported</a></td><td><div class="summary">
+            Checks whether the specified return key text is supported by the client.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="b14451e5-9b8f-d52a-dbca-da15c3a6e0fc.htm">IsKeyboardTypeSupported</a></td><td><div class="summary">
+            Checks the supplied keyboard type against the current keyboard capabilities to
+            determine whether the current connected client supports showing that type of
+            keyboard. The unknown and physical keyboard types will always return false since
+            we can only ever request an onscreen keyboard type to be shown.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="4706337e-a164-2286-c290-aff398dcdbbe.htm">IsTouchInputModeSupported</a></td><td><div class="summary">
+            Queries the capabilities to check whether the currently connected client supports
+            the supplied touch input mode.
+            </div></td></tr><tr data="protected;inherited;notNetfw;"><td><img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/57ctke0a" target="_blank">MemberwiseClone</a></td><td><div class="summary">Creates a shallow copy of the current <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="d70cae98-bad1-4bdc-9645-9d5fd625df15.htm">SetButtonTarget</a></td><td><div class="summary"><p>
+            Used to set or or cancel button redirection for a button.
+            </p><p>
+            You can test whether the client supports redirecting a given button using
+            <a href="066f4196-ec29-06f5-ed54-e05db494983e.htm">IsButtonRedirectionSupported(ButtonId)</a>.
+            </p><p>
+            This API supports fallback. This means if you change the redirection state of a
+            button that the client does not support you will not get an error and your request
+            will be cached. If the user then connects via a different client that does support
+            this capability then the cached state will be applied and the button will be
+            redirected appropriately.
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="0d7bf5ad-a4b8-7d0a-4277-5f37663dd7f7.htm">SetTouchInputMode</a></td><td><div class="summary">
+            Sets the current client to the specified input mode. The input mode alters how the
+            client processes and translates touch events.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="a0b2ba6a-2ca9-f201-031e-b269bd2040aa.htm">ShowKeyboard</a></td><td><div class="summary">
+            Requests the on-screen keyboard to be displayed using the supplied configuration.
+            This function will throw a <a href="http://msdn2.microsoft.com/en-us/library/8a7a4e64" target="_blank">NotSupportedException</a> if you request a
+            keyboard configuration that is not supported by the client. To prevent the exception
+            being thrown you can call <a href="97ed11d9-8cd2-9c1e-a4db-7b968d093be3.htm">IsKeyboardConfigSupported(KeyboardState)</a> to check whether
+            the supplied configuration is supported.
+            </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/7bxwbwt2" target="_blank">ToString</a></td><td><div class="summary">Returns a string that represents the current object.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr></table><a href="#mainBody">Top</a><div class="OH_CollapsibleAreaRegion" id="seeAlsoSection"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="78e1ca13-62f4-e74f-81ab-1ad693771dd4.htm">Input Class</a></div><div class="seeAlsoStyle"><a href="a096d640-bd1d-22e3-e658-15c131622f2c.htm">Citrix.Cmp Namespace</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"> </div></body></html>

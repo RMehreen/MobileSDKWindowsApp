@@ -1,0 +1,120 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }.OH_footer { }</style><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>SessionManager Class</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="SessionManager class" /><meta name="System.Keywords" content="Citrix.Cmp.SessionManager class" /><meta name="System.Keywords" content="SessionManager class, about SessionManager class" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.SessionManager" /><meta name="Microsoft.Help.Id" content="T:Citrix.Cmp.SessionManager" /><meta name="Description" content="Used to track, query and manage the status of a user's remote connection to the Citrix server running your app. Use the event in this class to track when a user reconnects a client to the Citrix server." /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="Citrix.Cmp" /><meta name="file" content="16416a47-a451-b2da-a3c9-5f852cb42f21" /><meta name="guid" content="16416a47-a451-b2da-a3c9-5f852cb42f21" /><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdTitleColumn">SessionManager Class</td><td class="OH_tdRunningTitleColumn">Citrix Mobility Pack .NET SDK</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span> <div class="summary"><p>
+            Used to track, query and manage the status of a user's remote connection to the Citrix
+            server running your app. Use the <a href="f90246b8-319a-1e82-f553-779069144d05.htm">SessionConnected</a> event in
+            this class to track when a user reconnects a client to the Citrix server. It is often
+            useful to use this event to recheck the capabilities of the newly connected client and
+            to alter your apps behaviour or layout to best suit the client.
+            </p><p>
+            The CMP SDK uses Windows focus checking by default when processing requests and firing
+            events. This focus checking is provided as an arbitration mechanism between multiple
+            applications that use CMP SDK and are running in the same session. By only allowing the
+            app with focus to use CMP SDK, you ensure that apps don't try to set conflicting state
+            on the client. When your app does not have focus, any set request will fail and throw
+            an exception. Also most of the events will not get fired. The only events that will fire
+            when your app does not have focus are the session events in this class.
+            </p><p>
+            While the focus checking behaviour is used by default, you can turn it off. The
+            <a href="0123f03d-d488-d8c9-3946-2511f5a2d9d4.htm">SetSessionOption(SessionOption, Boolean)</a> function allows you to turn focus checking
+            on or off for your app. Just be aware that when you turn focus checking off, your app
+            can potentially try to set conflicting state with another CMP enabled app that does have
+            focus. For this reason disabling the focus checking is not recommended.
+            </p><p>
+            This class also implements an automatic disconnect feature when the screen becomes
+            locked. For mobile apps we want to provide the best "as-local" user experience. One of
+            the things that breaks this, is the display of the Windows lock screen in a session. So
+            by disconnecting a session when it becomes locked, the user is spared the cumbersome
+            process of having to unlock the session. Instead they can relaunch the app from the app
+            list in their mobile receiver. Also depending on the receiver, when configured for
+            mobile app operation it may not be possible to unlock the screen. This is because
+            receivers hide client controls that are normally provided for interacting with legacy
+            Windows applications.
+            </p></div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Inheritance Hierarchy</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System<span id="LST23CEFECE_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST23CEFECE_0?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Object</a><br />  <span class="selflink">Citrix.Cmp<span id="LST23CEFECE_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST23CEFECE_1?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>SessionManager</span><br /><p> </p>
+    <strong>Namespace:</strong> 
+   <a href="a096d640-bd1d-22e3-e658-15c131622f2c.htm">Citrix.Cmp</a><br />
+    <strong>Assembly:</strong>
+   Citrix.CMP (in Citrix.CMP.dll) Version: 2.0.0.0 (7.12.0.10009)<div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Syntax</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><div class="OH_CodeSnippetContainer"><div class="OH_CodeSnippetContainerTabs"><div class="OH_CodeSnippetContainerTabLeft" id="ID0EDCA_tabimgleft"> </div><div id="ID0EDCA_tab1" class="OH_CodeSnippetContainerTabFirst"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','cs','1','4');return false;">C#</a></div><div id="ID0EDCA_tab2" class="OH_CodeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','vb','2','4');return false;">VB</a></div><div id="ID0EDCA_tab3" class="OH_CodeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','cpp','3','4');return false;">C++</a></div><div id="ID0EDCA_tab4" class="OH_CodeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','fs','4','4');return false;">F#</a></div><div class="OH_CodeSnippetContainerTabRight" id="ID0EDCA_tabimgright"> </div></div><div class="OH_CodeSnippetContainerCodeCollection"><div class="OH_CodeSnippetToolBar"><div class="OH_CodeSnippetToolBarText"><a id="ID0EDCA_copyCode" href="#" class="OH_copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EDCA');return false;" title="Copy">Copy</a></div></div><div id="ID0EDCA_code_Div1" class="OH_CodeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">SessionManager</span> : <span class="identifier">INotifyPropertyChanged</span>, 
+	<span class="identifier">IDisposable</span></pre></div><div id="ID0EDCA_code_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">Public</span> <span class="keyword">Class</span> <span class="identifier">SessionManager</span>
+	<span class="keyword">Implements</span> <span class="identifier">INotifyPropertyChanged</span>, <span class="identifier">IDisposable</span></pre></div><div id="ID0EDCA_code_Div3" class="OH_CodeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">ref class</span> <span class="identifier">SessionManager</span> : <span class="identifier">INotifyPropertyChanged</span>, 
+	<span class="identifier">IDisposable</span></pre></div><div id="ID0EDCA_code_Div4" class="OH_CodeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">type</span> <span class="identifier">SessionManager</span> =  
+    <span class="keyword">class</span>
+        <span class="keyword">interface</span> <span class="identifier">INotifyPropertyChanged</span>
+        <span class="keyword">interface</span> <span class="identifier">IDisposable</span>
+    <span class="keyword">end</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EDCA");</script><p>The <span class="selflink">SessionManager</span> type exposes the following members.</p><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Properties</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="propertyList"><tr><th class="ps_iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="271661ed-200f-0d4f-1460-acf598027903.htm">AutoDisconnectOnLock</a></td><td><div class="summary">
+            Controls whether the auto-disconnect on lock feature is enabled or disabled. It is
+            enabled by default. When enabled, if the Windows session ever becomes locked the
+            application will disconnect the session. This prevents the user from ever seeing the
+            Windows lock screen. For apps designed for mobile devices we don't want to break the
+            immersion and show the user Windows screens such as login, lock, etc. If the user
+            wants to access their app again, they can launch it from the app list on their
+            device.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="702c95b0-79b5-55fd-de97-0ec07360b5d2.htm">IsCmpAvailable</a></td><td><div class="summary">
+            Use this property to determine whether there is a currently connected client that
+            supports CMP.
+            </div></td></tr></table><a href="#mainBody">Top</a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Methods</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="methodList"><tr><th class="ps_iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="d1357356-b4ea-d330-ad20-c89d509ed3b9.htm">Disconnect</a></td><td><div class="summary">
+            This function issues an asynchronous disconnect request that will disconnect any
+            connected client from the server. The application will remain running on the server,
+            and the user can reconnect to it at a later time if they want.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="8776f826-dbbf-0174-8025-3fd7c5c807b4.htm">Dispose</a></td><td><div class="summary">
+            IDisposable implementation.
+            </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/bsc2ak47" target="_blank">Equals</a></td><td><div class="summary">Determines whether the specified object is equal to the current object.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="protected;declared;notNetfw;"><td><img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="ea1c418e-ea56-3e7d-d0b1-1db1ac9a5018.htm">Finalize</a></td><td><div class="summary">
+            Finalizer
+            </div> (Overrides <a href="http://msdn2.microsoft.com/en-us/library/4k87zsw7" target="_blank">Object<span id="LST23CEFECE_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST23CEFECE_2?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Finalize<span id="LST23CEFECE_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST23CEFECE_3?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="d9e4e5af-f130-34b0-8b0a-77292ab44834.htm">GetClientState</a></td><td><div class="summary">
+            Returns the current client state.
+            </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/zdee4b3y" target="_blank">GetHashCode</a></td><td><div class="summary">Serves as a hash function for a particular type. </div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="24702d60-7a47-af79-4c28-56915c157aea.htm">GetSessionOption</a></td><td><div class="summary">
+            Used to query session options that control how the CMP SDK behaves. These options
+            are held locally on the Citrix server, so queries do not get routed down to the
+            currently connected Citrix client (so you can call this function at any time,
+            regardless of the state of the client).
+            </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/dfwy45w9" target="_blank">GetType</a></td><td><div class="summary">Gets the <a href="http://msdn2.microsoft.com/en-us/library/42892f65" target="_blank">Type</a> of the current instance.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="5a6873eb-18a7-c232-3651-53387c3f089b.htm">Logoff</a></td><td><div class="summary">
+            This function issues an asynchronous logoff request. This will cause all
+            applications running in the session to be closed, and the user to be disconnected
+            from the session.
+            </div></td></tr><tr data="protected;inherited;notNetfw;"><td><img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/57ctke0a" target="_blank">MemberwiseClone</a></td><td><div class="summary">Creates a shallow copy of the current <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="e05ca8b0-3b55-72f2-3c25-b3c3407295b5.htm">RegisterMobileProcess</a></td><td><div class="summary"><p>
+            Registering a process as a mobile process via this function will disable the use
+            of XenApp legacy app mobile experience enhancements for that process. These
+            enhancements are designed to make it easier to use legacy Windows applications
+            on mobile devices.
+            </p><p>
+            These enhancements are as follows:
+            <ul><li>When a text input field gets focus and displays the cursor, Xenapp
+                will request the mobile receiver to popup the onscreen keyboard automatically.</li><li>When a list box gets focus in the application, the strings
+                displayed in the list box are sent down to the mobile receiver. The mobile
+                receiver will then display that list in a local, touch friendly list control
+                on the mobile device.</li></ul></p><p>
+            While these enhancements can be useful for interacting with legacy Windows
+            applications, they typically get in the way of apps that are designed for native
+            mobile use. Any app that uses this SDK will automatically have these enhancements
+            disabled. You will only need to call this API manually if you launch other processes
+            that do not use this SDK themselves, and they also do not require the legacy app
+            mobility functions.
+            </p><p>
+            You can re-enable legacy app functions for a process using
+            .
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="0123f03d-d488-d8c9-3946-2511f5a2d9d4.htm">SetSessionOption</a></td><td><div class="summary">
+            Used to set session options that control how the CMP SDK behaves. These options are
+            set locally on the Citrix server, and do not attempt to call a currently connected
+            Citrix client (so you can call this function at any time, regardless of the state of
+            the client).
+            </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/7bxwbwt2" target="_blank">ToString</a></td><td><div class="summary">Returns a string that represents the current object.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="d648c8ef-50c7-fe27-aab5-53da01b89270.htm">UnregisterMobileProcess</a></td><td><div class="summary">
+            Used in conjunction with <a href="e05ca8b0-3b55-72f2-3c25-b3c3407295b5.htm">RegisterMobileProcess(UInt32)</a>. This function will
+            re-enable the XenApp legacy app mobility enhancements for the specified process.
+            </div></td></tr></table><a href="#mainBody">Top</a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Events</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="eventList"><tr><th class="ps_iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubevent.gif" alt="Public event" title="Public event" /></td><td><a href="569546be-fac2-4b28-9eb6-a722be8839e1.htm">PropertyChanged</a></td><td><div class="summary">
+            This event is fired whenever the state of one of the public properties on this class
+            is changed.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubevent.gif" alt="Public event" title="Public event" /></td><td><a href="f90246b8-319a-1e82-f553-779069144d05.htm">SessionConnected</a></td><td><div class="summary">
+            This event is fired when a remote client connects to the server. It will fire when
+            this API is created for the first time and when a user reconnects to a disconnected
+            session. It is fired after the API has re-queried and cached all the client
+            capabilities that tell it what features of CMP the client supports.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubevent.gif" alt="Public event" title="Public event" /></td><td><a href="97681041-5068-9765-12c1-91e75e8383da.htm">SessionDisconnected</a></td><td><div class="summary">
+            This event is fired when a user becomes disconnected from the server for any reason.
+            It will only be fired when the session remains running on the server. If the session
+            ends this event will not be fired. Once a session is disconnected there will be no
+            connected client so none of the CMP features will be available.
+            </div></td></tr></table><a href="#mainBody">Top</a><div class="OH_CollapsibleAreaRegion" id="seeAlsoSection"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="a096d640-bd1d-22e3-e658-15c131622f2c.htm">Citrix.Cmp Namespace</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"> </div></body></html>

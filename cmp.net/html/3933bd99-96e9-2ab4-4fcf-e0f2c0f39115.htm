@@ -1,0 +1,56 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }.OH_footer { }</style><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Display Properties</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="Display class, properties" /><meta name="Microsoft.Help.Id" content="Properties.T:Citrix.Cmp.Display" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="Citrix.Cmp" /><meta name="file" content="3933bd99-96e9-2ab4-4fcf-e0f2c0f39115" /><meta name="guid" content="3933bd99-96e9-2ab4-4fcf-e0f2c0f39115" /><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdTitleColumn">Display Properties</td><td class="OH_tdRunningTitleColumn">Citrix Mobility Pack .NET SDK</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span> <p>The <a href="b72a3c53-7408-e39d-894e-68b354806bff.htm">Display</a> type exposes the following members.</p><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Properties</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="propertyList"><tr><th class="ps_iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="788abe02-6147-f8cf-5aef-794adcb26f9d.htm">CanSetViewport</a></td><td><div class="summary">
+            Used to test whether the current client supports setting the viewport. When this
+            property returns false you cannot use <a href="575de285-0c6e-98d6-2fff-4b6ca46d203d.htm">SetViewportOrigin(Int32, Int32)</a> to change the
+            position of the viewport on the client.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="cf32a0a6-07cd-8470-8481-400605c597f4.htm">CapabilitiesDisplayState</a></td><td><div class="summary"><p>
+            This property returns the initial display state of the client that was provided when
+            the client connected to the session. Since this state is loaded from capabilities it
+            will be up-to-date as soon as the <a href="f90246b8-319a-1e82-f553-779069144d05.htm">SessionConnected</a>
+            event has been fired.
+            </p><p>
+            However capabilities state only changes when a new client connects, while display
+            state can change while a client is connected. E.g. orientation changes trigger the
+            X and Y resolutions to be swapped, or the client may be plugged into an external
+            display device with a different resolution. To get the most up-to-date display state
+            you should use <a href="400cd73e-8f02-f90b-0b6e-ae7c6946a679.htm">GetDisplayState<span id="LSTAF13F138_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF13F138_0?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>.
+            </p><p>
+            If you call this property when the session is disconnected or if the client does not
+            support CMP, it will return null.
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="c7db4528-9b73-16db-c004-840890a33ffd.htm">ColorDepthSupported</a></td><td><div class="summary">
+            Whether or not the currently connected client can report the color depth of its
+            display.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="d973e33d-9c50-578b-0807-c8aecca1c5b9.htm">DisplayStateSupported</a></td><td><div class="summary">
+            Whether or not the currently connected client supports the capability to query any
+            of the display state. Check the individual capabilities to see what specific display
+            state can be queried:
+            <ul><li><a href="c7db4528-9b73-16db-c004-840890a33ffd.htm">ColorDepthSupported</a></li><li><a href="2214b45a-9886-c8b9-40a9-8f3839e9c339.htm">DpiSupported</a></li><li><a href="271cdb72-abfc-40ed-d158-819598ce4b06.htm">PhysicalScreenSizeSupported</a></li><li><a href="f246af8b-7a33-5ce9-9400-a2f525e8d2cb.htm">ResolutionSupported</a></li></ul></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="2214b45a-9886-c8b9-40a9-8f3839e9c339.htm">DpiSupported</a></td><td><div class="summary">
+            Whether or not the currently connected client can report the DPI of its screen.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="15d9f400-9d9e-584f-1fb6-9b1d2cd0b2c4.htm">LandscapeOrientationSupported</a></td><td><div class="summary">
+            Returns true if the device supports the landscape orientation.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="edc7f845-5baf-068d-8b1f-55c88d1caa5e.htm">OrientationCanChange</a></td><td><div class="summary">
+            Returns true if the device supports changing it's orientation, false otherwise.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="e24eb885-2114-b5bb-117f-36da2c30f159.htm">OrientationFollowSensorSupported</a></td><td><div class="summary">
+            Returns true if the device supports automatically changing it's orientation to
+            match the orientation the user is holding it in.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="acd7a14a-14a4-1c9d-b62d-47fd5b6a048f.htm">OrientationLockingSupported</a></td><td><div class="summary">
+            Returns true if the device can have its orientation locked using the version 1
+            locking API, see: <a href="4261c913-ebf1-3afd-6f80-ffc8120a1d20.htm">BeginLockOrientation(Orientation, Action<span id="LSTAF13F138_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF13F138_1?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>IAsyncResult<span id="LSTAF13F138_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF13F138_2?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a> and <a href="b9b7f567-d0ef-7e94-b4e3-33e0b26b8c53.htm">LockOrientation(Orientation)</a>.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="b476fc99-7518-902e-ddf5-ff35a0f7c7c3.htm">OrientationLockingV2Supported</a></td><td><div class="summary">
+            Returns true if the device can have its orientation locked using the version 2
+            locking API, see: <a href="fb831a65-8516-96d9-38e8-621a191e1651.htm">BeginSetSupportedOrientations(SupportedOrientations, Action<span id="LSTAF13F138_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF13F138_3?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>IAsyncResult<span id="LSTAF13F138_4"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAF13F138_4?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a> and
+            <a href="eec8ba71-11c6-413a-a86a-5cfc74dd823d.htm">SetSupportedOrientations(SupportedOrientations)</a>.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="271cdb72-abfc-40ed-d158-819598ce4b06.htm">PhysicalScreenSizeSupported</a></td><td><div class="summary">
+            Whether or not the currently connected client can report the physical, diagonal
+            size of its screen (in inches).
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="843db11f-b54b-b988-0438-6dcb08215d9e.htm">PortraitOrientationSupported</a></td><td><div class="summary">
+            Returns true if the device supports the portrait orientation.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="f246af8b-7a33-5ce9-9400-a2f525e8d2cb.htm">ResolutionSupported</a></td><td><div class="summary">
+            Whether or not the currently connected client can report the resolution of its
+            screen.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="1beb74ec-a0d3-fb80-b578-87de8fa2bb02.htm">ReverseLandscapeOrientationSupported</a></td><td><div class="summary">
+            Returns true if the device supports the reverse landscape orientation.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="c86c8d10-4f41-428f-961d-9534616e3555.htm">ReversePortraitOrientationSupported</a></td><td><div class="summary">
+            Returns true if the device supports the reverse (upside down) portrait orientation.
+            </div></td></tr></table><a href="#mainBody">Top</a><div class="OH_CollapsibleAreaRegion" id="seeAlsoSection"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="b72a3c53-7408-e39d-894e-68b354806bff.htm">Display Class</a></div><div class="seeAlsoStyle"><a href="a096d640-bd1d-22e3-e658-15c131622f2c.htm">Citrix.Cmp Namespace</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"> </div></body></html>

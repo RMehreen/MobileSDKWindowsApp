@@ -1,0 +1,39 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }.OH_footer { }</style><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Citrix.Cmp.Skinning Namespace</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="Citrix.Cmp.Skinning namespace" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.Skinning" /><meta name="Microsoft.Help.Id" content="N:Citrix.Cmp.Skinning" /><meta name="Description" content="This namespace provides classes that allow you to dynamically load and unload WPF XAML resources so you can change the skin of your application on the fly." /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="Citrix.Cmp.Skinning" /><meta name="file" content="6bc107d6-f590-0a96-a9ff-c32fbab1aea8" /><meta name="guid" content="6bc107d6-f590-0a96-a9ff-c32fbab1aea8" /><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdTitleColumn">Citrix.Cmp.Skinning Namespace</td><td class="OH_tdRunningTitleColumn">Citrix Mobility Pack .NET SDK</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span> <div class="summary">This namespace provides classes that allow you to dynamically load and unload WPF XAML resources so you can change the skin of your application on the fly. This is useful when you want your app to mimic the native look of the client device it is running on. E.g. your app can look like an iPhone app when accessed from an iPhone Citrix Receiver or like an Android app when access from an Android Citrix Receiver.</div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Classes</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="classList"><tr><th class="ps_iconColumn">
+					 
+				</th><th>Class</th><th>Description</th></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="e04ee096-d205-d9b6-01d7-f6c3f29392e7.htm">AppDomainAssemblySkin</a></td><td><div class="summary">
+            This skin loader can load skins from any arbitrary assembly like DirectAssemblySkin
+            but it is more memory efficient since your application will not keep the target assembly
+            permanently loaded in memory. If you are constantly swapping between a number of large
+            skins this may be a better choice than DirectAssemblySkin. The tradeoff is that this
+            implementation takes longer to load skins (about an order of magnitude slower).
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="aa6c4c29-9b33-6a0a-034e-167f19b85131.htm">DirectAssemblySkin</a></td><td><div class="summary">
+            Supports loading resources from any given assembly, given the path of the assembly. Use
+            this skin loader when you do not want to have to reference the assembly are loading in
+            your project (which requires re-compilation), e.g. you want to create and deploy new
+            skins for your app without having to re-compile your app.
+            
+            Once you have loaded an assembly it will remain loaded by your application, even if you
+            swap to a new skin. If this creates memory problems you can use AppDomainAssemblySkin
+            instead.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="015588b2-37ef-1316-ba8e-c713eafebd60.htm">LooseXamlSkin</a></td><td><div class="summary">
+            Supports loading a skin from an arbitrary XAML file(s). This is the slowest and most
+            insecure skin loading technique, however it is the most flexible. You could potentially
+            alter XAML on the fly and then load it using this loader.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="f8cb7bbd-f039-12b9-701a-f90aef4740a7.htm">ReferencedAssemblySkin</a></td><td><div class="summary">
+            Supports loading a skin from an assembly directly referenced by your project. This is
+            faster then DirectAssemblySkin, and it is safer since you can only load assemblies that
+            the developer has explicitly referenced in the application. However you lose
+            flexibility since you have to re-compile the app every time you want to add a new,
+            supported skin.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="f21c4cd1-2d37-f069-d44b-d610d7cabe21.htm">ResourceDifferenceException</a></td><td><div class="summary">
+            Thrown when differencing two sets of resources and they are found not to contain the
+            same resources.
+            </div></td></tr><tr data="class; public"><td><img src="../icons/pubclass.gif" alt="Public class" title="Public class" /></td><td><a href="374baefc-ab21-715e-bab0-c10a972b9682.htm">Skin</a></td><td><div class="summary">
+            Base class for an instance of a set of resources/styles that make up a skin.
+            Specialisations are required that implement different methods for loading and unloading
+            skins.
+            </div></td></tr></table><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Interfaces</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="interfaceList"><tr><th class="ps_iconColumn">
+					 
+				</th><th>Interface</th><th>Description</th></tr><tr data="interface; public"><td><img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="c543231b-c829-5baa-32d4-a0781d7c050a.htm">ISkinBamlResolver</a></td><td><div class="summary">
+            Defines an interface for retrieving BAML streams from an assembly.
+            </div></td></tr></table></div></div></div></div><div id="OH_footer" class="OH_footer"> </div></body></html>

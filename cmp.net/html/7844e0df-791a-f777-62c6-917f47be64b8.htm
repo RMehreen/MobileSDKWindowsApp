@@ -1,0 +1,45 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }.OH_footer { }</style><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Picture Properties</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="Picture class, properties" /><meta name="Microsoft.Help.Id" content="Properties.T:Citrix.Cmp.Picture" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="Citrix.Cmp" /><meta name="file" content="7844e0df-791a-f777-62c6-917f47be64b8" /><meta name="guid" content="7844e0df-791a-f777-62c6-917f47be64b8" /><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdTitleColumn">Picture Properties</td><td class="OH_tdRunningTitleColumn">Citrix Mobility Pack .NET SDK</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span> <p>The <a href="ecf47d2d-999e-fcac-a983-ea86dc20b7e4.htm">Picture</a> type exposes the following members.</p><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Properties</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="propertyList"><tr><th class="ps_iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="1aae3df3-9c14-8daa-e0f6-c8a30989fac9.htm">Camera</a></td><td><div class="summary">
+            Returns the camera that was used to take the picture. This is only set for V2 take
+            picture requests. V1 take picture requests will always return
+            <a href="7ab4c319-df13-3655-be75-3a4224dd5aa6.htm">Default</a>, regardless of which camera was used.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="3992b5c6-1c9e-03b2-1685-9e5b826c7d47.htm">FileExists</a></td><td><div class="summary">
+            Tests whether or not the underlying file on the client device that holds the picture
+            exists and is currently accessible. When the client becomes disconnected the file
+            will no longer be accessible.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="4a4bbf0f-35c7-19d7-b2ae-7a05ea93fb99.htm">FileName</a></td><td><div class="summary">
+            The full path and file name of the picture. This file is located on the client
+            device itself, so it is recommended that you first copy the file to a local location
+            on the Citrix server before you attempt to use it. This will make repeated access
+            faster, and ensures you can still access the picture if the client becomes
+            disconnected. You can use any standard file IO API to copy the file from this source
+            location (as long as the client is still connected).
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="078d7278-4e62-98f3-ea00-7c38835ab48c.htm">Format</a></td><td><div class="summary">
+            The image format of the picture.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="836f13c7-3dc5-ac8c-9c8c-cea1b1d1ac2a.htm">IsV2Picture</a></td><td><div class="summary">
+            Whether or not this picture was taken using the version 2 take picture API. The
+            version 2 API supports additional features to control the size and quality of the
+            image. It also returns extra information, including EXIF tag meta-data and a thumb-
+            nail view of the picture.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="296dccbe-8ffc-1d42-acb3-aafbcba8ed86.htm">Quality</a></td><td><div class="summary">
+            The quality used for the capture operation. The quality is a percentage value of:
+            [0..100]. A value of 0 means the default quality of the device was used to take the
+            picture. One is the lowest quality and one hundred is the highest quality.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="734df731-7162-42c1-bec9-320166525304.htm">Resolution</a></td><td><div class="summary">
+            Returns the resolution of the picture. This resolution is only set for V2 take
+            picture requests. V1 requests will always return (0, 0).
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="4b0c6390-a6ad-2ad9-66bf-f289562471cd.htm">Size</a></td><td><div class="summary">
+            The file size of the picture in bytes.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="474785bd-623e-3db2-e246-05b4acb06510.htm">ThumbnailExists</a></td><td><div class="summary">
+            Returns whether or not there is a thumbnail image available for this picture on the
+            client device.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="2bf688d0-5fb6-2984-f5bc-23f7047194e0.htm">ThumbnailFileName</a></td><td><div class="summary">
+            Thumbnail file name. This is the name of an image file on the client device that
+            contains a reduced thumbnail view of the image. A thumbnail is only available for
+            pictures that are taken using the V2 take picture API.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="9138ba27-fe04-541d-1de9-8a25d20db454.htm">ThumbnailType</a></td><td><div class="summary">
+            The type of thumbnail that is available for this picture. Thumbnails can only be
+            generated by V2 take picture requests. V1 pictures will always return
+            <a href="2e54d3a0-bcec-219c-528c-753ad7c90d36.htm">None</a>.
+            </div></td></tr></table><a href="#mainBody">Top</a><div class="OH_CollapsibleAreaRegion" id="seeAlsoSection"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="ecf47d2d-999e-fcac-a983-ea86dc20b7e4.htm">Picture Class</a></div><div class="seeAlsoStyle"><a href="a096d640-bd1d-22e3-e658-15c131622f2c.htm">Citrix.Cmp Namespace</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"> </div></body></html>

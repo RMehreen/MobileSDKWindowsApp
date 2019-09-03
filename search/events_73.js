@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['scrollmodechanged',['ScrollModeChanged',['../class_citrix_mobility_1_1_citrix_mobile_class.html#a00af57789f1404985709a3ce3df4d065',1,'CitrixMobility::CitrixMobileClass.ScrollModeChanged()'],['../interface_citrix_mobility_1_1_i_c_m_p_events___event.html#ac2777a4ac56356699e38eadb5dc52636',1,'CitrixMobility::ICMPEvents_Event.ScrollModeChanged()']]],
+  ['sessionstatechanged',['SessionStateChanged',['../class_citrix_mobility_1_1_citrix_mobile_class.html#a2f39816ffa31f23c0d07d7ba37a19ea3',1,'CitrixMobility::CitrixMobileClass.SessionStateChanged()'],['../interface_citrix_mobility_1_1_i_c_m_p_events___event.html#af29823819e7eda572e582b44a20f8403',1,'CitrixMobility::ICMPEvents_Event.SessionStateChanged()']]],
+  ['smsstarted',['SMSStarted',['../class_citrix_mobility_1_1_citrix_mobile_class.html#a655cc2a3e551de8fb01304b1707b5379',1,'CitrixMobility::CitrixMobileClass.SMSStarted()'],['../interface_citrix_mobility_1_1_i_c_m_p_events___event.html#a73e71b946ca550e441f6dd67defaa804',1,'CitrixMobility::ICMPEvents_Event.SMSStarted()']]],
+  ['supportedorientationschanged',['SupportedOrientationsChanged',['../class_citrix_mobility_1_1_citrix_mobile_class.html#a6a384483abf322c5c1836d5081746469',1,'CitrixMobility::CitrixMobileClass.SupportedOrientationsChanged()'],['../interface_citrix_mobility_1_1_i_c_m_p_events___event.html#a63dcbc24c16baaf9057e3084d978ec65',1,'CitrixMobility::ICMPEvents_Event.SupportedOrientationsChanged()']]]
+];

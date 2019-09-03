@@ -1,0 +1,180 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }.OH_footer { }</style><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>CmpApi Class</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="CmpApi class" /><meta name="System.Keywords" content="Citrix.Cmp.CmpApi class" /><meta name="System.Keywords" content="CmpApi class, about CmpApi class" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpApi" /><meta name="Microsoft.Help.Id" content="T:Citrix.Cmp.CmpApi" /><meta name="Description" content="The core class that enables the use of the CMP SDK. You must create an instance of this class before the CMP SDK is usable. You should not create multiple instances of this class in your application, just create one instance and reuse it." /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="Citrix.Cmp" /><meta name="file" content="4f4e01e6-c1f3-3110-8e87-efe36e411014" /><meta name="guid" content="4f4e01e6-c1f3-3110-8e87-efe36e411014" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdTitleColumn">CmpApi Class</td><td class="OH_tdRunningTitleColumn">Citrix Mobility Pack .NET SDK</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span> <div class="summary"><p>
+            The core class that enables the use of the CMP SDK. You must create an instance of this
+            class before the CMP SDK is usable. You should not create multiple instances of this
+            class in your application, just create one instance and reuse it. You have to create
+            this object in the context of your UI thread. This is so the SDK can get a reference to
+            your UI thread in order to post notifications to it. If you create the SDK in a non-UI
+            thread then none of the notifications or async callbacks will ever get executed.
+            </p><p>
+            Many of the API calls in this SDK have both a synchronous and asynchronous version.
+            We provide async APIs where the SDK has to call over the network to the client
+            device. Since the round trip delay can potentially be quite long, you can end up with
+            pauses and stutters in your UI if you use the synchronous version of the APIs. So where
+            available, your should always use the async version of the API instead. This will
+            unblock your UI thread and so keep your UI responsive for the user.
+            </p><p>
+            The various functions in this SDK are accessed via the public properties of this class:
+            <ul><li><strong><a href="8e9b8202-3046-14be-e77e-b5b3d6757503.htm">Audio</a></strong> - Used to capture audio clips using the client device and upload them
+                to the Citrix server so you can use them.</li><li><strong><a href="06f04b47-f703-b005-781a-e93c67d86880.htm">Camera</a></strong> - Used to take pictures using the camera on the client device and then
+                upload those pictures to the Citrix server so you can use them.</li><li><strong><a href="65d14ea7-c531-b05c-0866-99e4790e99b2.htm">ClientControls</a></strong> - Used to control the appearance of the on-screen Citrix Receiver client
+                controls. E.g. on the iPhone you can disable the on-screen controls that appear at
+                the bottom of the screen.</li><li><strong><a href="baa5116c-c786-1f81-f8e5-d0333c2fd1fa.htm">Device</a></strong> - Used to access information about the client device, such as the form
+                factor and client OS.</li><li><strong><a href="cea60e20-7714-3a0f-2fd7-72164bb58bdf.htm">Display</a></strong> - The <a href="b72a3c53-7408-e39d-894e-68b354806bff.htm">Display</a> class contains many functions to
+                view and control the state of the clients display. You can query basic information
+                such as resolution, DPI and orientation of the client device. You can also perform
+                control operations such as locking the orientation and setting the position of the
+                viewport on the client.</li><li><strong><a href="5a9886c4-5726-e97d-3386-95242dc8d803.htm">Input</a></strong> - The <a href="78e1ca13-62f4-e74f-81ab-1ad693771dd4.htm">Input</a> class is used to manage all
+                functionality related to user input. It contains functions to show/hide the
+                on-screen keyboard; change how the receiver processes user touch input and handle
+                button presses of the physical buttons on the user's client device.</li><li><strong><a href="a6fbe1b8-8ff2-b57e-8b15-eab954bfb856.htm">Messaging</a></strong> - Used to send SMS messages using the phone.</li><li><strong><a href="3ea7e66b-73cb-386c-4765-98afef37e2a2.htm">Notifications</a></strong> - The <a href="9c5581b2-aa98-0ae4-b296-f84877bf77e5.htm">Notifications</a> class allows to display
+                notifications to the user using the notification mechanism of the client device,
+                e.g. vibrations, flashing light, text message.</li><li><strong><a href="b631fa23-9692-8f3a-f8e7-a762e5f8b1a2.htm">Phone</a></strong> - Used to start phone calls.</li><li><strong><a href="7118ceb1-e8c1-a79b-b1be-9117cca479fc.htm">Picker</a></strong> - Used to display a local picker control on the client device. A picker
+                can display a simple list of strings to the user. Since the picker is shown locally
+                on the client, it provides a smoother user experience to the user.</li><li><strong><a href="d957dc53-8fea-8ea0-36a9-d5f224369d62.htm">SessionManager</a></strong> - The <a href="16416a47-a451-b2da-a3c9-5f852cb42f21.htm">SessionManager</a> class is important for
+                tracking when the user connects and reconnects to the Citrix server. Users may move
+                their session between different client devices. E.g. they may start it on a phone
+                and then reconnect using their tablet. Since the different devices may have
+                different capabilities, you should use the
+                <a href="f90246b8-319a-1e82-f553-779069144d05.htm">SessionConnected</a> event to detect when the
+                user has reconnected and check the capabilities of the client device in case you
+                want to change the appearance or behaviour of your app.</li><li><strong><a href="6942de72-4740-3bc8-8813-914d3c4768f9.htm">Video</a></strong> - Used to capture video clips using the client device and upload them
+                to the Citrix server so you can use them.</li></ul></p></div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Inheritance Hierarchy</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System<span id="LSTCD3730A3_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCD3730A3_0?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Object</a><br />  <span class="selflink">Citrix.Cmp<span id="LSTCD3730A3_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCD3730A3_1?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>CmpApi</span><br /><p> </p>
+    <strong>Namespace:</strong> 
+   <a href="a096d640-bd1d-22e3-e658-15c131622f2c.htm">Citrix.Cmp</a><br />
+    <strong>Assembly:</strong>
+   Citrix.CMP (in Citrix.CMP.dll) Version: 2.0.0.0 (7.12.0.10009)<div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Syntax</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><div class="OH_CodeSnippetContainer"><div class="OH_CodeSnippetContainerTabs"><div class="OH_CodeSnippetContainerTabLeft" id="ID0EDCA_tabimgleft"> </div><div id="ID0EDCA_tab1" class="OH_CodeSnippetContainerTabFirst"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','cs','1','4');return false;">C#</a></div><div id="ID0EDCA_tab2" class="OH_CodeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','vb','2','4');return false;">VB</a></div><div id="ID0EDCA_tab3" class="OH_CodeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','cpp','3','4');return false;">C++</a></div><div id="ID0EDCA_tab4" class="OH_CodeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','fs','4','4');return false;">F#</a></div><div class="OH_CodeSnippetContainerTabRight" id="ID0EDCA_tabimgright"> </div></div><div class="OH_CodeSnippetContainerCodeCollection"><div class="OH_CodeSnippetToolBar"><div class="OH_CodeSnippetToolBarText"><a id="ID0EDCA_copyCode" href="#" class="OH_copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EDCA');return false;" title="Copy">Copy</a></div></div><div id="ID0EDCA_code_Div1" class="OH_CodeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">CmpApi</span> : <span class="identifier">IDisposable</span></pre></div><div id="ID0EDCA_code_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">Public</span> <span class="keyword">Class</span> <span class="identifier">CmpApi</span>
+	<span class="keyword">Implements</span> <span class="identifier">IDisposable</span></pre></div><div id="ID0EDCA_code_Div3" class="OH_CodeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">ref class</span> <span class="identifier">CmpApi</span> : <span class="identifier">IDisposable</span></pre></div><div id="ID0EDCA_code_Div4" class="OH_CodeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">type</span> <span class="identifier">CmpApi</span> =  
+    <span class="keyword">class</span>
+        <span class="keyword">interface</span> <span class="identifier">IDisposable</span>
+    <span class="keyword">end</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EDCA");</script><p>The <span class="selflink">CmpApi</span> type exposes the following members.</p><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Constructors</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="constructorList"><tr><th class="ps_iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="33dc757b-d3e5-1acb-dbda-8d3ac2cf5592.htm">CmpApi<span id="LSTCD3730A3_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCD3730A3_2?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a></td><td><div class="summary">
+            Initialisation constructor. If you are using CMP in a WinForms or WPF application
+            you should call this from your main UI thread. The API will obtain a reference to
+            the dispatcher (<a href="http://msdn2.microsoft.com/en-us/library/ms615907" target="_blank">Dispatcher</a>) of your thread
+            and will execute any notifications and async callbacks on this thread.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="41ea94da-bee0-4427-3d92-4a8dac50966b.htm">CmpApi(Int32)</a></td><td><div class="summary"><p>
+            Initialisation constructor to create an API instance that is associated with another
+            process rather than the current process. You can use this to control Citrix Windows 
+            App Mobilization SDK state for processes that do not use the SDK themselves. This means
+            that when the specified process has focus, the state you set using this API object
+            will get synced to the client device. Refer to the <a href="2412a4ab-3f0d-800f-0ab0-97dfd50ffcc3.htm">ProcessId</a> property
+            for more information.
+            </p><p>
+            If you are using CMP in a WinForms or WPF application you should call this from your
+            main UI thread. The API will obtain a reference to the dispatcher
+            (<a href="http://msdn2.microsoft.com/en-us/library/ms615907" target="_blank">Dispatcher</a>) of your thread and will execute
+            any notifications and async callbacks on this thread.
+            </p></div></td></tr></table><a href="#mainBody">Top</a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Properties</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="propertyList"><tr><th class="ps_iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="8e9b8202-3046-14be-e77e-b5b3d6757503.htm">Audio</a></td><td><div class="summary">
+            Returns the <a href="03d8e148-8660-298b-0f78-eede24005540.htm">Audio</a> class that is used to perform audio
+            capture on the client device.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="06f04b47-f703-b005-781a-e93c67d86880.htm">Camera</a></td><td><div class="summary">
+            Returns the <a href="49c2628c-e039-31b9-37b5-3e773da4b5cb.htm">Camera</a> class that is used to control the camera
+            on the client device to take pictures.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="65d14ea7-c531-b05c-0866-99e4790e99b2.htm">ClientControls</a></td><td><div class="summary">
+            Returns the <a href="0834310e-e949-b787-154a-e3a5d66db4f1.htm">ClientControls</a> class that is used to control
+            the on-screen client controls displayed by the receiver.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="baa5116c-c786-1f81-f8e5-d0333c2fd1fa.htm">Device</a></td><td><div class="summary">
+            Returns the <a href="6888a074-8bcf-528e-ac20-4845e5c66a9a.htm">Device</a> class that is used to query state about
+            the client device and its operating system.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="cea60e20-7714-3a0f-2fd7-72164bb58bdf.htm">Display</a></td><td><div class="summary">
+            Returns the <a href="cea60e20-7714-3a0f-2fd7-72164bb58bdf.htm">Display</a> class used for querying the state of the client
+            display as well as controlling its orientation and viewport position.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="5a9886c4-5726-e97d-3386-95242dc8d803.htm">Input</a></td><td><div class="summary">
+            Allows you to manage how the user provides input to the client device.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="a6fbe1b8-8ff2-b57e-8b15-eab954bfb856.htm">Messaging</a></td><td><div class="summary">
+            The <a href="a6fbe1b8-8ff2-b57e-8b15-eab954bfb856.htm">Messaging</a> class allows you to make the client device send SMS
+            messages.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="3ea7e66b-73cb-386c-4765-98afef37e2a2.htm">Notifications</a></td><td><div class="summary">
+            The <a href="3ea7e66b-73cb-386c-4765-98afef37e2a2.htm">Notifications</a> class allows you to notify the user to let them
+            know there is some pending state that may be of interest to them in your application
+            (when they are not actively using your app).
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="b631fa23-9692-8f3a-f8e7-a762e5f8b1a2.htm">Phone</a></td><td><div class="summary">
+            Returns a <a href="b631fa23-9692-8f3a-f8e7-a762e5f8b1a2.htm">Phone</a> object that is used to make the client device start
+            phone calls.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="7118ceb1-e8c1-a79b-b1be-9117cca479fc.htm">Picker</a></td><td><div class="summary">
+            The <a href="ea20c5ad-fb17-67a5-753d-0655c74239a6.htm">PickerControl</a> class allows you to display a local picker control
+            on the client device. The picker can display a simple list of strings, and allows
+            the user to select a single string from the list.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="2412a4ab-3f0d-800f-0ab0-97dfd50ffcc3.htm">ProcessId</a></td><td><div class="summary"><p>
+            Returns the PID of the process this API instance is associated with. Null is
+            returned when the API is associated with the current process.
+            </p><p>
+            When an API instance is associated with another process you can set a subset of SDK
+            state that will be made active whenever that process has focus. This subset is known
+            as Virtual Device Object (VDO) state. The ability to set state on other processes is
+            useful when your application spawns other processes in a session that are not CMP
+            aware. For example you may launch Microsoft Word to view a document. You could then
+            set the touch input mode (<a href="0d7bf5ad-a4b8-7d0a-4277-5f37663dd7f7.htm">SetTouchInputMode(TouchInputMode)</a>) to
+            <a href="21e99098-4731-52b2-2655-e7481e6ad7db.htm">MouseWheelScroll</a> so swipes trigger scrolling in Word.
+            </p><p>
+            The VDO states are:
+            <ul><li><strong>Button redirection</strong> - For devices with physical buttons like Android the SDK allows you
+                to redirect the handling of these buttons to your server hosted application. If
+                you want to handle button presses while a non-CMP process has focus you can use
+                an API instance associated with that process to redirect the button and add a
+                handler for it (using <a href="601ca9db-a83b-6050-69a8-18a0be8bf62e.htm">BeginSetButtonTarget(ButtonId, ButtonTarget, Action<span id="LSTCD3730A3_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCD3730A3_3?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>IAsyncResult<span id="LSTCD3730A3_4"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCD3730A3_4?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a> and
+                <a href="81230fc7-e5b7-b036-326b-73febe1edb00.htm">ButtonPressed</a>). The handler you register will
+                then get called when the redirected button is pressed when that non-CMP process
+                has focus.</li><li><strong>Client control visibility</strong> - Receivers generally have some form of on screen controls. Some
+                receivers allow you to hide these controls so they don't get in the way of using
+                the. However when you hide these controls you need to provide equivalent in app
+                controls where appropriate, e.g. to show the keyboard and close the app. If you
+                want these controls hidden while a non-CMP process has focus you can call
+                <a href="e5e71994-f6ee-6f4c-30ae-612698427874.htm">BeginDisable(Action<span id="LSTCD3730A3_5"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCD3730A3_5?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>IAsyncResult<span id="LSTCD3730A3_6"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCD3730A3_6?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a>. Note: this is generally
+                not recommended for non-CMP processes since they will not provide equivalent
+                controls since they are not aware of being accessed from a mobile device.</li><li><strong>Keyboard state</strong> - You can set the keyboard to be displayed when a non-CMP process has
+                focus. Keep in mind that on many devices the user can manually close the
+                keyboard. See <a href="555a857a-1918-10f4-b811-fefb910a7316.htm">BeginShowKeyboard(KeyboardState, Action<span id="LSTCD3730A3_7"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCD3730A3_7?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>IAsyncResult<span id="LSTCD3730A3_8"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCD3730A3_8?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a>.</li><li><strong>Orientation locking</strong> - You can lock the orientation to a specific orientation (if
+                supported by the device). See
+                <a href="fb831a65-8516-96d9-38e8-621a191e1651.htm">BeginSetSupportedOrientations(SupportedOrientations, Action<span id="LSTCD3730A3_9"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCD3730A3_9?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>IAsyncResult<span id="LSTCD3730A3_10"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCD3730A3_10?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a>.</li><li><strong>Touch Input Mode</strong> - Set via <a href="0d7bf5ad-a4b8-7d0a-4277-5f37663dd7f7.htm">SetTouchInputMode(TouchInputMode)</a>, the touch
+                input mode controls how user touch input is translated to events that the server
+                hosted app receives. Since the mode significantly alters the behavior for the
+                user, it is important to ensure your processes use the most appropriate mode.
+                E.g. Citrix Receiver generally uses <a href="21e99098-4731-52b2-2655-e7481e6ad7db.htm">Pan</a>
+                or <a href="21e99098-4731-52b2-2655-e7481e6ad7db.htm">MouseWheelScroll</a> for standard Windows
+                apps that are not mobile aware.</li><li><strong>Viewport position</strong> - When the server session size is bigger than the size of the client
+                screen or the user has zoomed the session in while in the
+                <a href="21e99098-4731-52b2-2655-e7481e6ad7db.htm">Pan</a> input mode you can set the viewport
+                position. To apply a specific position while a non-CMP process has focus you can
+                call <a href="827f6217-975c-8216-fae2-2d64d1035826.htm">BeginSetViewportOrigin(Int32, Int32, Action<span id="LSTCD3730A3_11"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCD3730A3_11?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>IAsyncResult<span id="LSTCD3730A3_12"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCD3730A3_12?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a>.</li></ul></p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="d957dc53-8fea-8ea0-36a9-d5f224369d62.htm">SessionManager</a></td><td><div class="summary">
+            The session manager tracks the state of the session. It contains useful events to
+            detect when a user connects or disconnects from a session.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="6942de72-4740-3bc8-8813-914d3c4768f9.htm">Video</a></td><td><div class="summary">
+            The <a href="0252bb37-6c6e-030a-d229-66c915a02904.htm">Video</a> object allows you to capture video clips on the
+            client device and then upload them to the server for use.
+            </div></td></tr></table><a href="#mainBody">Top</a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Methods</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="methodList"><tr><th class="ps_iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="f8922607-bd68-16a5-1a40-23f086796346.htm">Dispose</a></td><td><div class="summary">
+            Cleans up the CMP.NET API. It is recommended that you always call this in order to
+            shut down the internal worker thread that the API creates.
+            </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/bsc2ak47" target="_blank">Equals</a></td><td><div class="summary">Determines whether the specified object is equal to the current object.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="protected;declared;notNetfw;"><td><img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="740cecda-c93c-509f-ffb0-c5570e39a960.htm">Finalize</a></td><td><div class="summary">
+            Finalizer.
+            </div> (Overrides <a href="http://msdn2.microsoft.com/en-us/library/4k87zsw7" target="_blank">Object<span id="LSTCD3730A3_13"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCD3730A3_13?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Finalize<span id="LSTCD3730A3_14"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCD3730A3_14?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/zdee4b3y" target="_blank">GetHashCode</a></td><td><div class="summary">Serves as a hash function for a particular type. </div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/dfwy45w9" target="_blank">GetType</a></td><td><div class="summary">Gets the <a href="http://msdn2.microsoft.com/en-us/library/42892f65" target="_blank">Type</a> of the current instance.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="protected;inherited;notNetfw;"><td><img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/57ctke0a" target="_blank">MemberwiseClone</a></td><td><div class="summary">Creates a shallow copy of the current <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/7bxwbwt2" target="_blank">ToString</a></td><td><div class="summary">Returns a string that represents the current object.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr></table><a href="#mainBody">Top</a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Remarks</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div>
+            The SDK creates an internal thread for processing async requests. Depending on your
+            environment you will need to explicitly call <a href="f8922607-bd68-16a5-1a40-23f086796346.htm">Dispose<span id="LSTCD3730A3_15"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCD3730A3_15?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> to ensure
+            this thread gets stopped to prevent your app from hanging at shutdown. For WPF apps
+            we can detect app shutdown automatically and will stop the thread for you. However for
+            WinForm apps you must call dispose manually.
+            <div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Examples</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div>
+            The following example shows how you can issue an async request to send a notification.
+            Note how a callback function has been provided as a parameter. This function will get
+            executed in the context of your UI thread, so you are free to make calls that update
+            your UI in this callback without worrying about throwing an exception.
+            <div class="OH_CodeSnippetContainer"><div class="OH_CodeSnippetContainerCodeCollection"><div class="OH_CodeSnippetToolBar"><div class="OH_CodeSnippetToolBarText"><a id="ID0EAAABA_copyCode" href="#" class="OH_copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAAABA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAABA_code_Div1" class="OH_CodeSnippetContainerCode" style="display: block"><pre xml:space="preserve">CmpApi cmpApi = <span class="highlight-keyword">new</span> CmpApi();
+cmpApi.Notifications.BeginNotifyUser(NotificationTypes.Vibrate, <span class="highlight-keyword">null</span>, ar =&gt;
+{
+    <span class="highlight-keyword">try</span>
+    {
+        cmpApi.Notifications.EndNotifyUser(ar);
+        Trace.WriteLine(<span class="highlight-literal">"The user was notified."</span>);
+    }
+    <span class="highlight-keyword">catch</span> (CmpException)
+    {
+    }
+    <span class="highlight-keyword">catch</span> (NotSupportedException)
+    {
+    }
+});</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAAABA");</script><div class="OH_CollapsibleAreaRegion" id="seeAlsoSection"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="a096d640-bd1d-22e3-e658-15c131622f2c.htm">Citrix.Cmp Namespace</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"> </div></body></html>

@@ -1,0 +1,53 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }.OH_footer { }</style><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>KeyboardState Properties</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="KeyboardState class, properties" /><meta name="Microsoft.Help.Id" content="Properties.T:Citrix.Cmp.KeyboardState" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="Citrix.Cmp" /><meta name="file" content="1c9d0479-0b9d-3ec4-8ce8-8c4ad8dea0f3" /><meta name="guid" content="1c9d0479-0b9d-3ec4-8ce8-8c4ad8dea0f3" /><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdTitleColumn">KeyboardState Properties</td><td class="OH_tdRunningTitleColumn">Citrix Mobility Pack .NET SDK</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span> <p>The <a href="14d78943-4801-17b4-a713-daa7bb41aa55.htm">KeyboardState</a> type exposes the following members.</p><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Properties</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="propertyList"><tr><th class="ps_iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="43e4c921-7448-4de2-8eb7-56a8a3976067.htm">AutoCapitalizationMode</a></td><td><div class="summary">
+            The auto-capitalization mode in use by the current keyboard. When requesting the on
+            screen keyboard to be displayed, set this to the desired auto-caps mode otherwise
+            the default of none will be used. Note: not all clients support all modes - check
+            the client capabilities first using
+            <a href="3007bf7b-4bc5-449d-15a8-2cbef0d17ceb.htm">IsKeyboardAutoCapitalizeModeSupported(KeyboardAutoCapitalization)</a>.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="a03cdd32-cd33-9553-63b7-e4f4659e015d.htm">AutoCorrectEnabled</a></td><td><div class="summary">
+            Whether or not auto-correct is enabled. When requesting the on-screen keyboard to be
+            displayed, set this to true to enable auto-correct. Note: not all clients support
+            auto correct. Use <a href="bfd3f018-dced-272a-630b-97301133a010.htm">IsKeyboardAutoCorrectSupported</a> to
+            determine whether the current client supports it.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="136e5ea7-732f-1e5f-bd3b-146b9063c5a0.htm">ExtendedKeyboardEnabled</a></td><td><div class="summary">
+            Whether or not the extended keyboard is displayed. When requesting the on-screen
+            keyboad to be displayed, set this to true to enable the extended keyboard. The
+            extended keyboard is a user configurable row of extra buttons at the top of the
+            keyboard. The user can add buttons and button combinations like ALT, TAB and
+            CTRL-ALT-DEL to the extended keyboard.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="6f5b23fb-1b7a-1368-b1a1-9fabab097c8b.htm">InputControlRect</a></td><td><div class="summary"><p>
+            Used to define the bounding rect of the current input control if you want to
+            receiver to try and keep this rect visible when displaying the on-screen keyboard.
+            This input rect is only used when the input mode is set to panning or scrolling.
+            When the input mode is set to <a href="21e99098-4731-52b2-2655-e7481e6ad7db.htm">RawMouseInput</a>
+            the receiver will resize the session when the on-screen keyboard is displayed
+            instead (rather than moving it up, above the keyboard). In this case it is up to
+            your application to keep the input field visible in the remaining space available in
+            the session.
+            </p><p>
+            Note: this property is never set in the keyboard state reported by
+            <a href="249b308b-0d58-4b4f-d11f-c9ef016fe76c.htm">GetKeyboardState<span id="LST57DED384_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST57DED384_0?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>. It is only ever set if you set it
+            for a show keyboard request.
+            </p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="a5363f56-31a8-feb6-e8ab-4adeacd5b6ee.htm">KeyboardType</a></td><td><div class="summary">
+            The type of the keyboard in use on the client. When requesting the on-screen
+            keyboard to be displayed, set this to the type of keyboard that is desired. Note:
+            not all clients support all types. Use <a href="b14451e5-9b8f-d52a-dbca-da15c3a6e0fc.htm">IsKeyboardTypeSupported(KeyboardType)</a>
+            to determine whether the client supports a given keyboard type. When setting this
+            property, requests to set to <a href="79608589-fa12-0ff9-fa04-3decdf72c2d7.htm">Unknown</a> or
+            <a href="79608589-fa12-0ff9-fa04-3decdf72c2d7.htm">Physical</a> are ignored since they are not valid
+            on-screen keyboard types.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="60a5a289-4a1e-134b-a4e2-4b72e5a4c7fd.htm">OnScreenKeyboardVisible</a></td><td><div class="summary">
+            Whether or not the on-screen keyboard is currently visible. This is a read only
+            property.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="780c22a6-57f5-82d9-dc5c-d9ee31cd8066.htm">PhysicalKeyboardInUse</a></td><td><div class="summary">
+            Whether or not the physical keyboard is currently in use. This is a read only
+            property.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="0fa4c444-6b3a-b25a-6386-83fa677901d0.htm">ReturnKeyText</a></td><td><div class="summary">
+            Defines the text that is displayed on the return key on the on-screen keyboard. When
+            displaying the on-screen keyboard, set this property to change to default text that
+            gets displayed on the return key. Note: not all clients support all of the return
+            key text options. Use <a href="4431a580-6389-b78b-2374-dc7d8505b6d9.htm">IsKeyboardReturnTextSupported(KeyboardReturnKey)</a>
+            to check whether a given option is supported by the client.
+            </div></td></tr></table><a href="#mainBody">Top</a><div class="OH_CollapsibleAreaRegion" id="seeAlsoSection"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="14d78943-4801-17b4-a713-daa7bb41aa55.htm">KeyboardState Class</a></div><div class="seeAlsoStyle"><a href="a096d640-bd1d-22e3-e658-15c131622f2c.htm">Citrix.Cmp Namespace</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"> </div></body></html>

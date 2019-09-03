@@ -1,0 +1,387 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }.OH_footer { }</style><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>CmpError Enumeration</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="CmpError enumeration" /><meta name="System.Keywords" content="Citrix.Cmp.CmpError enumeration" /><meta name="System.Keywords" content="NoError enumeration member" /><meta name="System.Keywords" content="InvalidFunction enumeration member" /><meta name="System.Keywords" content="NotFound enumeration member" /><meta name="System.Keywords" content="NotSupported enumeration member" /><meta name="System.Keywords" content="InvalidParameter enumeration member" /><meta name="System.Keywords" content="NullParameter enumeration member" /><meta name="System.Keywords" content="ComInitializeError enumeration member" /><meta name="System.Keywords" content="ComCreateInstanceError enumeration member" /><meta name="System.Keywords" content="ConvertUtf8Error enumeration member" /><meta name="System.Keywords" content="ConvertUtf16To8Error enumeration member" /><meta name="System.Keywords" content="MissingInterface enumeration member" /><meta name="System.Keywords" content="InvalidSize enumeration member" /><meta name="System.Keywords" content="AccessDenied enumeration member" /><meta name="System.Keywords" content="RegisterInterfacesError enumeration member" /><meta name="System.Keywords" content="Timeout enumeration member" /><meta name="System.Keywords" content="Utf8To16LengthError enumeration member" /><meta name="System.Keywords" content="Utf16To8LengthError enumeration member" /><meta name="System.Keywords" content="BufferTooSmall enumeration member" /><meta name="System.Keywords" content="NotEnoughMemory enumeration member" /><meta name="System.Keywords" content="NotForegroundWindow enumeration member" /><meta name="System.Keywords" content="SessionNotFound enumeration member" /><meta name="System.Keywords" content="SystemHookFailed enumeration member" /><meta name="System.Keywords" content="NotConnected enumeration member" /><meta name="System.Keywords" content="InvalidHandle enumeration member" /><meta name="System.Keywords" content="GetSafeArrayElementError enumeration member" /><meta name="System.Keywords" content="BufferOverflow enumeration member" /><meta name="System.Keywords" content="PacketFieldError enumeration member" /><meta name="System.Keywords" content="UnrecognizedStoragePath enumeration member" /><meta name="System.Keywords" content="PacketTooSmall enumeration member" /><meta name="System.Keywords" content="GetApiVersionError enumeration member" /><meta name="System.Keywords" content="CreateObjectError enumeration member" /><meta name="System.Keywords" content="InvalidPacketFieldOffset enumeration member" /><meta name="System.Keywords" content="InvalidPacketFieldLength enumeration member" /><meta name="System.Keywords" content="PacketTooBig enumeration member" /><meta name="System.Keywords" content="FileNotFound enumeration member" /><meta name="System.Keywords" content="InternalError enumeration member" /><meta name="System.Keywords" content="ServiceDoesNotExist enumeration member" /><meta name="System.Keywords" content="GetFilePathError enumeration member" /><meta name="System.Keywords" content="BindResponsePacket enumeration member" /><meta name="System.Keywords" content="PickerShowError enumeration member" /><meta name="System.Keywords" content="InvalidProcessId enumeration member" /><meta name="System.Keywords" content="InsufficientBuffer enumeration member" /><meta name="System.Keywords" content="InvalidFlags enumeration member" /><meta name="System.Keywords" content="NoUnicodeTranslation enumeration member" /><meta name="System.Keywords" content="ClientDriveUnavailable enumeration member" /><meta name="System.Keywords" content="SdCardUnmounted enumeration member" /><meta name="System.Keywords" content="NetworkEnumerate enumeration member" /><meta name="System.Keywords" content="NotContainerError enumeration member" /><meta name="System.Keywords" content="NoNetwork enumeration member" /><meta name="System.Keywords" content="InvalidAddress enumeration member" /><meta name="System.Keywords" content="NoMoreItems enumeration member" /><meta name="System.Keywords" content="MoreData enumeration member" /><meta name="System.Keywords" content="LoadingDll enumeration member" /><meta name="System.Keywords" content="InterfaceNotAvailable enumeration member" /><meta name="System.Keywords" content="GenerateHashValue enumeration member" /><meta name="System.Keywords" content="GenerateRandomData enumeration member" /><meta name="System.Keywords" content="CreateInternalClass enumeration member" /><meta name="System.Keywords" content="CreateInternalWindow enumeration member" /><meta name="System.Keywords" content="CreateThread enumeration member" /><meta name="System.Keywords" content="ButtonNoError enumeration member" /><meta name="System.Keywords" content="UnsupportedButtonId enumeration member" /><meta name="System.Keywords" content="SetButtonTargetError enumeration member" /><meta name="System.Keywords" content="GetButtonTargetError enumeration member" /><meta name="System.Keywords" content="GetButtonTargetTimeout enumeration member" /><meta name="System.Keywords" content="CameraNoError enumeration member" /><meta name="System.Keywords" content="TakePictureError enumeration member" /><meta name="System.Keywords" content="NoCamera enumeration member" /><meta name="System.Keywords" content="UnsupportedImageFormat enumeration member" /><meta name="System.Keywords" content="GetPictureFileNameError enumeration member" /><meta name="System.Keywords" content="GetPictureFileNameTimeout enumeration member" /><meta name="System.Keywords" content="TakePictureCanceled enumeration member" /><meta name="System.Keywords" content="RemovePictureError enumeration member" /><meta name="System.Keywords" content="GetPictureStateTimeout enumeration member" /><meta name="System.Keywords" content="GetPictureStateError enumeration member" /><meta name="System.Keywords" content="DeviceNoError enumeration member" /><meta name="System.Keywords" content="InvalidPropId enumeration member" /><meta name="System.Keywords" content="InvalidPropertyType enumeration member" /><meta name="System.Keywords" content="DeviceGetStringError enumeration member" /><meta name="System.Keywords" content="DeviceGetStringTimeout enumeration member" /><meta name="System.Keywords" content="DeviceGetBoolError enumeration member" /><meta name="System.Keywords" content="DeviceGetBoolTimeout enumeration member" /><meta name="System.Keywords" content="UnsupportedPropId enumeration member" /><meta name="System.Keywords" content="DisplayNoError enumeration member" /><meta name="System.Keywords" content="SetScrollModeError enumeration member" /><meta name="System.Keywords" content="SetOrientationError enumeration member" /><meta name="System.Keywords" content="GetOrientationError enumeration member" /><meta name="System.Keywords" content="SetViewportOriginError enumeration member" /><meta name="System.Keywords" content="GetOrientationTimeout enumeration member" /><meta name="System.Keywords" content="GetScrollModeError enumeration member" /><meta name="System.Keywords" content="GetScrollModeTimeout enumeration member" /><meta name="System.Keywords" content="GetViewportOriginError enumeration member" /><meta name="System.Keywords" content="GetViewportOriginTimeout enumeration member" /><meta name="System.Keywords" content="GetDisplaySettingsError enumeration member" /><meta name="System.Keywords" content="GetDisplaySettingsTimeout enumeration member" /><meta name="System.Keywords" content="GetViewportError enumeration member" /><meta name="System.Keywords" content="GetViewportTimeout enumeration member" /><meta name="System.Keywords" content="SetViewportError enumeration member" /><meta name="System.Keywords" content="SetOrientationV2 enumeration member" /><meta name="System.Keywords" content="GetOrientationV2 enumeration member" /><meta name="System.Keywords" content="GetOrientationSupportedTimeout enumeration member" /><meta name="System.Keywords" content="ViewportLockedError enumeration member" /><meta name="System.Keywords" content="ViewportOriginLockedError enumeration member" /><meta name="System.Keywords" content="KeyboardNoError enumeration member" /><meta name="System.Keywords" content="ShowKeyboardError enumeration member" /><meta name="System.Keywords" content="HideKeyboardError enumeration member" /><meta name="System.Keywords" content="GetKeyboardStateError enumeration member" /><meta name="System.Keywords" content="GetKeyboardStateTimeout enumeration member" /><meta name="System.Keywords" content="SmsNoError enumeration member" /><meta name="System.Keywords" content="SendSmsError enumeration member" /><meta name="System.Keywords" content="PhoneNoError enumeration member" /><meta name="System.Keywords" content="StartPhoneCallError enumeration member" /><meta name="System.Keywords" content="InvalidPhoneNumber enumeration member" /><meta name="System.Keywords" content="PhoneNumberTooLong enumeration member" /><meta name="System.Keywords" content="PickerNoError enumeration member" /><meta name="System.Keywords" content="ShowPickerError enumeration member" /><meta name="System.Keywords" content="HidePickerError enumeration member" /><meta name="System.Keywords" content="GetPickerStateError enumeration member" /><meta name="System.Keywords" content="GetPickerStateTimeout enumeration member" /><meta name="System.Keywords" content="PickerTitleTooLong enumeration member" /><meta name="System.Keywords" content="PickerListTooBig enumeration member" /><meta name="System.Keywords" content="EventNoError enumeration member" /><meta name="System.Keywords" content="UnknownEventId enumeration member" /><meta name="System.Keywords" content="EventHookingFailure enumeration member" /><meta name="System.Keywords" content="ChannelNoError enumeration member" /><meta name="System.Keywords" content="OpenChannelError enumeration member" /><meta name="System.Keywords" content="BindFailed enumeration member" /><meta name="System.Keywords" content="NotBound enumeration member" /><meta name="System.Keywords" content="UnbindFailed enumeration member" /><meta name="System.Keywords" content="BindTimeout enumeration member" /><meta name="System.Keywords" content="NotifyNoError enumeration member" /><meta name="System.Keywords" content="NotifyTextTooLong enumeration member" /><meta name="System.Keywords" content="NotifyUserError enumeration member" /><meta name="System.Keywords" content="SessionNoError enumeration member" /><meta name="System.Keywords" content="NoSession enumeration member" /><meta name="System.Keywords" content="SessionAlreadyOpen enumeration member" /><meta name="System.Keywords" content="CreateSessionError enumeration member" /><meta name="System.Keywords" content="SessionOptionInvalid enumeration member" /><meta name="System.Keywords" content="RegisterCmpProcessError enumeration member" /><meta name="System.Keywords" content="UnregisterCmpProcessError enumeration member" /><meta name="System.Keywords" content="CapabilitiesNoError enumeration member" /><meta name="System.Keywords" content="CapabilityNotSupported enumeration member" /><meta name="System.Keywords" content="NoCapabilities enumeration member" /><meta name="System.Keywords" content="CapabilityValueNotFound enumeration member" /><meta name="System.Keywords" content="CapabilityNotFound enumeration member" /><meta name="System.Keywords" content="CapabilityTypeMismatch enumeration member" /><meta name="System.Keywords" content="CapabilitySizeMismatch enumeration member" /><meta name="System.Keywords" content="CapabilityInvalidValueType enumeration member" /><meta name="System.Keywords" content="CapabilityValueOverflow enumeration member" /><meta name="System.Keywords" content="ControlsNoError enumeration member" /><meta name="System.Keywords" content="ControlToggleError enumeration member" /><meta name="System.Keywords" content="GetControlFlagsTimeout enumeration member" /><meta name="System.Keywords" content="GetControlFlagsError enumeration member" /><meta name="System.Keywords" content="GvchNoError enumeration member" /><meta name="System.Keywords" content="GvchIoDataOutOfBounds enumeration member" /><meta name="System.Keywords" content="GvchIoStringTooBig enumeration member" /><meta name="System.Keywords" content="GvchIoStringInvalid enumeration member" /><meta name="System.Keywords" content="GvchIoDataTooBig enumeration member" /><meta name="System.Keywords" content="GvchIoHeaderTooSmall enumeration member" /><meta name="System.Keywords" content="GvchInvalidStateForCall enumeration member" /><meta name="System.Keywords" content="GvchInvalidVcName enumeration member" /><meta name="System.Keywords" content="GvchNotConnected enumeration member" /><meta name="System.Keywords" content="GvchInvalidSession enumeration member" /><meta name="System.Keywords" content="GvchInvalidVcMgr enumeration member" /><meta name="System.Keywords" content="VdoNoError enumeration member" /><meta name="System.Keywords" content="VdoContextSet enumeration member" /><meta name="System.Keywords" content="VdoContextActivate enumeration member" /><meta name="System.Keywords" content="CaptureNoError enumeration member" /><meta name="System.Keywords" content="CapturePicture enumeration member" /><meta name="System.Keywords" content="CaptureVideo enumeration member" /><meta name="System.Keywords" content="CaptureAudio enumeration member" /><meta name="System.Keywords" content="CaptureOptionsTooLong enumeration member" /><meta name="System.Keywords" content="CaptureRemoveError enumeration member" /><meta name="System.Keywords" content="CaptureCanceled enumeration member" /><meta name="System.Keywords" content="AudioDisabled enumeration member" /><meta name="System.Keywords" content="EmulatorSimulatedFailure enumeration member" /><meta name="System.Keywords" content="EmulatorPipeNotFound enumeration member" /><meta name="System.Keywords" content="EmulatorPipeBroken enumeration member" /><meta name="System.Keywords" content="EmulatorFailedToAutoLaunch enumeration member" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.NoError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.InvalidFunction" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.NotFound" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.NotSupported" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.InvalidParameter" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.NullParameter" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.ComInitializeError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.ComCreateInstanceError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.ConvertUtf8Error" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.ConvertUtf16To8Error" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.MissingInterface" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.InvalidSize" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.AccessDenied" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.RegisterInterfacesError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.Timeout" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.Utf8To16LengthError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.Utf16To8LengthError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.BufferTooSmall" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.NotEnoughMemory" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.NotForegroundWindow" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.SessionNotFound" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.SystemHookFailed" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.NotConnected" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.InvalidHandle" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetSafeArrayElementError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.BufferOverflow" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.PacketFieldError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.UnrecognizedStoragePath" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.PacketTooSmall" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetApiVersionError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CreateObjectError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.InvalidPacketFieldOffset" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.InvalidPacketFieldLength" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.PacketTooBig" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.FileNotFound" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.InternalError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.ServiceDoesNotExist" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetFilePathError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.BindResponsePacket" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.PickerShowError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.InvalidProcessId" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.InsufficientBuffer" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.InvalidFlags" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.NoUnicodeTranslation" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.ClientDriveUnavailable" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.SdCardUnmounted" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.NetworkEnumerate" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.NotContainerError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.NoNetwork" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.InvalidAddress" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.NoMoreItems" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.MoreData" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.LoadingDll" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.InterfaceNotAvailable" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GenerateHashValue" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GenerateRandomData" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CreateInternalClass" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CreateInternalWindow" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CreateThread" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.ButtonNoError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.UnsupportedButtonId" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.SetButtonTargetError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetButtonTargetError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetButtonTargetTimeout" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CameraNoError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.TakePictureError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.NoCamera" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.UnsupportedImageFormat" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetPictureFileNameError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetPictureFileNameTimeout" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.TakePictureCanceled" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.RemovePictureError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetPictureStateTimeout" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetPictureStateError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.DeviceNoError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.InvalidPropId" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.InvalidPropertyType" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.DeviceGetStringError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.DeviceGetStringTimeout" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.DeviceGetBoolError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.DeviceGetBoolTimeout" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.UnsupportedPropId" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.DisplayNoError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.SetScrollModeError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.SetOrientationError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetOrientationError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.SetViewportOriginError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetOrientationTimeout" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetScrollModeError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetScrollModeTimeout" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetViewportOriginError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetViewportOriginTimeout" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetDisplaySettingsError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetDisplaySettingsTimeout" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetViewportError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetViewportTimeout" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.SetViewportError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.SetOrientationV2" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetOrientationV2" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetOrientationSupportedTimeout" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.ViewportLockedError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.ViewportOriginLockedError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.KeyboardNoError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.ShowKeyboardError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.HideKeyboardError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetKeyboardStateError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetKeyboardStateTimeout" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.SmsNoError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.SendSmsError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.PhoneNoError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.StartPhoneCallError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.InvalidPhoneNumber" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.PhoneNumberTooLong" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.PickerNoError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.ShowPickerError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.HidePickerError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetPickerStateError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetPickerStateTimeout" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.PickerTitleTooLong" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.PickerListTooBig" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.EventNoError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.UnknownEventId" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.EventHookingFailure" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.ChannelNoError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.OpenChannelError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.BindFailed" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.NotBound" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.UnbindFailed" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.BindTimeout" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.NotifyNoError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.NotifyTextTooLong" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.NotifyUserError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.SessionNoError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.NoSession" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.SessionAlreadyOpen" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CreateSessionError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.SessionOptionInvalid" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.RegisterCmpProcessError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.UnregisterCmpProcessError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CapabilitiesNoError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CapabilityNotSupported" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.NoCapabilities" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CapabilityValueNotFound" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CapabilityNotFound" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CapabilityTypeMismatch" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CapabilitySizeMismatch" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CapabilityInvalidValueType" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CapabilityValueOverflow" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.ControlsNoError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.ControlToggleError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetControlFlagsTimeout" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GetControlFlagsError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GvchNoError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GvchIoDataOutOfBounds" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GvchIoStringTooBig" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GvchIoStringInvalid" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GvchIoDataTooBig" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GvchIoHeaderTooSmall" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GvchInvalidStateForCall" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GvchInvalidVcName" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GvchNotConnected" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GvchInvalidSession" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.GvchInvalidVcMgr" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.VdoNoError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.VdoContextSet" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.VdoContextActivate" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CaptureNoError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CapturePicture" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CaptureVideo" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CaptureAudio" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CaptureOptionsTooLong" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CaptureRemoveError" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.CaptureCanceled" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.AudioDisabled" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.EmulatorSimulatedFailure" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.EmulatorPipeNotFound" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.EmulatorPipeBroken" /><meta name="Microsoft.Help.F1" content="Citrix.Cmp.CmpError.EmulatorFailedToAutoLaunch" /><meta name="Microsoft.Help.Id" content="T:Citrix.Cmp.CmpError" /><meta name="Description" content="This enumeration defines the full set of CMP errors that can be raised. The underlying values are made up of two words. The top word contains a CMP component ID. This ID will match one of the values from ." /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="Citrix.Cmp" /><meta name="file" content="6c588ab4-ede7-2a68-27dc-f82d4c55ca8b" /><meta name="guid" content="6c588ab4-ede7-2a68-27dc-f82d4c55ca8b" /><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdTitleColumn">CmpError Enumeration</td><td class="OH_tdRunningTitleColumn">Citrix Mobility Pack .NET SDK</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span> <div class="summary">
+            This enumeration defines the full set of CMP errors that can be raised. The underlying
+            values are made up of two words. The top word contains a CMP component ID. This ID will
+            match one of the values from <a href="2ac1d6d5-e68d-807a-9eeb-5b1e9edf1f4d.htm">CmpComponent</a>. The lower word contains the
+            specific error ID for that component. A lower word value of '0' always indicates success
+            for that component.
+            </div><p> </p>
+    <strong>Namespace:</strong> 
+   <a href="a096d640-bd1d-22e3-e658-15c131622f2c.htm">Citrix.Cmp</a><br />
+    <strong>Assembly:</strong>
+   Citrix.CMP (in Citrix.CMP.dll) Version: 2.0.0.0 (7.12.0.10009)<div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Syntax</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><div class="OH_CodeSnippetContainer"><div class="OH_CodeSnippetContainerTabs"><div class="OH_CodeSnippetContainerTabLeft" id="ID0EDCA_tabimgleft"> </div><div id="ID0EDCA_tab1" class="OH_CodeSnippetContainerTabFirst"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','cs','1','4');return false;">C#</a></div><div id="ID0EDCA_tab2" class="OH_CodeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','vb','2','4');return false;">VB</a></div><div id="ID0EDCA_tab3" class="OH_CodeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','cpp','3','4');return false;">C++</a></div><div id="ID0EDCA_tab4" class="OH_CodeSnippetContainerTab"><a href="#" onclick="javascript:ChangeTab('ID0EDCA','fs','4','4');return false;">F#</a></div><div class="OH_CodeSnippetContainerTabRight" id="ID0EDCA_tabimgright"> </div></div><div class="OH_CodeSnippetContainerCodeCollection"><div class="OH_CodeSnippetToolBar"><div class="OH_CodeSnippetToolBarText"><a id="ID0EDCA_copyCode" href="#" class="OH_copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EDCA');return false;" title="Copy">Copy</a></div></div><div id="ID0EDCA_code_Div1" class="OH_CodeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">enum</span> <span class="identifier">CmpError</span></pre></div><div id="ID0EDCA_code_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">Public</span> <span class="keyword">Enumeration</span> <span class="identifier">CmpError</span></pre></div><div id="ID0EDCA_code_Div3" class="OH_CodeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">enum class</span> <span class="identifier">CmpError</span></pre></div><div id="ID0EDCA_code_Div4" class="OH_CodeSnippetContainerCode" style="display: none"><pre xml:space="preserve"><span class="keyword">type</span> <span class="identifier">CmpError</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EDCA");</script><div id="enumerationSection"><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Members</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table id="enumMemberList" class="members"><tr><th class="ps_iconColumn">
+									 
+								</th><th>Member name</th><th>Value</th><th>Description</th></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.NoError"><span class="selflink">NoError</span></td><td>0</td><td>
+            Component: Common. No error.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.InvalidFunction"><span class="selflink">InvalidFunction</span></td><td>1</td><td>
+            Component: Common. Invalid function.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.NotFound"><span class="selflink">NotFound</span></td><td>2</td><td>
+            Component: Common. Not found.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.NotSupported"><span class="selflink">NotSupported</span></td><td>3</td><td>
+            Component: Common. Not supported.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.InvalidParameter"><span class="selflink">InvalidParameter</span></td><td>4</td><td>
+            Component: Common. Invalid parameter.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.NullParameter"><span class="selflink">NullParameter</span></td><td>5</td><td>
+            Component: Common. Null parameter.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.ComInitializeError"><span class="selflink">ComInitializeError</span></td><td>6</td><td>
+            Component: Common. COM did not initialize.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.ComCreateInstanceError"><span class="selflink">ComCreateInstanceError</span></td><td>7</td><td>
+            Component: Common. COM instance not created.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.ConvertUtf8Error"><span class="selflink">ConvertUtf8Error</span></td><td>8</td><td>
+            Component: Common. Error converting UTF8 string.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.ConvertUtf16To8Error"><span class="selflink">ConvertUtf16To8Error</span></td><td>9</td><td>
+            Component: Common. Error converting UTF16 string to UTF8.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.MissingInterface"><span class="selflink">MissingInterface</span></td><td>10</td><td>
+            Component: Common. Missing COM interface.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.InvalidSize"><span class="selflink">InvalidSize</span></td><td>11</td><td>
+            Component: Common. Invalid size.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.AccessDenied"><span class="selflink">AccessDenied</span></td><td>12</td><td>
+            Component: Common. Access denied.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.RegisterInterfacesError"><span class="selflink">RegisterInterfacesError</span></td><td>13</td><td>
+            Component: Common. Error registering interfaces.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.Timeout"><span class="selflink">Timeout</span></td><td>14</td><td>
+            Component: Common. Timeout.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.Utf8To16LengthError"><span class="selflink">Utf8To16LengthError</span></td><td>15</td><td>
+            Component: Common. Error with UTF8 to UTF16 length.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.Utf16To8LengthError"><span class="selflink">Utf16To8LengthError</span></td><td>16</td><td>
+            Component: Common. Error with UTF16 to UTF8 length.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.BufferTooSmall"><span class="selflink">BufferTooSmall</span></td><td>17</td><td>
+            Component: Common. Buffer too small.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.NotEnoughMemory"><span class="selflink">NotEnoughMemory</span></td><td>18</td><td>
+            Component: Common. Not enough memory.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.NotForegroundWindow"><span class="selflink">NotForegroundWindow</span></td><td>19</td><td>
+            Component: Common. The call you made is not supported when your application does not
+            have the foreground window.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.SessionNotFound"><span class="selflink">SessionNotFound</span></td><td>20</td><td>
+            Component: Common. Session not found.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.SystemHookFailed"><span class="selflink">SystemHookFailed</span></td><td>21</td><td>
+            Component: Common. Windows system hook failed.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.NotConnected"><span class="selflink">NotConnected</span></td><td>22</td><td>
+            Component: Common. Not connected.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.InvalidHandle"><span class="selflink">InvalidHandle</span></td><td>23</td><td>
+            Component: Common. Invalid handle.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetSafeArrayElementError"><span class="selflink">GetSafeArrayElementError</span></td><td>24</td><td>
+            Component: Common. Error getting safe array element.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.BufferOverflow"><span class="selflink">BufferOverflow</span></td><td>25</td><td>
+            Component: Common. Buffer overflow.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.PacketFieldError"><span class="selflink">PacketFieldError</span></td><td>26</td><td>
+            Component: Common. Error with packet field.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.UnrecognizedStoragePath"><span class="selflink">UnrecognizedStoragePath</span></td><td>27</td><td>
+            Component: Common. Unrecognized storage path.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.PacketTooSmall"><span class="selflink">PacketTooSmall</span></td><td>28</td><td>
+            Component: Common. Packet too small.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetApiVersionError"><span class="selflink">GetApiVersionError</span></td><td>29</td><td>
+            Component: Common. Error getting API version.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CreateObjectError"><span class="selflink">CreateObjectError</span></td><td>30</td><td>
+            Component: Common. Error creating object.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.InvalidPacketFieldOffset"><span class="selflink">InvalidPacketFieldOffset</span></td><td>31</td><td>
+            Component: Common. Invalid packet field offset.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.InvalidPacketFieldLength"><span class="selflink">InvalidPacketFieldLength</span></td><td>32</td><td>
+            Component: Common. Invalid packet field length.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.PacketTooBig"><span class="selflink">PacketTooBig</span></td><td>33</td><td>
+            Component: Common. Packet too big.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.FileNotFound"><span class="selflink">FileNotFound</span></td><td>34</td><td>
+            Component: Common. File not found.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.InternalError"><span class="selflink">InternalError</span></td><td>35</td><td>
+            Component: Common. Internal error.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.ServiceDoesNotExist"><span class="selflink">ServiceDoesNotExist</span></td><td>36</td><td>
+            Component: Common. Service does not exist.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetFilePathError"><span class="selflink">GetFilePathError</span></td><td>37</td><td>
+            Component: Common. Error getting file path.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.BindResponsePacket"><span class="selflink">BindResponsePacket</span></td><td>38</td><td>
+            Component: Common. Error with bind response packet.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.PickerShowError"><span class="selflink">PickerShowError</span></td><td>39</td><td>
+            Component: Common. Error with picker show packet.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.InvalidProcessId"><span class="selflink">InvalidProcessId</span></td><td>40</td><td>
+            Component: Common. Invalid process ID.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.InsufficientBuffer"><span class="selflink">InsufficientBuffer</span></td><td>41</td><td>
+            Component: Common. Insufficient buffer.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.InvalidFlags"><span class="selflink">InvalidFlags</span></td><td>42</td><td>
+            Component: Common. Invalid flags.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.NoUnicodeTranslation"><span class="selflink">NoUnicodeTranslation</span></td><td>43</td><td>
+            Component: Common. No unicode translation.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.ClientDriveUnavailable"><span class="selflink">ClientDriveUnavailable</span></td><td>44</td><td>
+            Component: Common. Client drive unavailable.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.SdCardUnmounted"><span class="selflink">SdCardUnmounted</span></td><td>45</td><td>
+            Component: Common. SD card unmounted.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.NetworkEnumerate"><span class="selflink">NetworkEnumerate</span></td><td>46</td><td>
+            Component: Common. Error with network enumeration.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.NotContainerError"><span class="selflink">NotContainerError</span></td><td>47</td><td>
+            Component: Common. Not network container.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.NoNetwork"><span class="selflink">NoNetwork</span></td><td>48</td><td>
+            Component: Common. No network.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.InvalidAddress"><span class="selflink">InvalidAddress</span></td><td>49</td><td>
+            Component: Common. Invalid address.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.NoMoreItems"><span class="selflink">NoMoreItems</span></td><td>50</td><td>
+            Component: Common. Not more items.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.MoreData"><span class="selflink">MoreData</span></td><td>51</td><td>
+            Component: Common. More data available.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.LoadingDll"><span class="selflink">LoadingDll</span></td><td>52</td><td>
+            Component: Common. Error loading DLL.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.InterfaceNotAvailable"><span class="selflink">InterfaceNotAvailable</span></td><td>53</td><td>
+            Component: Common. Interface not available.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GenerateHashValue"><span class="selflink">GenerateHashValue</span></td><td>54</td><td>
+            Component: Common. Error generating hash value.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GenerateRandomData"><span class="selflink">GenerateRandomData</span></td><td>55</td><td>
+            Component: Common. Error generating random data.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CreateInternalClass"><span class="selflink">CreateInternalClass</span></td><td>56</td><td>
+            Component: Common. Error creating internal window class.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CreateInternalWindow"><span class="selflink">CreateInternalWindow</span></td><td>57</td><td>
+            Component: Common. Error creating internal window.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CreateThread"><span class="selflink">CreateThread</span></td><td>58</td><td>
+            Component: Common. Error creating thread.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.ButtonNoError"><span class="selflink">ButtonNoError</span></td><td>65536</td><td>
+            Component: Button. No error.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.UnsupportedButtonId"><span class="selflink">UnsupportedButtonId</span></td><td>65537</td><td>
+            Component: Button. The client does not support redirection of the specified button.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.SetButtonTargetError"><span class="selflink">SetButtonTargetError</span></td><td>65538</td><td>
+            Component: Button. Unable to change the redirection state of the specified button.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetButtonTargetError"><span class="selflink">GetButtonTargetError</span></td><td>65539</td><td>
+            Component: Button. Unable to query the redirection state of the specified button.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetButtonTargetTimeout"><span class="selflink">GetButtonTargetTimeout</span></td><td>65540</td><td>
+            Component: Button. Timeout querying the redirection state of the specified button.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CameraNoError"><span class="selflink">CameraNoError</span></td><td>131072</td><td>
+            Component: Camera. No error.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.TakePictureError"><span class="selflink">TakePictureError</span></td><td>131073</td><td>
+            Component: Camera. Error taking a picture.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.NoCamera"><span class="selflink">NoCamera</span></td><td>131074</td><td>
+            Component: Camera. The client device has no controllable camera.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.UnsupportedImageFormat"><span class="selflink">UnsupportedImageFormat</span></td><td>131075</td><td>
+            Component: Camera. You specified an image format that is not supported by the client
+            device.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetPictureFileNameError"><span class="selflink">GetPictureFileNameError</span></td><td>131076</td><td>
+            Component: Camera. There was an error querying the filename of the specified
+            picture.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetPictureFileNameTimeout"><span class="selflink">GetPictureFileNameTimeout</span></td><td>131077</td><td>
+            Component: Camera. There was a timeout while querying the filename of a picture.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.TakePictureCanceled"><span class="selflink">TakePictureCanceled</span></td><td>131078</td><td>
+            Component: Camera. The user canceled taking a picture.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.RemovePictureError"><span class="selflink">RemovePictureError</span></td><td>131079</td><td>
+            Component: Camera. There was an error deleting a picture.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetPictureStateTimeout"><span class="selflink">GetPictureStateTimeout</span></td><td>131080</td><td>
+            Component: Camera. There was a timeout querying the state of a picture.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetPictureStateError"><span class="selflink">GetPictureStateError</span></td><td>131081</td><td>
+            Component: Camera. There was an error querying the state of a picture.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.DeviceNoError"><span class="selflink">DeviceNoError</span></td><td>262144</td><td>
+            Component: Device. No error.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.InvalidPropId"><span class="selflink">InvalidPropId</span></td><td>262145</td><td>
+            Component: Device. The ID you supplied to query a device property was invalid.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.InvalidPropertyType"><span class="selflink">InvalidPropertyType</span></td><td>262146</td><td>
+            Component: Device. You supplied a valid property ID, but you used the wrong type.
+            E.g. you tried to query a string value using the boolean query function.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.DeviceGetStringError"><span class="selflink">DeviceGetStringError</span></td><td>262147</td><td>
+            Component: Device. There was an error querying a string property.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.DeviceGetStringTimeout"><span class="selflink">DeviceGetStringTimeout</span></td><td>262148</td><td>
+            Component: Device. There was a timeout querying a string property.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.DeviceGetBoolError"><span class="selflink">DeviceGetBoolError</span></td><td>262149</td><td>
+            Component: Device. There was an error querying a boolean property.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.DeviceGetBoolTimeout"><span class="selflink">DeviceGetBoolTimeout</span></td><td>262150</td><td>
+            Component: Device. There was a timeout querying a boolean property.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.UnsupportedPropId"><span class="selflink">UnsupportedPropId</span></td><td>262151</td><td>
+            Component: Device. The client device does not support querying the specified
+            property.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.DisplayNoError"><span class="selflink">DisplayNoError</span></td><td>327680</td><td>
+            Component: Display. 
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.SetScrollModeError"><span class="selflink">SetScrollModeError</span></td><td>327681</td><td>
+            Component: Display. There was an error setting the scroll (input) mode.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.SetOrientationError"><span class="selflink">SetOrientationError</span></td><td>327682</td><td>
+            Component: Display. There was an error setting the orientation.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetOrientationError"><span class="selflink">GetOrientationError</span></td><td>327683</td><td>
+            Component: Display. There was an error querying the current orientation.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.SetViewportOriginError"><span class="selflink">SetViewportOriginError</span></td><td>327684</td><td>
+            Component: Display. There was an error setting the viewport position.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetOrientationTimeout"><span class="selflink">GetOrientationTimeout</span></td><td>327685</td><td>
+            Component: Display. There was a timeout querying the current orientation.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetScrollModeError"><span class="selflink">GetScrollModeError</span></td><td>327686</td><td>
+            Component: Display. There was an error querying the scroll (input) mode.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetScrollModeTimeout"><span class="selflink">GetScrollModeTimeout</span></td><td>327687</td><td>
+            Component: Display. There was a timeout querying the scroll (input) mode.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetViewportOriginError"><span class="selflink">GetViewportOriginError</span></td><td>327688</td><td>
+            Component: Display. There was an error getting the viewport position.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetViewportOriginTimeout"><span class="selflink">GetViewportOriginTimeout</span></td><td>327689</td><td>
+            Component: Display. There was a timeout querying the viewport position.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetDisplaySettingsError"><span class="selflink">GetDisplaySettingsError</span></td><td>327690</td><td>
+            Component: Display. There was an error querying the display settings.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetDisplaySettingsTimeout"><span class="selflink">GetDisplaySettingsTimeout</span></td><td>327691</td><td>
+            Component: Display. There was a timeout quering the display settings.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetViewportError"><span class="selflink">GetViewportError</span></td><td>327692</td><td>
+            Component: Display. There was an error querying the detailed viewport state.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetViewportTimeout"><span class="selflink">GetViewportTimeout</span></td><td>327693</td><td>
+            Component: Display. There was a timeout querying the detailed viewport state.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.SetViewportError"><span class="selflink">SetViewportError</span></td><td>327694</td><td>
+            Component: Display. There was an error setting the detailed viewport state.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.SetOrientationV2"><span class="selflink">SetOrientationV2</span></td><td>327695</td><td>
+            Component: Display. todo?
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetOrientationV2"><span class="selflink">GetOrientationV2</span></td><td>327696</td><td>
+            Component: Display. todo?
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetOrientationSupportedTimeout"><span class="selflink">GetOrientationSupportedTimeout</span></td><td>327697</td><td>
+            Component: Display. todo?
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.ViewportLockedError"><span class="selflink">ViewportLockedError</span></td><td>327699</td><td>
+            Component: Display. The viewport cannot be changed since it is locked.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.ViewportOriginLockedError"><span class="selflink">ViewportOriginLockedError</span></td><td>327698</td><td>
+            Component: Display. The viewport cannot be changed since it is locked.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.KeyboardNoError"><span class="selflink">KeyboardNoError</span></td><td>458752</td><td>
+            Component: Keyboard. No error.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.ShowKeyboardError"><span class="selflink">ShowKeyboardError</span></td><td>458753</td><td>
+            Component: Keyboard. There was an error showing the keyboard.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.HideKeyboardError"><span class="selflink">HideKeyboardError</span></td><td>458754</td><td>
+            Component: Keyboard. There was an error hiding the keyboard.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetKeyboardStateError"><span class="selflink">GetKeyboardStateError</span></td><td>458755</td><td>
+            Component: Keyboard. There was an error querying the current keyboard state.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetKeyboardStateTimeout"><span class="selflink">GetKeyboardStateTimeout</span></td><td>458756</td><td>
+            Component: Keyboard. There was a timeout querying the current keyboard state.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.SmsNoError"><span class="selflink">SmsNoError</span></td><td>524288</td><td>
+            Component: Messaging. No error.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.SendSmsError"><span class="selflink">SendSmsError</span></td><td>524289</td><td>
+            Component: Messaging. There was an error sending an SMS.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.PhoneNoError"><span class="selflink">PhoneNoError</span></td><td>589824</td><td>
+            Component: Phone. No error.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.StartPhoneCallError"><span class="selflink">StartPhoneCallError</span></td><td>589825</td><td>
+            Component: Phone. There was an error starting the phone call.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.InvalidPhoneNumber"><span class="selflink">InvalidPhoneNumber</span></td><td>589826</td><td>
+            Component: Phone. The supplied phone number was in invalid.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.PhoneNumberTooLong"><span class="selflink">PhoneNumberTooLong</span></td><td>589827</td><td>
+            Component: Phone. The supplied phone number was too long.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.PickerNoError"><span class="selflink">PickerNoError</span></td><td>655360</td><td>
+            Component: Picker. No error.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.ShowPickerError"><span class="selflink">ShowPickerError</span></td><td>655361</td><td>
+            Component: Picker. There was an error showing the picker control.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.HidePickerError"><span class="selflink">HidePickerError</span></td><td>655362</td><td>
+            Component: Picker. There was an error hiding the picker control.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetPickerStateError"><span class="selflink">GetPickerStateError</span></td><td>655363</td><td>
+            Component: Picker. There was an error querying the state of a currently visible
+            picker.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetPickerStateTimeout"><span class="selflink">GetPickerStateTimeout</span></td><td>655364</td><td>
+            Component: Picker. There was a timeout querying picker state.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.PickerTitleTooLong"><span class="selflink">PickerTitleTooLong</span></td><td>655365</td><td>
+            Component: Picker. The picker title you supplied was too long.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.PickerListTooBig"><span class="selflink">PickerListTooBig</span></td><td>655366</td><td>
+            Component: Picker. The list of picker items you supplied was too big.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.EventNoError"><span class="selflink">EventNoError</span></td><td>786432</td><td>
+            Component: Event. No error.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.UnknownEventId"><span class="selflink">UnknownEventId</span></td><td>786433</td><td>
+            Component: Event. An unknown event ID was supplied in a filter events request. This
+            request is not supported in CMP.NET.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.EventHookingFailure"><span class="selflink">EventHookingFailure</span></td><td>786434</td><td>
+            Component: Event. Error hooking event.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.ChannelNoError"><span class="selflink">ChannelNoError</span></td><td>851968</td><td>
+            Component: Channel. No error.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.OpenChannelError"><span class="selflink">OpenChannelError</span></td><td>851969</td><td>
+            Component: Channel. There was an error opening the channel.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.BindFailed"><span class="selflink">BindFailed</span></td><td>851970</td><td>
+            Component: Channel. There was an error binding to the channel.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.NotBound"><span class="selflink">NotBound</span></td><td>851971</td><td>
+            Component: Channel. The channel is currently not bound.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.UnbindFailed"><span class="selflink">UnbindFailed</span></td><td>851973</td><td>
+            Component: Channel. The channel unbind operation failed.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.BindTimeout"><span class="selflink">BindTimeout</span></td><td>851974</td><td>
+            Component: Channel. There was a timeout binding the channel.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.NotifyNoError"><span class="selflink">NotifyNoError</span></td><td>917504</td><td>
+            Component: Notifications. No error.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.NotifyTextTooLong"><span class="selflink">NotifyTextTooLong</span></td><td>917505</td><td>
+            Component: Notifications. The notification text you supplied was too long.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.NotifyUserError"><span class="selflink">NotifyUserError</span></td><td>917506</td><td>
+            Component: Notifications. There was an error notifying the user.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.SessionNoError"><span class="selflink">SessionNoError</span></td><td>983040</td><td>
+            Component: Session. No error.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.NoSession"><span class="selflink">NoSession</span></td><td>983041</td><td>
+            Component: Session. There is no CMP session.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.SessionAlreadyOpen"><span class="selflink">SessionAlreadyOpen</span></td><td>983042</td><td>
+            Component: Session. An attempt was made to open a CMP session, but a session is
+            already open.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CreateSessionError"><span class="selflink">CreateSessionError</span></td><td>983043</td><td>
+            Component: Session. There was an error creating a CMP session.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.SessionOptionInvalid"><span class="selflink">SessionOptionInvalid</span></td><td>983044</td><td>
+            Component: Session. A request was made to set an unknown/invalid session option.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.RegisterCmpProcessError"><span class="selflink">RegisterCmpProcessError</span></td><td>983045</td><td>
+            Component: Session. There was an error registering the specified process as a CMP
+            process.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.UnregisterCmpProcessError"><span class="selflink">UnregisterCmpProcessError</span></td><td>983046</td><td>
+            Component: Session. There was an error unregistering the specified process as a CMP
+            process.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CapabilitiesNoError"><span class="selflink">CapabilitiesNoError</span></td><td>1048576</td><td>
+            Component: Capabilities. No error.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CapabilityNotSupported"><span class="selflink">CapabilityNotSupported</span></td><td>1048577</td><td>
+            Component: Capabilities. The client does not support the specified capability.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.NoCapabilities"><span class="selflink">NoCapabilities</span></td><td>1048578</td><td>
+            Component: Capabilities. The client does not support reporting capabilities.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CapabilityValueNotFound"><span class="selflink">CapabilityValueNotFound</span></td><td>1048579</td><td>
+            Component: Capabilities. A value for the specified capability was not found.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CapabilityNotFound"><span class="selflink">CapabilityNotFound</span></td><td>1048580</td><td>
+            Component: Capabilities. The specified capability was not found.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CapabilityTypeMismatch"><span class="selflink">CapabilityTypeMismatch</span></td><td>1048581</td><td>
+            Component: Capabilities. A capability was queried using the wrong type, e.g.
+            querying a boolean capability using an integer query function.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CapabilitySizeMismatch"><span class="selflink">CapabilitySizeMismatch</span></td><td>1048582</td><td>
+            Component: Capabilities. An integral capability was queried using a query function
+            of the wrong size, e.g. querying a 32bit value using a 16bit query function.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CapabilityInvalidValueType"><span class="selflink">CapabilityInvalidValueType</span></td><td>1048583</td><td>
+            Component: Capabilities. The client returned a value that was invalid for the type
+            of the capability.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CapabilityValueOverflow"><span class="selflink">CapabilityValueOverflow</span></td><td>1048584</td><td>
+            Component: Capabilities. The client returned a value that was bigger than the target
+            capability type, e.g. it returned a large 64 bit number that was too big to fit into
+            a 32 bit number.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.ControlsNoError"><span class="selflink">ControlsNoError</span></td><td>1114112</td><td>
+            Component: Controls. No error.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.ControlToggleError"><span class="selflink">ControlToggleError</span></td><td>1114113</td><td>
+            Component: Controls. There was an error changing the visbility of the on-screen
+            client controls.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetControlFlagsTimeout"><span class="selflink">GetControlFlagsTimeout</span></td><td>1114114</td><td>
+            Component: Controls. There was a timeout querying the visibility status of the on-
+            screen client controls.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GetControlFlagsError"><span class="selflink">GetControlFlagsError</span></td><td>1114115</td><td>
+            Component: Controls. There was an error querying the visibility status of the on-
+            screen client controls.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GvchNoError"><span class="selflink">GvchNoError</span></td><td>1179648</td><td>
+            Component: GVCH. No error.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GvchIoDataOutOfBounds"><span class="selflink">GvchIoDataOutOfBounds</span></td><td>1179649</td><td>
+            Component: GVCH. Out of bounds.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GvchIoStringTooBig"><span class="selflink">GvchIoStringTooBig</span></td><td>1179650</td><td>
+            Component: GVCH. String too big.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GvchIoStringInvalid"><span class="selflink">GvchIoStringInvalid</span></td><td>1179651</td><td>
+            Component: GVCH. String invalid.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GvchIoDataTooBig"><span class="selflink">GvchIoDataTooBig</span></td><td>1179652</td><td>
+            Component: GVCH. The data payload is too big.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GvchIoHeaderTooSmall"><span class="selflink">GvchIoHeaderTooSmall</span></td><td>1179653</td><td>
+            Component: GVCH. The data header is too small.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GvchInvalidStateForCall"><span class="selflink">GvchInvalidStateForCall</span></td><td>1179654</td><td>
+            Component: GVCH. GVCH is in an invalid state for the specified call.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GvchInvalidVcName"><span class="selflink">GvchInvalidVcName</span></td><td>1179655</td><td>
+            Component: GVCH. The virtual channel name is invalid.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GvchNotConnected"><span class="selflink">GvchNotConnected</span></td><td>1179656</td><td>
+            Component: GVCH. Not connected.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GvchInvalidSession"><span class="selflink">GvchInvalidSession</span></td><td>1179657</td><td>
+            Component: GVCH. Invalid session.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.GvchInvalidVcMgr"><span class="selflink">GvchInvalidVcMgr</span></td><td>1179658</td><td>
+            Component: GVCH. Invalid virtual channel manager.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.VdoNoError"><span class="selflink">VdoNoError</span></td><td>1245184</td><td>
+            Component: VDO. No error.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.VdoContextSet"><span class="selflink">VdoContextSet</span></td><td>1245185</td><td>
+            Component: VDO. Set context error.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.VdoContextActivate"><span class="selflink">VdoContextActivate</span></td><td>1245186</td><td>
+            Component: VDO. Activate context error.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CaptureNoError"><span class="selflink">CaptureNoError</span></td><td>1310720</td><td>
+            Component: Capture. No error.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CapturePicture"><span class="selflink">CapturePicture</span></td><td>1310721</td><td>
+            Component: Capture. Error taking picture.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CaptureVideo"><span class="selflink">CaptureVideo</span></td><td>1310722</td><td>
+            Component: Capture. Error capturing video.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CaptureAudio"><span class="selflink">CaptureAudio</span></td><td>1310723</td><td>
+            Component: Capture. Error capturing audio.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CaptureOptionsTooLong"><span class="selflink">CaptureOptionsTooLong</span></td><td>1310724</td><td>
+            Component: Capture. Options too long.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CaptureRemoveError"><span class="selflink">CaptureRemoveError</span></td><td>1310725</td><td>
+            Component: Capture. Error removing captured item from the client.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.CaptureCanceled"><span class="selflink">CaptureCanceled</span></td><td>1310726</td><td>
+            Component: Capture. The capture operation was canceled by the user.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.AudioDisabled"><span class="selflink">AudioDisabled</span></td><td>1310727</td><td>
+            Component: Capture. Audio recording is disabled in the receiver settings.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.EmulatorSimulatedFailure"><span class="selflink">EmulatorSimulatedFailure</span></td><td>1376257</td><td>
+            Component: Emulator. failed because API success was disabled.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.EmulatorPipeNotFound"><span class="selflink">EmulatorPipeNotFound</span></td><td>1376258</td><td>
+            Component: Emulator. Failed to connect to emulator.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.EmulatorPipeBroken"><span class="selflink">EmulatorPipeBroken</span></td><td>1376259</td><td>
+            Component: Emulator. Pipe disconnect or failure.
+            </td></tr><tr><td /><td target="F:Citrix.Cmp.CmpError.EmulatorFailedToAutoLaunch"><span class="selflink">EmulatorFailedToAutoLaunch</span></td><td>1376260</td><td>
+            Component: Emulator. Unable to launch emulator.
+            </td></tr></table></div><div class="OH_CollapsibleAreaRegion" id="seeAlsoSection"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="a096d640-bd1d-22e3-e658-15c131622f2c.htm">Citrix.Cmp Namespace</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"> </div></body></html>

@@ -1,0 +1,41 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }.OH_footer { }</style><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>ClientKeyboardController Fields</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="ClientKeyboardController class, fields" /><meta name="Microsoft.Help.Id" content="Fields.T:Citrix.Cmp.ClientKeyboardController" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="Citrix.Cmp" /><meta name="file" content="89cb0d3b-2afe-f481-8967-ec5d64768844" /><meta name="guid" content="89cb0d3b-2afe-f481-8967-ec5d64768844" /><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdTitleColumn">ClientKeyboardController Fields</td><td class="OH_tdRunningTitleColumn">Citrix Mobility Pack .NET SDK</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span> <p>The <a href="9d09b141-005f-ec0f-7049-7517a5535074.htm">ClientKeyboardController</a> type exposes the following members.</p><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Fields</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><table class="members" id="fieldList"><tr><th class="ps_iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubfield.gif" alt="Public field" title="Public field" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="3f251394-7c1b-5260-30bb-374d24549151.htm">AutoHideKeyboardProperty</a></td><td><div class="summary">
+            Set this property to true to enable the focus based keyboard hide functionality.
+            This will request the client device to hide it's on-screen keyboard whenever the
+            text box loses focus.
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubfield.gif" alt="Public field" title="Public field" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="0da377a0-8d69-ccc7-dbdf-28d89c2c5f6d.htm">AutoShowKeyboardProperty</a></td><td><div class="summary"><p>
+            Set this property to true to enable the focus based keyboard popup functionality.
+            This will request the client device show it's on-screen keyboard whenever the text
+            box gets focus, or the user clicks on it.
+            </p><p>
+            Enabling this property also turns on auto-scrolling functionality to keep your text
+            box visible. If you are using <a href="605f951d-afd4-b349-aba6-c167d27fcf4b.htm">LayoutEnabledProperty</a>,
+            then your window will resize when the keyboard gets displayed so it occupies the
+            space above the keyboard. This resize operation can potentially cause the textbox
+            that triggered the keyboard to be displayed to get hidden. The recommended page
+            layout to handle this situation is to wrap the page in a <a href="http://msdn2.microsoft.com/en-us/library/ms612678" target="_blank">ScrollViewer</a>
+            so the user can always scroll the page to see any portions that get obscured. If
+            you have used this recommended layout then this property will lookup the parent
+            <a href="http://msdn2.microsoft.com/en-us/library/ms612678" target="_blank">ScrollViewer</a> that contains your textbox. When the resize occurs it
+            will then ensure that the page gets scrolled automatically so that the textbox
+            remains visible.
+            </p><p>
+            Note: to hide the keyboard, either enable the AutoHideKeyboard dependency property
+            as well, or manually hide the keyboard at an appropriate time.
+            </p></div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubfield.gif" alt="Public field" title="Public field" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="0836554e-4798-4fed-d45c-8753ab14e454.htm">KeyboardReturnKeyTextProperty</a></td><td><div class="summary">
+            Used to control the return key text that is displayed on the on-screen keyboard
+            when popping up the keyboard on a UI control using
+            <a href="0da377a0-8d69-ccc7-dbdf-28d89c2c5f6d.htm">AutoShowKeyboardProperty</a>.
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubfield.gif" alt="Public field" title="Public field" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="e87c2190-cf96-5e4c-6943-d5e9c4a3cb1b.htm">KeyboardTypeProperty</a></td><td><div class="summary">
+            This keyboard type dependency property is used in conjunction with
+            <a href="0da377a0-8d69-ccc7-dbdf-28d89c2c5f6d.htm">AutoShowKeyboardProperty</a> in order to control the specific type of
+            keyboard that gets popped up. Like that property you must also set this one on
+            TextBox instances. You set the value to one of the enumerated
+            <a href="79608589-fa12-0ff9-fa04-3decdf72c2d7.htm">KeyboardType</a> values.
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubfield.gif" alt="Public field" title="Public field" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="8f939b33-a7d3-a56d-c80e-f49f24dfb234.htm">ShowExtendedKeyboardProperty</a></td><td><div class="summary">
+            Use this property in conjunction with <a href="0da377a0-8d69-ccc7-dbdf-28d89c2c5f6d.htm">AutoShowKeyboardProperty</a> to
+            control whether the extended keyboard is also displayed. By default the extended
+            keyboard is not shown. Setting this property to true will cause the extended
+            keyboard to be displayed (if supported by the client).
+            </div></td></tr></table><a href="#mainBody">Top</a><div class="OH_CollapsibleAreaRegion" id="seeAlsoSection"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"> </div><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="9d09b141-005f-ec0f-7049-7517a5535074.htm">ClientKeyboardController Class</a></div><div class="seeAlsoStyle"><a href="a096d640-bd1d-22e3-e658-15c131622f2c.htm">Citrix.Cmp Namespace</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"> </div></body></html>
